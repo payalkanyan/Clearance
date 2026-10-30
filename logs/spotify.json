@@ -1,7 +1,7 @@
 {
   "slug": "spotify",
   "app": "Spotify",
-  "at": "2026-10-30T11:38:15Z",
+  "at": "2026-10-30T11:46:39Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -273,11 +273,11 @@
       }
     ],
     "repairs": [],
-    "calls": 1
+    "calls": 0
   },
   "citations": {
     "slug": "spotify",
-    "at": "2026-10-30T11:38:15Z",
+    "at": "2026-10-30T11:46:39Z",
     "checked": 32,
     "verified": 32,
     "downgrades": []

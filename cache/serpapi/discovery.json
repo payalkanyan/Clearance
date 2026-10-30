@@ -1,7 +1,7 @@
 {
   "slug": "serpapi",
   "app_name": "SerpApi",
-  "website": "docs.cloud.google.com",
+  "website": "serpapi.com",
   "queries": [
     {
       "query": "SerpApi OAuth app registration",
@@ -87,7 +87,7 @@
     {
       "url": "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
       "title": "How to register your own Microsoft OAuth app - Nango Docs",
-      "description": "## Documentation Index\nThis guide shows you how to register your own app with Microsoft to obtain your OAuth credentials (client id & secret).\n\n## [\u200b](https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app#creating-your-microsoft-oauth-app)  Creating your Microsoft OAuth app\nRegister an application in Microsoft Entra ID\n\n3. From the search bar at the top of the Azure portal, search for **App registrations** and select it. Then choose **New registration**. Or from your left navigation tab, navigate to **Applications** > **App registrations** then choose **New registration**.\n7. Click **Register** to complete the app registration.\n\nRecord the **Application (client) ID**, which uniquely identifies your application and is used in your application\u2019s code as part of validating security tokens.\n\n2. Click **Add a permission**.\n4. Choose the type of permissions:\n   - **Application permissions** - Your app accesses the API directly without a signed-in user.\n\n4. Click **Add**.",
+      "description": "## Documentation Index\nThis guide shows you how to register your own app with Microsoft to obtain your OAuth credentials (client id & secret).\n\n## [\u200b](https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app#creating-your-microsoft-oauth-app)  Creating your Microsoft OAuth app\nRegister an application in Microsoft Entra ID\n\n3. From the search bar at the top of the Azure portal, search for **App registrations** and select it. Then choose **New registration**. Or from your left navigation tab, navigate to **Applications** > **App registrations** then choose **New registration**.\n7. Click **Register** to complete the app registration.\n\nRecord the **Application (client) ID**, which uniquely identifies your application and is used in your application\u2019s code as part of validating security tokens.\n\n4. Click **Add**.",
       "query": "SerpApi OAuth app registration",
       "position": 2,
       "score": 16.4,
@@ -99,7 +99,7 @@
     {
       "url": "https://learn.boltrics.com/appIntegration/core/AuthorizationOAuth2.html",
       "title": "Authorization through OAuth 2.0 | Learn 3PL Dynamics",
-      "description": "Go to Microsoft Entra ID and open App registrations. Select New registration. Fill in: Name (e.g. MyIntegration); Supported account types (typically Single ...",
+      "description": "# Authorization through OAuth 2.0\n- **Service-to-Service (Client Credentials)**-- an integration runs as an application (no user)\n  - **Requirements:** 1) App registration in Microsoft Entra ID and 2) Registration of the Entra App in Business Central\n- **User Delegated (Authorization Code)**-- an integration runs on behalf of a signed-in user\n  - **Requirements:** 1) App registration in Microsoft Entra ID and 2) configuration of User Permissions in Business Central",
       "query": "SerpApi OAuth app registration",
       "position": 3,
       "score": 15.1,
@@ -133,19 +133,6 @@
       ]
     },
     {
-      "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
-      "title": "Choose Google Drive API scopes",
-      "description": "To authorize your app, the Google Drive API requires you to define OAuth scopes in two places: the Google Cloud console and your app. In the ...",
-      "query": "SerpApi API scopes permissions",
-      "position": 2,
-      "score": 11.4,
-      "official": true,
-      "reasons": [
-        "host dominates the search results",
-        "developer documentation host"
-      ]
-    },
-    {
       "url": "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews",
       "title": "How To Scrape Home Depot Product Reviews - SerpApi",
       "description": "In this post, we'll explore how to collect product reviews from Home Depot using SerpApi's Home Depot Product Reviews API. SerpApi lets you ...",
@@ -155,19 +142,6 @@
       "official": true,
       "reasons": [
         "host matches the app name"
-      ]
-    },
-    {
-      "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
-      "title": "Quota and Compliance Audits | YouTube Data API",
-      "description": "If you have completed an API Compliance Audit within the last 12 months but require an additional quota extension, fill out and submit the Audit and Quota ...",
-      "query": "SerpApi production access quota extension",
-      "position": 2,
-      "score": 10.4,
-      "official": true,
-      "reasons": [
-        "host dominates the search results",
-        "developer documentation host"
       ]
     },
     {
@@ -195,19 +169,6 @@
       ]
     },
     {
-      "url": "https://developers.google.com/terms",
-      "title": "Google APIs Terms of Service - Google for Developers",
-      "description": "YOU AGREE THAT GOOGLE MAY MONITOR USE OF THE APIS TO ENSURE QUALITY, IMPROVE GOOGLE PRODUCTS AND SERVICES, AND VERIFY YOUR COMPLIANCE WITH THE ...",
-      "query": "SerpApi developer terms of service",
-      "position": 4,
-      "score": 8.8,
-      "official": true,
-      "reasons": [
-        "host dominates the search results",
-        "developer documentation host"
-      ]
-    },
-    {
       "url": "https://serpapi.com/pricing",
       "title": "Plans and Pricing - SerpApi",
       "description": "SerpApi provides simple pricing to suit your every need. Starter $ 25 / month. Most popular Production $ 150 / month Get started 15,000 searches per month 3, ...",
@@ -229,6 +190,19 @@
       "official": true,
       "reasons": [
         "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+      "title": "Choose Google Drive API scopes",
+      "description": "To authorize your app, the Google Drive API requires you to define OAuth scopes in two places: the Google Cloud console and your app. In the ...",
+      "query": "SerpApi API scopes permissions",
+      "position": 2,
+      "score": 8.4,
+      "official": false,
+      "reasons": [
+        "frequent host, but the app's own site is in the results",
+        "developer documentation host"
       ]
     },
     {
@@ -280,15 +254,15 @@
       ]
     },
     {
-      "url": "https://developers.google.com/android-publisher/getting_started",
-      "title": "Getting Started | Google Play Developer API",
-      "description": "# Getting Started    Stay organized with collections      Save and categorize content based on your preferences.\n## Additional information\n### Obtain your Developer ID\n```\nhttps://play.google.com/console/developers/1234567890123456789/api-access\n```",
-      "query": "SerpApi developer console create app",
-      "position": 5,
-      "score": 7.5,
-      "official": true,
+      "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+      "title": "Quota and Compliance Audits | YouTube Data API",
+      "description": "If you have completed an API Compliance Audit within the last 12 months but require an additional quota extension, fill out and submit the Audit and Quota ...",
+      "query": "SerpApi production access quota extension",
+      "position": 2,
+      "score": 7.4,
+      "official": false,
       "reasons": [
-        "host dominates the search results",
+        "frequent host, but the app's own site is in the results",
         "developer documentation host"
       ]
     },
@@ -306,6 +280,19 @@
       ]
     },
     {
+      "url": "https://developers.google.com/terms",
+      "title": "Google APIs Terms of Service - Google for Developers",
+      "description": "YOU AGREE THAT GOOGLE MAY MONITOR USE OF THE APIS TO ENSURE QUALITY, IMPROVE GOOGLE PRODUCTS AND SERVICES, AND VERIFY YOUR COMPLIANCE WITH THE ...",
+      "query": "SerpApi developer terms of service",
+      "position": 4,
+      "score": 5.8,
+      "official": false,
+      "reasons": [
+        "frequent host, but the app's own site is in the results",
+        "developer documentation host"
+      ]
+    },
+    {
       "url": "https://www.octoparse.com/blog/is-serpapi-legal",
       "title": "Is SerpApi Legal? The Google Lawsuit, Explained (2026) - Octoparse",
       "description": "Is SerpApi legal? In July 2026 a US court dismissed Google's DMCA lawsuit against it. Here's what the ruling means for using a SERP API in 2026.",
@@ -315,6 +302,19 @@
       "official": false,
       "reasons": [
         "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/android-publisher/getting_started",
+      "title": "Getting Started | Google Play Developer API",
+      "description": "# Getting Started    Stay organized with collections      Save and categorize content based on your preferences.\n## Additional information\n### Obtain your Developer ID\n```\nhttps://play.google.com/console/developers/1234567890123456789/api-access\n```",
+      "query": "SerpApi developer console create app",
+      "position": 5,
+      "score": 4.5,
+      "official": false,
+      "reasons": [
+        "frequent host, but the app's own site is in the results",
+        "developer documentation host"
       ]
     },
     {
@@ -368,7 +368,7 @@
     {
       "url": "https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey",
       "title": "Required scopes and permissions for /rest/api/3/issue/{issueIdOrKey",
-      "description": "# Required scopes and permissions for /rest/api/3/issue/{issueIdOrKey\n[![User: \"Nivi Mor_m15kf7\"](https://us.v-cdn.net/6038660/uploads/avatars/c8/34/nc834f32a10e780d60045b6ad22448520.webp)](https://community.atlassian.com/forums/profile/5951396/Nivi%20Mor_m15kf7)\n\nMember\n\nI want to use the\u00a0/rest/api/3/issue/{issueIdOrKey endpoint to query issues. I followed [the docs](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-get) and created a token with classic\u00a0read:jira-work scope.\n\nWhen I query an existing issue I get:\n\n{\"errorMessages\":[\"Issue does not exist or you do not have permission to see it.\"],\"errors\":{}}%\n\nAs the user who created this token, I have permission to browse the project where the issue is.\n\nShare Share\n\nSort by Oldest\u00a0\u25be\n\n1 - 3 of 3\u21911\u2191\n\n[![User: \"Nivi Mor_m15kf7\"](https://us.v-cdn.net/6038660/uploads/avatars/c8/34/nc834f32a10e780d60045b6ad22448520.webp)](https://community.atlassian.com/forums/profile/5951396/Nivi%20Mor_m15kf7)\n\nMember\n\nOP\n\nScopes are only relevant for OAuth 2, not for basic auth.\n\nShare Share\n\n[![User: \"Gor Greyan\"](https://us.v-cdn.net/6038660/uploads/avatars/01/53/n0153740a6795e0d8f67316585374a979.png)](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\n[Gor Greyan](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\nExpert\n\nScopes are only enforced when you\u2019re using OAuth 2.0 authentication (for example, when an external app integrates with Jira Cloud via the Atlassian platform). In that case, the access token\u2019s scopes (like `read:jira-work`, `write:jira-work`, etc.) determine what the app can do.\n\n- It completely ignores OAuth scopes.\n- Your request\u2019s permissions depend only on your Jira account permissions (project browse rights, issue security, etc.).\n\nShare Share\n\n[![User: \"Jesper Evo Matthiesen\"](https://us.v-cdn.net/6038660/uploads/avatars/35/23/n352326934f8299b55baf4ff0f16e68bf.webp)](https://community.atlassian.com/forums/profile/2708284/Jesper%20Evo%20Matthiesen)\n\n[Jesper Evo Matthiesen](https://community.atlassian.com/forums/profile/2708284/Jesper%20Evo%20Matthiesen)\n\nMember\n\ndeleted..\n\nShare Share\n\nSort by Oldest\u00a0\u25be\n\n1 - 1 of 1\u21911\u2191\n\n[![User: \"Gor Greyan\"](https://us.v-cdn.net/6038660/uploads/avatars/01/53/n0153740a6795e0d8f67316585374a979.png)](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\n[Gor Greyan](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\nExpert\n\nScopes are only enforced when you\u2019re using OAuth 2.0 authentication (for example, when an external app integrates with Jira Cloud via the Atlassian platform). In that case, the access token\u2019s scopes (like `read:jira-work`, `write:jira-work`, etc.) determine what the app can do.\n\n- It completely ignores OAuth scopes.\n- Your request\u2019s permissions depend only on your Jira account permissions (project browse rights, issue security, etc.).\n\nShare Share",
+      "description": "# Required scopes and permissions for /rest/api/3/issue/{issueIdOrKey\n[![User: \"Nivi Mor_m15kf7\"](https://us.v-cdn.net/6038660/uploads/avatars/c8/34/nc834f32a10e780d60045b6ad22448520.webp)](https://community.atlassian.com/forums/profile/5951396/Nivi%20Mor_m15kf7)\n\nMember\n\nI want to use the\u00a0/rest/api/3/issue/{issueIdOrKey endpoint to query issues. I followed [the docs](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-get) and created a token with classic\u00a0read:jira-work scope.\n\nWhen I query an existing issue I get:\n\n{\"errorMessages\":[\"Issue does not exist or you do not have permission to see it.\"],\"errors\":{}}%\n\nAs the user who created this token, I have permission to browse the project where the issue is.\n\nShare Share\n\nSort by Oldest\u00a0\u25be\n\n1 - 3 of 3\u21911\u2191\n\n[![User: \"Nivi Mor_m15kf7\"](https://us.v-cdn.net/6038660/uploads/avatars/c8/34/nc834f32a10e780d60045b6ad22448520.webp)](https://community.atlassian.com/forums/profile/5951396/Nivi%20Mor_m15kf7)\n\nMember\n\nOP\n\nScopes are only relevant for OAuth 2, not for basic auth.\n\nShare Share\n\n[![User: \"Gor Greyan\"](https://us.v-cdn.net/6038660/uploads/avatars/01/53/n0153740a6795e0d8f67316585374a979.png)](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\n[Gor Greyan](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\nExpert\n\nScopes are only enforced when you\u2019re using OAuth 2.0 authentication (for example, when an external app integrates with Jira Cloud via the Atlassian platform). In that case, the access token\u2019s scopes (like `read:jira-work`, `write:jira-work`, etc.) determine what the app can do.\n\n- It completely ignores OAuth scopes.\n- Your request\u2019s permissions depend only on your Jira account permissions (project browse rights, issue security, etc.).\n\nShare Share\n\n[![User: \"Jesper Evo Matthiesen\"](https://us.v-cdn.net/6038660/uploads/avatars/35/23/n352326934f8299b55baf4ff0f16e68bf.webp)](https://community.atlassian.com/forums/profile/2708284/Jesper%20Evo%20Matthiesen)\n\n[Jesper Evo Matthiesen](https://community.atlassian.com/forums/profile/2708284/Jesper%20Evo%20Matthiesen)\n\nMember\n\ndeleted..\n\nShare Share\n\nSort by Oldest\u00a0\u25be\n\n1 - 1 of 1\u21911\u2191\n\n[![User: \"Gor Greyan\"](https://us.v-cdn.net/6038660/uploads/avatars/01/53/n0153740a6795e0d8f67316585374a979.png)](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\nExpert\n\nScopes are only enforced when you\u2019re using OAuth 2.0 authentication (for example, when an external app integrates with Jira Cloud via the Atlassian platform). In that case, the access token\u2019s scopes (like `read:jira-work`, `write:jira-work`, etc.) determine what the app can do.\n\n- It completely ignores OAuth scopes.\n- Your request\u2019s permissions depend only on your Jira account permissions (project browse rights, issue security, etc.).\n\nShare Share\n\n## Find more posts tagged with\n[Privacy Policy](https://www.atlassian.com/legal/privacy-policy#what-this-policy-covers) [Notice at Collection](https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey#) [Terms](https://www.atlassian.com/legal/community-platform-terms-of-use) [Security](https://www.atlassian.com/trust/data-protection)",
       "query": "SerpApi API scopes permissions",
       "position": 4,
       "score": 1.8,
@@ -430,20 +430,8 @@
   "fallbacks": [],
   "skipped": [
     {
-      "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
-      "reason": "page limit reached"
-    },
-    {
       "url": "https://help.101domain.com/kb/api-key-scopes-and-permissions",
       "reason": "unofficial, official pages suffice"
-    },
-    {
-      "url": "https://serpapi.com/search-api",
-      "reason": "page limit reached"
-    },
-    {
-      "url": "https://developers.google.com/terms",
-      "reason": "page limit reached"
     },
     {
       "url": "https://serpapi.com/pricing",
@@ -452,6 +440,10 @@
     {
       "url": "https://serpapi.com/legal",
       "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+      "reason": "unofficial, official pages suffice"
     },
     {
       "url": "https://www.trustpilot.com/review/serpapi.com?page=4",
@@ -470,15 +462,23 @@
       "reason": "unofficial, official pages suffice"
     },
     {
-      "url": "https://developers.google.com/android-publisher/getting_started",
-      "reason": "page limit reached"
+      "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+      "reason": "unofficial, official pages suffice"
     },
     {
       "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
       "reason": "unofficial, official pages suffice"
     },
     {
+      "url": "https://developers.google.com/terms",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
       "url": "https://www.octoparse.com/blog/is-serpapi-legal",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://developers.google.com/android-publisher/getting_started",
       "reason": "unofficial, official pages suffice"
     },
     {
@@ -518,7 +518,7 @@
       "reason": "unofficial, official pages suffice"
     }
   ],
-  "no_oauth_found": false,
+  "no_oauth_found": true,
   "failed": null,
   "fetch_usage": []
 }

@@ -1,16 +1,13 @@
 {
   "slug": "serpapi",
   "app": "SerpApi",
-  "at": "2026-10-30T11:38:50Z",
+  "at": "2026-10-30T11:46:40Z",
   "model": "gemini-3.8-flash",
   "seconds": {
-    "discover": 54.38,
-    "probe": 4.39,
-    "composio": 1.35,
-    "extract": 158.51,
-    "citations": 0.01,
-    "score": 0.0,
-    "total": 218.64
+    "discover": 0.0,
+    "probe": 0.0,
+    "composio": 0.0,
+    "total": 0.0
   },
   "discover": {
     "queries": [
@@ -113,14 +110,14 @@
         "official": true
       },
       {
-        "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
-        "bytes": 17488,
+        "url": "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews",
+        "bytes": 23705,
         "source": "firecrawl",
         "official": true
       },
       {
-        "url": "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews",
-        "bytes": 23705,
+        "url": "https://serpapi.com/search-api",
+        "bytes": 403543,
         "source": "firecrawl",
         "official": true
       },
@@ -141,20 +138,8 @@
     "fallbacks": [],
     "skipped": [
       {
-        "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
-        "reason": "page limit reached"
-      },
-      {
         "url": "https://help.101domain.com/kb/api-key-scopes-and-permissions",
         "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://serpapi.com/search-api",
-        "reason": "page limit reached"
-      },
-      {
-        "url": "https://developers.google.com/terms",
-        "reason": "page limit reached"
       },
       {
         "url": "https://serpapi.com/pricing",
@@ -163,6 +148,10 @@
       {
         "url": "https://serpapi.com/legal",
         "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+        "reason": "unofficial, official pages suffice"
       },
       {
         "url": "https://www.trustpilot.com/review/serpapi.com?page=4",
@@ -181,15 +170,23 @@
         "reason": "unofficial, official pages suffice"
       },
       {
-        "url": "https://developers.google.com/android-publisher/getting_started",
-        "reason": "page limit reached"
+        "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+        "reason": "unofficial, official pages suffice"
       },
       {
         "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
         "reason": "unofficial, official pages suffice"
       },
       {
+        "url": "https://developers.google.com/terms",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
         "url": "https://www.octoparse.com/blog/is-serpapi-legal",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://developers.google.com/android-publisher/getting_started",
         "reason": "unofficial, official pages suffice"
       },
       {
@@ -229,7 +226,7 @@
         "reason": "unofficial, official pages suffice"
       }
     ],
-    "no_oauth_found": false
+    "no_oauth_found": true
   },
   "probe": [
     {
@@ -276,62 +273,13 @@
     ]
   },
   "extract": {
-    "usage": {
-      "input_tokens": 51824,
-      "output_tokens": 1385,
-      "total_tokens": 55041,
-      "calls": 1
-    },
-    "cost_usd": 0.044062,
-    "prompt_chars": 169074,
-    "trimmed": [
-      {
-        "url": "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
-        "kept_chars": 40000,
-        "original_chars": 169374,
-        "reason": "per-page cap"
-      }
-    ],
+    "usage": {},
+    "cost_usd": 0.0,
+    "prompt_chars": 0,
+    "trimmed": [],
     "repairs": [],
-    "calls": 1
+    "calls": 0
   },
-  "citations": {
-    "slug": "serpapi",
-    "at": "2026-10-30T11:38:50Z",
-    "checked": 4,
-    "verified": 4,
-    "downgrades": []
-  },
-  "score": {
-    "difficulty": "Medium",
-    "reason": {
-      "text": "Free tier accounts are limited to 250 searches per month.",
-      "label": "Sourced",
-      "source_url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
-      "quote": "Free Plan\u00b7 250 searches / month",
-      "note": null
-    },
-    "trigger": "limits_before_approval[0] matched 'limited to 250'",
-    "modifiers": [
-      "Requires a paid plan"
-    ],
-    "matches": [
-      {
-        "level": "Very hard",
-        "skipped": "credentials are available without approval ('no review required'), so approval before keys cannot apply"
-      },
-      {
-        "level": "Hard",
-        "pattern": "review (?:is )?required",
-        "where": "verdict",
-        "skipped": "negated by 'no review' next to the match"
-      },
-      {
-        "level": "Medium",
-        "pattern": "limited to \\d+",
-        "where": "limits_before_approval[0]",
-        "matched": "limited to 250"
-      }
-    ]
-  }
+  "citations": {},
+  "score": {}
 }

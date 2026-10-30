@@ -1,7 +1,7 @@
 {
   "slug": "quickbooks",
   "app": "QuickBooks",
-  "at": "2026-10-30T11:38:15Z",
+  "at": "2026-10-30T11:46:39Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -276,13 +276,13 @@
   },
   "extract": {
     "usage": {
-      "input_tokens": 34467,
-      "output_tokens": 3686,
-      "total_tokens": 44565,
+      "input_tokens": 34779,
+      "output_tokens": 2674,
+      "total_tokens": 40502,
       "calls": 0
     },
-    "cost_usd": 0.039673,
-    "prompt_chars": 129378,
+    "cost_usd": 0.036112,
+    "prompt_chars": 130025,
     "trimmed": [
       {
         "url": "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
@@ -298,30 +298,30 @@
       }
     ],
     "repairs": [
-      "approval_process[0]: quote trimmed from 28 to 24 words",
-      "approval_process[1]: quote trimmed from 27 to 24 words"
+      "verdict: quote trimmed from 28 to 24 words",
+      "approval_process[0]: quote trimmed from 28 to 24 words"
     ],
-    "calls": 1
+    "calls": 0
   },
   "citations": {
     "slug": "quickbooks",
-    "at": "2026-10-30T11:38:15Z",
-    "checked": 21,
-    "verified": 21,
+    "at": "2026-10-30T11:46:39Z",
+    "checked": 13,
+    "verified": 13,
     "downgrades": []
   },
   "score": {
     "difficulty": "Hard",
     "reason": {
-      "text": "A self-assessment questionnaire confirming terms compliance may be required before public distribution.",
+      "text": "Developers can register an account and test immediately in sandbox mode, but public production distribution requires submitting a self-assessment questionnaire and potentially passing technical, security, and marketing reviews.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
       "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a",
       "note": null
     },
-    "trigger": "approval_process[0] matched 'questionnaire'",
+    "trigger": "verdict matched 'questionnaire'",
     "modifiers": [
-      "Regional or legal restrictions"
+      "Requires privacy policy or terms URLs"
     ],
     "matches": [
       {
@@ -331,7 +331,7 @@
       {
         "level": "Hard",
         "pattern": "questionnaire",
-        "where": "approval_process[0]",
+        "where": "verdict",
         "matched": "questionnaire"
       }
     ]

@@ -1,7 +1,7 @@
 {
   "slug": "github",
   "app": "GitHub",
-  "at": "2026-10-30T11:38:15Z",
+  "at": "2026-10-30T11:46:39Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -289,11 +289,11 @@
       "approval_process[2]: quote trimmed from 27 to 24 words",
       "likely_blockers[2]: quote trimmed from 28 to 24 words"
     ],
-    "calls": 1
+    "calls": 0
   },
   "citations": {
     "slug": "github",
-    "at": "2026-10-30T11:38:15Z",
+    "at": "2026-10-30T11:46:39Z",
     "checked": 29,
     "verified": 29,
     "downgrades": []

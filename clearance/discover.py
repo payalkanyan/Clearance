@@ -170,7 +170,11 @@ def app_tokens(app_name: str) -> set[str]:
 
 
 def score_candidate(
-    candidate: Candidate, tokens: set[str], frequent_hosts: set[str]
+    candidate: Candidate,
+    tokens: set[str],
+    frequent_hosts: set[str],
+    *,
+    allow_frequency: bool = True,
 ) -> Candidate:
     reasons: list[str] = []
     score = 0.0
@@ -185,9 +189,13 @@ def score_candidate(
         if tokens & host_tokens(candidate.url):
             score += 6
             reasons.append("host matches the app name")
-        elif host in frequent_hosts:
+        elif host in frequent_hosts and allow_frequency:
             score += 4
             reasons.append("host dominates the search results")
+        elif host in frequent_hosts:
+            score += 1
+            candidate.official = False
+            reasons.append("frequent host, but the app's own site is in the results")
         elif any(token in text for token in tokens):
             # Naming the app proves nothing: a third-party tutorial about
             # GitHub also says "GitHub". Worth reading, not citable as official.
@@ -268,7 +276,21 @@ def rank(candidates: list[Candidate], app_name: str) -> list[Candidate]:
             host = urlsplit(candidate.url).netloc.lower()
             counts[host] = counts.get(host, 0) + 1
     frequent = {host for host, count in counts.items() if count >= 3}
-    scored = [score_candidate(candidate, tokens, frequent) for candidate in candidates]
+
+    # A host that merely dominates the results is only taken as the provider's
+    # own when the provider's actual domain is absent. SerpApi's pages are about
+    # scraping Google, so developers.google.com dominates its results; without
+    # this, Google's OAuth docs would be cited as SerpApi's own.
+    own_domain_present = any(
+        tokens & host_tokens(candidate.url)
+        for candidate in candidates
+        if not is_community(candidate.url)
+    )
+    scored = [
+        score_candidate(candidate, tokens, frequent,
+                        allow_frequency=not own_domain_present)
+        for candidate in candidates
+    ]
     return sorted(scored, key=lambda item: item.score, reverse=True)
 
 
@@ -276,7 +298,7 @@ def has_oauth_evidence(slug: str, pages: list[PageRecord]) -> bool:
     from .cache import page_text
 
     for page in pages:
-        if not page.official:
+        if not page.official or page.kind == "composio":
             continue
         body = page_text(slug, page).lower()
         if any(marker in body for marker in OAUTH_MARKERS):
@@ -373,7 +395,11 @@ def discover(
         )
 
     result.pages = pages
-    result.website = urlsplit(pages[0].url).netloc if pages else None
+    # The provider's own host, never a third-party page that happened to rank.
+    first_official = next((page for page in pages if page.official), None)
+    result.website = (
+        urlsplit((first_official or pages[0]).url).netloc if pages else None
+    )
 
     official = [page for page in pages if page.official]
     if not official:
@@ -388,7 +414,9 @@ def discover(
             result.failed = "no official page could be read"
         emit(f"discovery failed: {result.failed}")
     else:
-        result.no_oauth_found = not has_oauth_evidence(slug, official)
+        result.no_oauth_found = not has_oauth_evidence(
+            slug, [page for page in official if page.kind != "composio"]
+        )
         if result.no_oauth_found:
             emit("no OAuth evidence on any official page")
 

@@ -1,30 +1,30 @@
 {
   "app_name": "QuickBooks",
-  "website": "developer.intuit.com",
+  "website": "developer.intuit.com/app/developer/homepage",
   "verdict": {
-    "text": "Supported via Composio managed OAuth app; registering your own QuickBooks OAuth app is optional unless you want custom branding on the consent screen.",
+    "text": "Developers can register an account and test immediately in sandbox mode, but public production distribution requires submitting a self-assessment questionnaire and potentially passing technical, security, and marketing reviews.",
     "label": "Sourced",
-    "source_url": "https://composio.dev/toolkits/quickbooks",
-    "quote": "Composio provides a managed OAuth app for Quickbooks, so you sign in with your normal Quickbooks account and approve access."
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+    "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a"
   },
   "quick_setup_checklist": [],
   "difficulty": "Hard",
   "difficulty_reason": {
-    "text": "A self-assessment questionnaire confirming terms compliance may be required before public distribution.",
+    "text": "Developers can register an account and test immediately in sandbox mode, but public production distribution requires submitting a self-assessment questionnaire and potentially passing technical, security, and marketing reviews.",
     "label": "Sourced",
     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
     "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a",
-    "note": "triggered the Hard rating: approval_process[0] matched 'questionnaire'"
+    "note": "triggered the Hard rating: verdict matched 'questionnaire'"
   },
   "hands_on_time": {
-    "text": "10 to 20 minutes",
+    "text": "15 to 30 minutes",
     "label": "Inferred",
-    "note": "Creating a developer account, creating an app, selecting scopes, configuring redirect URIs, and generating credentials takes about 10-20 minutes based on standard developer portal steps."
+    "note": "Estimated time to register an Intuit developer account, configure app keys, set redirect URIs, and create a sandbox company."
   },
   "waiting_time": {
-    "text": "Immediate for development and testing; review times for public release are unspecified",
-    "label": "Inferred",
-    "note": "Sandbox testing and development credentials are generated immediately, but review time for public listing or marketing channel access is not stated in the documentation."
+    "text": "Unknown",
+    "label": "Uncertain",
+    "note": "Documentation does not state turnaround times for review of production questionnaires or app store listings."
   },
   "composio_status": {
     "text": "Toolkit available with a Composio managed OAuth app, so you can connect without registering your own. Bringing your own app is optional, for your name on the consent screen.",
@@ -47,203 +47,153 @@
       "note": "observed by the agent at 2026-10-30T11:35:45Z, HTTP 200; matched signin, login, continue with google"
     },
     {
-      "text": "An Intuit Developer account created via the developer portal.",
+      "text": "An Intuit Developer Account with accurate identity and domicile information.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
       "quote": "To enroll, you must create a Developer Account in the Portal by providing complete and accurate information"
     },
     {
-      "text": "Accurate enrollment details including legal identity name, domicile address, valid email, and authorized users.",
+      "text": "A valid payment method if platform service fees or subscription requirements apply to your integration tier.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "Your legal name whether using the Platform as an individual or entity."
-    },
-    {
-      "text": "A valid payment method if platform service fees (such as monthly or variable API usage fees) apply to your account.",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "To use the Intuit Developer Platform, you may need to pay fees which may include a flat monthly fee and a variable API usage fee"
+      "quote": "If applicable, valid and current payment method to facilitate financial transactions related to the Intuit Developer Platform."
     }
   ],
   "setup_steps": [
     {
-      "text": "Sign up for an Intuit Developer account at developer.intuit.com.",
+      "text": "Navigate to the Intuit Developer Portal at https://developer.intuit.com/app/developer/homepage and sign up or log in.",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing Intuit Developer setup steps."
+      "note": "Based on developer sign-in wall observations and the Intuit Developer homepage URL."
     },
     {
-      "text": "Navigate to the Developer Dashboard, open 'My Hub' > 'App Dashboard', and click 'Add'.",
+      "text": "Navigate to the App Dashboard from the developer console and click to add a new app.",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing Intuit Developer dashboard navigation."
+      "note": "Standard app creation flow described in developer integration walkthroughs."
     },
     {
-      "text": "Select 'QuickBooks Online and Payments', specify your app name, and proceed to the permissions step.",
+      "text": "Select 'QuickBooks Online and Payments', provide your application name, and select the initial permissions.",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing app creation flow."
+      "note": "App creation steps described in developer guides."
     },
     {
-      "text": "Select the required permissions for your application and click 'Done' to finalize creation.",
+      "text": "Open the app's settings and add your OAuth callback URL to the 'Redirect URIs' field (e.g., your Composio callback or custom server endpoint).",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing permission assignment."
+      "note": "Required redirect URI configuration in developer settings."
     },
     {
-      "text": "Go to the 'Settings' tab in your application, find 'Redirect URIs', and add your callback URL.",
+      "text": "Go to 'Keys and credentials' to view and copy your Client ID and Client Secret.",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing OAuth callback configuration."
+      "note": "Location of client credentials in the Intuit developer portal."
     },
     {
-      "text": "Navigate to 'Keys and credentials', toggle 'Show credentials', and copy your Client ID and Client Secret.",
+      "text": "If testing, go to My Hub > Sandbox and create a Sandbox test company to retrieve your test Company ID / Realm ID.",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing key retrieval."
+      "note": "Standard practice for QuickBooks sandbox environment setup."
     },
     {
-      "text": "Under 'My Hub' > 'Sandbox', click 'Add' to spin up a test QuickBooks company and record the Company ID / Realm ID for API requests.",
+      "text": "Paste your Client ID and Client Secret into Composio or your application configuration.",
       "label": "Inferred",
-      "note": "Derived from third-party developer guide describing sandbox setup."
+      "note": "Standard credential handoff step when configuring a custom OAuth application."
     }
   ],
   "scopes": [
     {
-      "text": "com.intuit.quickbooks.accounting: Grants access to the QuickBooks Online Accounting API for managing accounting entities.",
+      "text": "com.intuit.quickbooks.accounting: Provides read and write access to QuickBooks Online Accounting API data.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
       "quote": "Grants access to the QuickBooks Online Accounting API, which focuses on accounting data."
     },
     {
-      "text": "com.intuit.quickbooks.payment: Grants access to the QuickBooks Payments API for payment processing.",
+      "text": "com.intuit.quickbooks.payment: Provides access to QuickBooks payments processing and bank account records.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
       "quote": "Grants access to the QuickBooks Payments API, which focuses on payments processing."
     },
     {
-      "text": "openid: Grants access to OpenID Connect features, including user profile, email, phone, and address.",
+      "text": "openid: Accesses OpenID Connect user identity details such as profile, email, phone, and address.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
       "quote": "Grants access to OpenID Connect features. Include one or more of the following capabilities:"
-    },
-    {
-      "text": "app-foundations.custom-field-definitions: Grants read and write access to custom field definitions via the GraphQL API.",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
-      "quote": "Grants access to read and write Custom Fields definitions data."
-    },
-    {
-      "text": "project-management.project: Grants read and write access to Project data via GraphQL.",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
-      "quote": "Grants access to read and write Project data."
-    },
-    {
-      "text": "payroll.compensation.read: Grants read access to pay types using the Time API (requires customer to use QuickBooks Payroll).",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
-      "quote": "Grants read access to pay types (i.e., compensation) using the Time API."
     }
   ],
   "limits_before_approval": [
     {
-      "text": "Sandbox environments must strictly use non-live, aggregated, and anonymized data.",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "You agree to utilize the Sandbox exclusively for the creation, testing, and internal evaluation of your Developer Applications using only non-live, Aggregated and Anonymized Data"
-    },
-    {
-      "text": "The sandbox environment and test data cannot be utilized for production purposes.",
+      "text": "Sandbox environments and test data may only be used for testing and development, never production data.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
       "quote": "The Sandbox, and the data provided therein, must not be used for production purposes."
     },
     {
-      "text": "Intuit reserves the right to audit sandbox use and impose throttling or functionality limits.",
+      "text": "Platform access may be subject to variable API usage fees or flat monthly platform service fees.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "Intuit reserves the right to conduct audits of your use of the Sandbox and may impose additional fees or limit functionalities (including throttling or blocking"
-    },
-    {
-      "text": "QuickBooks OAuth access tokens expire after 1 hour and must be refreshed.",
-      "label": "Inferred",
-      "note": "Documented in third-party documentation; official OAuth token lifetime details were not fully rendered in the provided page text."
+      "quote": "To use the Intuit Developer Platform, you may need to pay fees which may include a flat monthly fee and a variable API usage fee"
     }
   ],
   "approval_process": [
     {
-      "text": "A self-assessment questionnaire confirming terms compliance may be required before public distribution.",
+      "text": "Developers may need to submit a self-assessment questionnaire demonstrating policy compliance before moving to production.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
       "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a"
     },
     {
-      "text": "Launching on Intuit Marketing Channels requires technical, marketing, and legal compliance evaluations.",
+      "text": "Publishing to Intuit marketing channels requires technical, security, legal compliance, and marketing reviews.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "To launch your Application using an Intuit Marketing Channel, further assessments and reviews may be required by Intuit initially, and periodically thereafter, including, but"
+      "quote": "To launch your Application using an Intuit Marketing Channel, further assessments and reviews may be required by Intuit initially, and periodically thereafter"
     },
     {
-      "text": "A mandatory security review evaluating data privacy and stewardship practices, potentially conducted by an Intuit-designated third party.",
+      "text": "Intuit reserves total discretion to approve, reject, or suspend developer applications.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "Our security review focuses on your data privacy and stewardship policies to ensure that you are abiding by Applicable Law, this Agreement, Intuit Policies."
-    },
-    {
-      "text": "Intuit retains total discretion to withhold, reject, or suspend developer applications without providing justification.",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "Intuit reserves the right to withhold, deny, suspend, or reject your Developer Application at its sole discretion, without any obligation to provide reasons"
+      "quote": "Intuit reserves the right to withhold, deny, suspend, or reject your Developer Application at its sole discretion"
     }
   ],
   "likely_blockers": [
     {
-      "text": "The QuickBooks Payroll API is currently closed to new developers and restricted to an interest list.",
+      "text": "Certain APIs like QuickBooks Payroll are closed to new developers and require getting onto an interest list.",
       "label": "Sourced",
       "source_url": "https://help.developer.intuit.com/s/question/0D5TR00000aUBQ20AO/how-to-add-scopes-for-payroll-to-a-production-app",
-      "quote": "The payroll API is not currently open to new developers, but we can add you to our interest list so you can be kept informed"
+      "quote": "The payroll API is not currently open to new developers, but we can add you to our interest list"
     },
     {
-      "text": "The Intuit App Partner Program has regional restrictions and is only available in the US, UK, Australia, and Canada (excluding Quebec).",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
-      "quote": "The Intuit App Partner Program is available for partners based in the US, UK, Australia, and Canada (excluding Quebec)."
-    },
-    {
-      "text": "Failure to provide published legal terms, including user terms of service and privacy policies.",
-      "label": "Sourced",
-      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
-      "quote": "updates to disclosures, terms of service, and privacy policies provided to Users."
-    },
-    {
-      "text": "Failing third-party security audits or not cooperating with audit information requests.",
+      "text": "Failure to complete security review questionnaires or satisfy data stewardship requirements.",
       "label": "Inferred",
-      "note": "Section 8.1 requires working with designated third-party security reviewers, and section 6.3 notes that failure to remediate issues can lead to termination."
+      "note": "Section 8.1 requires apps to satisfy third-party data privacy and security reviews."
     },
     {
-      "text": "Regional or legal restrictions",
+      "text": "Incomplete business profile, missing terms of service or privacy policy URLs, or unverified contact details.",
+      "label": "Inferred",
+      "note": "Inferred from developer portal enrollment rules and listing review requirements."
+    },
+    {
+      "text": "Requires privacy policy or terms URLs",
       "label": "Inferred",
       "note": "rubric modifier: noted as a blocker, it does not change the difficulty level"
     }
   ],
   "agent_can_do": [
-    "Configure MCP or SDK clients with required QuickBooks tools and scopes",
-    "Identify applicable scopes for accounting, payments, or OpenID features",
-    "Generate OAuth 2.0 flow templates and handle token refresh logic",
-    "Draft code to execute API queries and manage Realm ID/Company ID parameters"
+    "Identify and format necessary OAuth scopes for the target QuickBooks APIs",
+    "Provide code samples and integration instructions for OAuth 2.0 flow handling",
+    "Monitor API response payloads and explain error codes"
   ],
   "you_must_do": [
-    "Sign up for an Intuit Developer account and enter organization/identity details",
-    "Create your app in the Intuit Developer Portal and obtain the Client ID and Secret",
-    "Maintain billing details if Intuit Developer Platform fees apply",
-    "Perform the end-user OAuth consent flow to link QuickBooks companies",
-    "Complete the self-assessment questionnaire and security review if distributing publicly"
+    "Sign in to the Intuit Developer Portal and complete developer account registration",
+    "Create the app in the developer console and obtain Client ID and Client Secret",
+    "Set the valid redirect URIs in the Intuit app configuration",
+    "Complete the self-assessment questionnaire and security compliance forms for production approval"
   ],
   "open_questions": [
     {
-      "text": "What are the exact pricing thresholds, fee amounts, and exemption criteria for the Intuit Developer Platform service fees mentioned in Section 5.1 of the terms?",
+      "text": "What is the expected turnaround time for Intuit to review the production self-assessment questionnaire?",
       "label": "Uncertain",
-      "note": "Section 5.1 mentions flat monthly and variable API usage fees, but the fee schedule and exemption criteria are not detailed in the scraped text."
+      "note": "The documentation does not provide standard SLAs or time estimates for application review."
     },
     {
-      "text": "When will Intuit reopen general developer access to the QuickBooks Payroll API?",
+      "text": "What specific tiers or thresholds trigger mandatory developer platform service fees?",
       "label": "Uncertain",
-      "note": "Community responses confirm the Payroll API is closed to new applicants, but give no timeline for public reopening."
+      "note": "The terms state that monthly or variable API fees may apply, but exact fee schedules are not detailed on the pages provided."
     }
   ],
   "sources": [
@@ -297,7 +247,7 @@
   "meta": {
     "slug": "quickbooks",
     "provenance": "agent",
-    "generated_at": "2026-10-30T11:38:15Z",
+    "generated_at": "2026-10-30T11:46:39Z",
     "model": "gemini-3.8-flash",
     "no_oauth_found": false
   }

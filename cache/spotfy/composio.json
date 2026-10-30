@@ -1,0 +1,15 @@
+{
+  "slug": "spotfy",
+  "kind": "none",
+  "url": null,
+  "status": null,
+  "tried": [
+    {
+      "url": "https://composio.dev/toolkits/spotfy",
+      "status": 404,
+      "error": "HTTP 404"
+    }
+  ],
+  "quote": null,
+  "pages": []
+}

@@ -305,7 +305,7 @@ def difficulty_table() -> str:
                    if guide.difficulty_reason else "")
         rows.append(
             f"{guide.meta.slug:<16}{(expected.value if expected else '-'):<12}"
-            f"{guide.difficulty.value:<12}{verdict:<8}{trigger[:70]}"
+            f"{guide.difficulty.value:<12}{verdict:<10}{trigger[:70]}"
         )
     return "\n".join(rows)
 

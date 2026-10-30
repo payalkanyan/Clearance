@@ -1,0 +1,312 @@
+{
+  "app_name": "Spotify",
+  "website": "developer.spotify.com/dashboard",
+  "verdict": {
+    "text": "App registration is immediate in Development Mode, but production access requires meeting strict organization partner criteria (including 250k MAUs) and undergoing an app review that takes up to six weeks.",
+    "label": "Inferred",
+    "note": "Immediate creation of Development Mode apps is supported by the dashboard setup docs, while Extended Quota Mode requires passing partner requirements and a review process lasting up to six weeks."
+  },
+  "quick_setup_checklist": [],
+  "difficulty": "Hard",
+  "difficulty_reason": {
+    "text": "App registration is immediate in Development Mode, but production access requires meeting strict organization partner criteria (including 250k MAUs) and undergoing an app review that takes up to six weeks.",
+    "label": "Inferred",
+    "note": "triggered the Hard rating: verdict matched 'app review'"
+  },
+  "hands_on_time": {
+    "text": "10 to 20 minutes",
+    "label": "Inferred",
+    "note": "Registering an app in the dashboard, configuring settings, and adding allowlisted users takes only a few minutes. Filling out partner and extension questionnaires takes additional time."
+  },
+  "waiting_time": {
+    "text": "Up to 6 weeks",
+    "label": "Sourced",
+    "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+    "quote": "This review process can take up to six weeks."
+  },
+  "composio_status": {
+    "text": "Toolkit available, but you must register your own OAuth app and give Composio its client ID and secret.",
+    "label": "Sourced",
+    "source_url": "https://composio.dev/toolkits/spotify",
+    "quote": "Spotify requires connections to go through your own OAuth app.",
+    "note": "read from Composio's own toolkit page"
+  },
+  "prerequisites": [
+    {
+      "text": "At https://developer.spotify.com/dashboard, an application form is shown, behind a sign-in or an access request. Fields visible: email, privacy policy, terms of service.",
+      "label": "Tested",
+      "source_url": "https://developer.spotify.com/dashboard",
+      "note": "observed by the agent at 2026-10-30T11:39:09Z, HTTP 200; matched login, continue with google, continue with apple"
+    },
+    {
+      "text": "The app owner must hold an active Spotify Premium account.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "The app owner must have a Spotify Premium account for apps in development mode to function."
+    },
+    {
+      "text": "Production Extended Quota access requires an established, legally registered business entity (individuals are not eligible) with a company email.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Please note that as of May 15th 2025, Spotify only accepts applications from organizations (not individuals)."
+    },
+    {
+      "text": "Production access requires an active, launched service maintaining at least 250,000 monthly active users (MAUs).",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Maintaining a minimum of active users (at least 250k MAUs)"
+    }
+  ],
+  "setup_steps": [
+    {
+      "text": "Log in to the Spotify Developer Dashboard at https://developer.spotify.com/dashboard using your Spotify account.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+      "quote": "Login to the Spotify Developer Dashboard. If necessary, read the latest Developer Terms of Service to complete your account set up."
+    },
+    {
+      "text": "Click on the 'Create an App' button on your dashboard.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+      "quote": "To create an app, go to your Dashboard and click on the Create an App button to open the following dialog box:"
+    },
+    {
+      "text": "Enter an App Name and App Description, and accept the Developer Terms of Service.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+      "quote": "Enter an App Name and App Description of your choice (they will be displayed to the user on the grant screen), put a tick"
+    },
+    {
+      "text": "Open the app's overview page and click on 'Settings' (or 'Edit Settings') to configure your application.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+      "quote": "Click on Edit Settings to view and update your app settings."
+    },
+    {
+      "text": "In the 'Redirect URIs' field, enter your application callback URL (for example http://127.0.0.1:8080 or your service callback URI) and save changes.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+      "quote": "In Redirect URIs enter one or more addresses that you want to allowlist with Spotify."
+    },
+    {
+      "text": "Retrieve your Client ID and Client Secret from the app overview/settings page (under 'View client secret') for OAuth configuration.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+      "quote": "The Client ID can be found here. The Client Secret can be found behind the View client secret link."
+    },
+    {
+      "text": "If testing in Development Mode, navigate to the 'Users Management' tab in your app settings and allowlist each test user by entering their name and Spotify email address.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Tap on the Add new user button and enter the name and Spotify email address of the user that you want to enable to"
+    }
+  ],
+  "scopes": [
+    {
+      "text": "user-read-private: Grants read access to the user's subscription details and account type.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "quote": "Read access to user\u2019s subscription details (type of user account)."
+    },
+    {
+      "text": "user-read-email: Grants read access to the user's real email address.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "quote": "Read access to user\u2019s email address."
+    },
+    {
+      "text": "playlist-read-private: Grants read access to the user's private playlists.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "quote": "Read access to user's private playlists."
+    },
+    {
+      "text": "playlist-modify-public and playlist-modify-private: Grants write access to create, modify, or reorder public or private playlists.",
+      "label": "Inferred",
+      "note": "Derived from the playlist scope definitions in the scopes reference page."
+    },
+    {
+      "text": "user-modify-playback-state: Grants write access to control playback on Spotify clients and Spotify Connect devices.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "quote": "Write access to a user\u2019s playback state"
+    },
+    {
+      "text": "user-library-read: Grants read access to check and view saved tracks, albums, and episodes in the user's library.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "quote": "Read access to a user's library."
+    }
+  ],
+  "limits_before_approval": [
+    {
+      "text": "Development Mode apps are strictly limited to at most 5 authenticated Spotify users who must be explicitly allowlisted.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Up to 5 authenticated Spotify users can use an app that is in development mode"
+    },
+    {
+      "text": "Non-allowlisted users who authenticate receive a 403 status code on API calls.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "However, API requests with an access token associated to that user and app will receive a 403 status code error."
+    },
+    {
+      "text": "Developers are limited to one Development Mode Client ID.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+      "quote": "Developers will be limited to one Development Mode Client ID"
+    },
+    {
+      "text": "Development Mode requests are constrained by quota buckets across the developer account, returning 429 QUOTA_EXCEEDED when exceeded.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Spotify's Web API has a quota system that limits the number of requests made through development mode apps that belong to a single developer account."
+    },
+    {
+      "text": "Development Mode apps will not function unless the app owner maintains an active Spotify Premium account.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+      "quote": "Development Mode use will require a Spotify Premium account"
+    }
+  ],
+  "approval_process": [
+    {
+      "text": "Step 1: Submit a Partner Application form from a corporate email address to qualify as an organization.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Application must be sent through a company email by using this form."
+    },
+    {
+      "text": "Step 2: If the Partner Application is approved, go to Dashboard > App > Settings > 'Quota extension Request' tab.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "If your Partner Application form is approved, you can ask Spotify to move your app from development mode into extended quota mode."
+    },
+    {
+      "text": "Step 3: Complete the 4-step questionnaire detailing your app and use case, then submit.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Tell us about your app by filling out the provided questionnaire (4 steps)"
+    },
+    {
+      "text": "Step 4: Spotify's review team evaluates your app for policy compliance, tests the app, and communicates decisions via email within up to six weeks.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "The app review team will review the information that you have provided, test out your app and send you feedback by email"
+    }
+  ],
+  "likely_blockers": [
+    {
+      "text": "Individual developers cannot obtain Extended Quota Mode; applications are accepted only from registered organizations.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Please note that as of May 15th 2025, Spotify only accepts applications from organizations (not individuals)."
+    },
+    {
+      "text": "Failure to demonstrate at least 250,000 monthly active users (MAUs) on an existing launched service.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Maintaining a minimum of active users (at least 250k MAUs)"
+    },
+    {
+      "text": "Lack of an active Spotify Premium subscription for the app owner.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "The app owner must have a Spotify Premium account for apps in development mode to function."
+    },
+    {
+      "text": "Attempting to create multiple Development Mode Client IDs under one developer account.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+      "quote": "Developers will be limited to one Development Mode Client ID"
+    },
+    {
+      "text": "Submitting the partner extension application using a personal email rather than a company domain email.",
+      "label": "Sourced",
+      "source_url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "quote": "Application must be sent through a company email by using this form."
+    },
+    {
+      "text": "Requires privacy policy or terms URLs",
+      "label": "Inferred",
+      "note": "rubric modifier: noted as a blocker, it does not change the difficulty level"
+    }
+  ],
+  "agent_can_do": [
+    "Identify and format the required OAuth scopes for your application use case.",
+    "Draft the authorization URL and handle the token exchange implementation (Authorization Code or PKCE flow).",
+    "Prepare API requests according to the Web API specification."
+  ],
+  "you_must_do": [
+    "Log in to the Spotify Developer Dashboard with a Spotify Premium account.",
+    "Register the application and configure the exact Redirect URIs in app settings.",
+    "Securely copy and store the Client ID and Client Secret.",
+    "Manually add up to 5 tester accounts (name and Spotify email) under User Management for Development Mode testing.",
+    "Submit the official organization partner application and quota extension review form if planning to deploy to production."
+  ],
+  "open_questions": [
+    {
+      "text": "What specific quota bucket limits are enforced for Development Mode apps, given Spotify notes they are subject to change without published numeric thresholds?",
+      "label": "Inferred",
+      "note": "Documentation indicates that endpoints are grouped into quota buckets and return 429 when exceeded, but does not state the exact numeric request limits."
+    },
+    {
+      "text": "The input 'Spotfy' does not match the provider's own name 'Spotify'; the guide follows the pages found.",
+      "label": "Uncertain",
+      "note": "the app name given did not match the provider's own"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+      "title": "Authorization | Spotify for Developers"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "title": "Scopes | Spotify for Developers"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "title": "Quota modes | Spotify for Developers"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+      "title": "Apps | Spotify for Developers"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+      "title": "Getting started with Web API | Spotify for Developers"
+    },
+    {
+      "url": "https://developer.spotify.com/terms",
+      "title": "Spotify Developer Terms | Spotify for Developers"
+    },
+    {
+      "url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+      "title": "Update on Developer Access and Platform Security | Spotify for Developers"
+    },
+    {
+      "url": "https://composio.dev/toolkits/spotify",
+      "title": "Spotify MCP Server | Composio"
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "title": "Managed OAuth apps | Composio"
+    },
+    {
+      "url": "https://developer.spotify.com/dashboard"
+    }
+  ],
+  "last_verified": {
+    "date": "2026-10-30",
+    "by": "agent"
+  },
+  "meta": {
+    "slug": "spotfy",
+    "provenance": "agent",
+    "generated_at": "2026-10-30T11:46:40Z",
+    "model": "gemini-3.8-flash",
+    "no_oauth_found": false
+  }
+}

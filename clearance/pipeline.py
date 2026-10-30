@@ -14,7 +14,16 @@ from typing import Callable
 from pydantic import BaseModel, ValidationError
 
 from . import composio as composio_module
-from .cache import load_pages, normalise_url, read_json, save_pages, slug_dir, write_json
+from .cache import (
+    load_pages,
+    normalise_url,
+    page_text,
+    read_json,
+    save_pages,
+    slug_dir,
+    store_page,
+    write_json,
+)
 from .citations import build_index, check
 from .config import GUIDES_DIR, LOGS_DIR, llm_model, slugify, today, utc_now
 from .discover import DiscoveryResult, discover
@@ -213,6 +222,47 @@ def run(
             result.log = {"stage": "extract", "failed": result.error}
             return result
 
+        # "Spotfy" finds Spotify's pages, but the Composio lookup used the
+        # misspelling. Ask again under the name the provider's own pages use.
+        resolved = slugify(extraction.draft.app_name or "")
+        mismatch_note: str | None = None
+        if resolved and resolved != slug:
+            mismatch_note = (
+                f"The input {app_input.strip()!r} does not match the provider's own "
+                f"name {extraction.draft.app_name!r}; the guide follows the pages found."
+            )
+            emit("composio", f"input resolved to {extraction.draft.app_name!r}; "
+                             "checking Composio under that name")
+            retry = composio_module.lookup(
+                extraction.draft.app_name, use_cache=use_cache, progress=progress
+            )
+            if retry.kind != "none":
+                composio_status = retry
+                composio_fact = retry.as_fact()
+                # The retry cached under its own slug. Copy the page into this
+                # run's cache, or stage 5 cannot find the quote's page.
+                for page in retry.pages:
+                    # Replace rather than skip: an earlier run may have left a
+                    # record pointing at a file that was never written here.
+                    pages = [
+                        kept for kept in pages
+                        if normalise_url(kept.url) != normalise_url(page.url)
+                    ]
+                    pages.append(
+                        store_page(
+                            slug,
+                            page.url,
+                            page_text(retry.slug, page),
+                            source=page.source,
+                            title=page.title,
+                            status=page.status,
+                            official=page.official,
+                            kind=page.kind,
+                        )
+                    )
+                    known.add(normalise_url(page.url))
+                save_pages(slug, pages)
+
         facts = list(iter_draft_facts(extraction.draft))
         # Composio's quote comes from a page too, so it is checked like any other.
         facts.append(("composio_status", None, composio_fact))
@@ -269,6 +319,11 @@ def run(
                 note="applied in code from the rubric in docs/guide-spec.md section 3",
             )
         )
+        if mismatch_note:
+            grouped["open_questions"].append(
+                Fact(text=mismatch_note, label=Label.UNCERTAIN,
+                     note="the app name given did not match the provider's own")
+            )
         if rating.modifiers:
             grouped["likely_blockers"] += [
                 Fact(text=item, label=Label.INFERRED,
@@ -336,7 +391,7 @@ def run(
             "prompt_chars": extraction.prompt_chars if extraction else 0,
             "trimmed": extraction.trimmed if extraction else [],
             "repairs": extraction.repairs if extraction else [],
-            "calls": 1 if extraction else 0,
+            "calls": (extraction.usage or {}).get("calls", 1) if extraction else 0,
         },
         "citations": citations.model_dump() if citations else {},
         "score": rating.model_dump(mode="json") if rating else {},

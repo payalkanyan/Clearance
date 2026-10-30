@@ -68,13 +68,22 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     extract_log = result.log.get("extract", {})
     citations_log = result.log.get("citations", {})
-    print(f"  one call to {result.log.get('model')}: "
-          f"{extract_log.get('usage', {}).get('input_tokens')} in / "
-          f"{extract_log.get('usage', {}).get('output_tokens')} out, "
-          f"${extract_log.get('cost_usd')} at list price")
-    print(f"  quotes: {citations_log.get('verified')} of "
-          f"{citations_log.get('checked')} verified, "
-          f"{len(citations_log.get('downgrades', []))} downgraded")
+    usage = extract_log.get("usage") or {}
+    if not usage:
+        print("  no model call: the guide was written in code because no OAuth "
+              "evidence was found")
+    elif extract_log.get("calls"):
+        print(f"  one call to {result.log.get('model')}: "
+              f"{usage.get('input_tokens')} in / {usage.get('output_tokens')} out, "
+              f"${extract_log.get('cost_usd')} at list price")
+    else:
+        print(f"  no model call: reused the cached draft "
+              f"({usage.get('input_tokens')} in / {usage.get('output_tokens')} out "
+              f"when it was made)")
+    if citations_log.get("checked") is not None:
+        print(f"  quotes: {citations_log.get('verified')} of "
+              f"{citations_log.get('checked')} verified, "
+              f"{len(citations_log.get('downgrades', []))} downgraded")
     print(f"  {result.log['seconds']['total']}s total")
     print(f"  wrote {result.guide_path}, {result.markdown_path}, {result.log_path}")
     return 0
