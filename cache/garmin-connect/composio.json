@@ -1,0 +1,25 @@
+{
+  "slug": "garmin-connect",
+  "kind": "none",
+  "url": null,
+  "status": null,
+  "tried": [
+    {
+      "url": "https://composio.dev/toolkits/garmin-connect",
+      "status": 404,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://composio.dev/toolkits/garminconnect",
+      "status": 404,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://composio.dev/toolkits/garmin",
+      "status": 404,
+      "error": "HTTP 404"
+    }
+  ],
+  "quote": null,
+  "pages": []
+}

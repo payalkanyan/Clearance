@@ -68,12 +68,17 @@ class Label(StrEnum):
 
 
 class Difficulty(StrEnum):
-    """See docs/guide-spec.md section 3. Pick the highest level that applies."""
+    """See docs/guide-spec.md section 3. Pick the highest level that applies.
+
+    Unknown is an addition to the spec's four levels, used only when the app has
+    no OAuth to rate. Calling that Easy would be a claim we cannot support.
+    """
 
     EASY = "Easy"
     MEDIUM = "Medium"
     HARD = "Hard"
     VERY_HARD = "Very hard"
+    UNKNOWN = "Unknown"
 
 
 def _is_relaxed(info: ValidationInfo) -> bool:

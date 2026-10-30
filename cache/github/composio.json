@@ -1,0 +1,38 @@
+{
+  "slug": "github",
+  "kind": "managed",
+  "url": "https://composio.dev/toolkits/github",
+  "status": 200,
+  "tried": [
+    {
+      "url": "https://composio.dev/toolkits/github",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "quote": "Composio provides a managed OAuth app for GitHub, so you sign in with your normal GitHub account and approve access.",
+  "pages": [
+    {
+      "url": "https://composio.dev/toolkits/github",
+      "file": "pages/6a431bb15c45567c.md",
+      "source": "firecrawl",
+      "fetched_at": "2026-10-30T11:24:28Z",
+      "title": "GitHub MCP Server | Composio",
+      "status": 200,
+      "bytes": 146084,
+      "official": true,
+      "query": null
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "file": "pages/a0f9c2141dd2d96c.md",
+      "source": "firecrawl",
+      "fetched_at": "2026-10-30T11:24:28Z",
+      "title": "Managed OAuth apps | Composio",
+      "status": 200,
+      "bytes": 3369,
+      "official": true,
+      "query": null
+    }
+  ]
+}

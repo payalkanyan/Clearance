@@ -315,6 +315,7 @@ def extract(
     probe_result: ProbeResult | None = None,
     composio_note: str | None = None,
     model: str | None = None,
+    use_cache: bool = True,
     progress: Callable[[str, str], None] | None = None,
 ) -> ExtractionResult:
     def emit(message: str) -> None:
@@ -324,6 +325,16 @@ def extract(
     slug = slugify(app_input)
     chosen = model or llm_model()
     result = ExtractionResult(slug=slug, model=chosen)
+
+    if use_cache:
+        from .cache import read_json
+
+        cached = read_json(slug_dir(slug) / "draft.json", default=None)
+        if cached and cached.get("draft") and cached.get("model") == chosen:
+            emit("cache hit: reusing the draft, no call made")
+            previous = ExtractionResult.model_validate(cached)
+            previous.usage = {**previous.usage, "calls": 0}
+            return previous
 
     if not gemini_api_key():
         result.error = "GEMINI_API_KEY is not set"

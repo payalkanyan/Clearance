@@ -1,0 +1,311 @@
+{
+  "slug": "spotify",
+  "app": "Spotify",
+  "at": "2026-10-30T11:22:26Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 0.0,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 0.0,
+    "citations": 0.01,
+    "score": 0.0,
+    "total": 0.01
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "Spotify OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+          "https://developer.spotify.com/documentation/web-api/concepts/apps",
+          "https://developer.spotify.com/documentation/web-api/tutorials/code-flow",
+          "https://developer.spotify.com/dashboard",
+          "https://www.youtube.com/watch?v=olY_2MW4Eik"
+        ]
+      },
+      {
+        "query": "Spotify developer console create app",
+        "results": 5,
+        "urls": [
+          "https://developer.spotify.com/documentation/web-api/concepts/apps",
+          "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+          "https://community.spotify.com/forum/en/discussion/7283365/unable-to-create-app",
+          "https://developer.spotify.com/dashboard",
+          "https://www.reddit.com/r/truespotify/comments/1qc5pc8/cannot_create_any_app_on_spotify_developers"
+        ]
+      },
+      {
+        "query": "Spotify API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+          "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+          "https://stackoverflow.com/questions/51795449/spotify-api-token-scope-issue",
+          "https://community.auth0.com/t/spotify-connection-with-additional-scopes/167542",
+          "https://www.activepieces.com/blog/spotify-web-api-free-access-modes-scopes-limits"
+        ]
+      },
+      {
+        "query": "Spotify app review verification process",
+        "results": 5,
+        "urls": [
+          "https://support.spotify.com/us/article/verified-by-spotify",
+          "https://support.spotify.com/us/artists/article/verified-by-spotify",
+          "https://www.trustpilot.com/review/www.spotify.com",
+          "https://www.quora.com/How-does-one-become-verified-on-Spotify",
+          "https://www.developer-tech.com/news/spotify-cries-foul-apple-app-review-process"
+        ]
+      },
+      {
+        "query": "Spotify production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+          "https://www.reddit.com/r/spotifyapi/comments/1p95n9x/need_spotify_api_extended_quota_for_a_public",
+          "https://community.spotify.com/forum/en/discussion/7503072/clarification-on-extended-quota-mode-eligibility",
+          "https://developer.spotify.com/blog/2025-04-15-updating-the-criteria-for-web-api-extended-access",
+          "https://community.spotify.com/forum/en/discussion/7384615/extended-quota-mode-request-independent-developer-trackline"
+        ]
+      },
+      {
+        "query": "Spotify developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://developer.spotify.com/terms",
+          "https://developer.spotify.com/policy",
+          "https://developer.spotify.com/documentation/web-api",
+          "https://www.reddit.com/r/truespotify/comments/1l2am4i/spotify_just_killed_indie_development_with_their",
+          "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+        "bytes": 18101,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+        "bytes": 32771,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+        "bytes": 19289,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+        "bytes": 17533,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+        "bytes": 21584,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://support.spotify.com/us/article/verified-by-spotify",
+        "bytes": 27289,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.spotify.com/terms",
+        "bytes": 67367,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/spotify",
+        "bytes": 25695,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.spotify.com/us/artists/article/verified-by-spotify",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/policy",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/tutorials/code-flow",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/blog/2025-04-15-updating-the-criteria-for-web-api-extended-access",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/dashboard",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.activepieces.com/blog/spotify-web-api-free-access-modes-scopes-limits",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.developer-tech.com/news/spotify-cries-foul-apple-app-review-process",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.trustpilot.com/review/www.spotify.com",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://stackoverflow.com/questions/51795449/spotify-api-token-scope-issue",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.auth0.com/t/spotify-connection-with-additional-scopes/167542",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/truespotify/comments/1qc5pc8/cannot_create_any_app_on_spotify_developers",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.spotify.com/forum/en/discussion/7384615/extended-quota-mode-request-independent-developer-trackline",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/spotifyapi/comments/1p95n9x/need_spotify_api_extended_quota_for_a_public",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.quora.com/How-does-one-become-verified-on-Spotify",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.spotify.com/forum/en/discussion/7283365/unable-to-create-app",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.spotify.com/forum/en/discussion/7503072/clarification-on-extended-quota-mode-eligibility",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/truespotify/comments/1l2am4i/spotify_just_killed_indie_development_with_their",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=olY_2MW4Eik",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [
+    {
+      "url": "https://developer.spotify.com/dashboard",
+      "observed": "application_form",
+      "at": "2026-10-30T10:26:57Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "login",
+        "continue with google",
+        "continue with apple"
+      ],
+      "fields_visible": [
+        "email",
+        "privacy policy",
+        "terms of service"
+      ],
+      "bytes": 4117,
+      "error": null,
+      "why": "path /dashboard, link text 'developer dashboard'"
+    }
+  ],
+  "composio": {
+    "kind": "bring-your-own",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/spotify",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 55689,
+      "output_tokens": 3406,
+      "total_tokens": 63354,
+      "calls": 0
+    },
+    "cost_usd": 0.054539,
+    "prompt_chars": 206981,
+    "trimmed": [
+      {
+        "url": "https://developer.spotify.com/terms",
+        "kept_chars": 40000,
+        "original_chars": 67057,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [],
+    "calls": 1
+  },
+  "citations": {
+    "slug": "spotify",
+    "at": "2026-10-30T11:22:26Z",
+    "checked": 32,
+    "verified": 32,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Hard",
+    "reason": {
+      "text": "Development mode credentials are created immediately without approval for up to 5 allowlisted users, but extending access to unlimited users requires an organization application and formal review.",
+      "label": "Inferred",
+      "source_url": null,
+      "quote": null,
+      "note": "Inferred from documentation stating newly created apps begin immediately in development mode with a 5-user cap, while moving to extended quota requires submitting partner forms and awaiting review."
+    },
+    "trigger": "verdict matched 'formal review'",
+    "modifiers": [
+      "Requires privacy policy or terms URLs"
+    ],
+    "matches": [
+      {
+        "level": "Very hard",
+        "skipped": "credentials are available without approval ('credentials are created immediately'), so approval before keys cannot apply"
+      },
+      {
+        "level": "Hard",
+        "pattern": "formal review",
+        "where": "verdict",
+        "matched": "formal review"
+      }
+    ]
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "slug": "github",
+  "app": "GitHub",
+  "at": "2026-10-30T11:24:28Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 0.0,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 0.0,
+    "citations": 0.01,
+    "score": 0.0,
+    "total": 0.02
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "GitHub OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://github.com/settings/applications/new",
+          "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+          "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+          "https://www.freecodecamp.org/news/how-to-set-up-a-github-oauth-application",
+          "https://www.youtube.com/watch?v=mX0xCyQ5GVY"
+        ]
+      },
+      {
+        "query": "GitHub developer console create app",
+        "results": 5,
+        "urls": [
+          "https://github.com/settings/developers",
+          "https://github.com/orgs/community/discussions/169525",
+          "https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps",
+          "https://docs.github.com/en/integrations/concepts/github-developer-program",
+          "https://akpolatcem.medium.com/building-your-first-github-app-from-hello-world-to-production-ready-bot-6795c3d43f28"
+        ]
+      },
+      {
+        "query": "GitHub API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+          "https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps",
+          "https://github.com/orgs/community/discussions/7891",
+          "https://docs.travis-ci.com/user/github-oauth-scopes",
+          "https://stackoverflow.com/questions/63906613/minimal-set-of-scopes-to-push-to-github-using-an-access-token"
+        ]
+      },
+      {
+        "query": "GitHub app review verification process",
+        "results": 5,
+        "urls": [
+          "https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization",
+          "https://github.com/orgs/community/discussions/174681",
+          "https://docs.github.com/en/apps/using-github-apps/authorizing-github-apps",
+          "https://github.com/privacyguides/verified-apps",
+          "https://github.com/orgs/community/discussions/210344"
+        ]
+      },
+      {
+        "query": "GitHub production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas-request-increase.html",
+          "https://github.com/aws-samples/sample-service-quotas-replicator-for-aws",
+          "https://github.com/data-science-on-aws/ai4good-hackathon/blob/master/quota-increase.md",
+          "https://github.com/awslabs/landing-zone-accelerator-on-aws/issues/946",
+          "https://developer.spotify.com/documentation/web-api/concepts/quota-modes"
+        ]
+      },
+      {
+        "query": "GitHub developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://docs.github.com/site-policy/github-terms/github-terms-of-service",
+          "https://docs.github.com/en/site-policy/github-terms/github-registered-developer-agreement",
+          "https://github.com/customer-terms/general-terms",
+          "https://www.reddit.com/r/programming/comments/5wy68j/new_github_terms_of_service_require_removing_many",
+          "https://docs.github.com/en/site-policy/github-terms"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+        "bytes": 10183,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+        "bytes": 3171,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.github.com/en/site-policy/github-terms/github-registered-developer-agreement",
+        "bytes": 24197,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.github.com/en/apps/using-github-apps/authorizing-github-apps",
+        "bytes": 6878,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps",
+        "bytes": 585199,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+        "bytes": 10853,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization",
+        "bytes": 4275,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/github",
+        "bytes": 146084,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://docs.travis-ci.com/user/github-oauth-scopes",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.freecodecamp.org/news/how-to-set-up-a-github-oauth-application",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://github.com/privacyguides/verified-apps",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://github.com/settings/applications/new",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.github.com/site-policy/github-terms/github-terms-of-service",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.github.com/en/integrations/concepts/github-developer-program",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.github.com/en/site-policy/github-terms",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://github.com/settings/developers",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://github.com/aws-samples/sample-service-quotas-replicator-for-aws",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://github.com/data-science-on-aws/ai4good-hackathon/blob/master/quota-increase.md",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://github.com/customer-terms/general-terms",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://github.com/awslabs/landing-zone-accelerator-on-aws/issues/946",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas-request-increase.html",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://stackoverflow.com/questions/63906613/minimal-set-of-scopes-to-push-to-github-using-an-access-token",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://akpolatcem.medium.com/building-your-first-github-app-from-hello-world-to-production-ready-bot-6795c3d43f28",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/programming/comments/5wy68j/new_github_terms_of_service_require_removing_many",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://github.com/orgs/community/discussions/169525",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://github.com/orgs/community/discussions/174681",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://github.com/orgs/community/discussions/7891",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mX0xCyQ5GVY",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://github.com/orgs/community/discussions/210344",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [
+    {
+      "url": "https://github.com/settings/applications",
+      "observed": "login_wall",
+      "at": "2026-10-30T10:28:19Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in",
+        "login",
+        "password",
+        "continue with google"
+      ],
+      "fields_visible": [
+        "email"
+      ],
+      "bytes": 1556,
+      "error": null,
+      "why": "path /settings/applications"
+    }
+  ],
+  "composio": {
+    "kind": "managed",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/github",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 27856,
+      "output_tokens": 3734,
+      "total_tokens": 32324,
+      "calls": 0
+    },
+    "cost_usd": 0.034895,
+    "prompt_chars": 100618,
+    "trimmed": [
+      {
+        "url": "https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps",
+        "kept_chars": 40000,
+        "original_chars": 585199,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [
+      "limits_before_approval[2]: quote trimmed from 28 to 24 words",
+      "approval_process[1]: quote trimmed from 27 to 24 words",
+      "approval_process[2]: quote trimmed from 27 to 24 words",
+      "likely_blockers[2]: quote trimmed from 28 to 24 words"
+    ],
+    "calls": 1
+  },
+  "citations": {
+    "slug": "github",
+    "at": "2026-10-30T11:24:28Z",
+    "checked": 29,
+    "verified": 29,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Easy",
+    "reason": null,
+    "trigger": "nothing matched a harder level: self-serve with no review found",
+    "modifiers": [],
+    "matches": [
+      {
+        "level": "Hard",
+        "pattern": "must complete .{0,40}verification",
+        "where": "approval_process[1]",
+        "skipped": "describes an optional programme"
+      },
+      {
+        "level": "Hard",
+        "pattern": "complete the .{0,30}verification process",
+        "where": "approval_process[1]",
+        "skipped": "describes an optional programme"
+      }
+    ]
+  }
+}
