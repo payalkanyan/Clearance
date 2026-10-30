@@ -1,0 +1,510 @@
+{
+  "slug": "quickbooks",
+  "app_name": "QuickBooks",
+  "website": "developer.intuit.com",
+  "queries": [
+    {
+      "query": "QuickBooks OAuth app registration",
+      "results": 5,
+      "urls": [
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "https://help.alteryx.com/platform/zh-CHS/connections/configure-connectivity/enable-oauth-2-0-authentication/oauth-2-0-for-quickbooks-online.html",
+        "https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks",
+        "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
+        "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online"
+      ]
+    },
+    {
+      "query": "QuickBooks developer console create app",
+      "results": 5,
+      "urls": [
+        "https://developer.intuit.com/",
+        "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
+        "https://developer.intuit.com/app/developer/qbo/docs/develop",
+        "https://developer.intuit.com/app/developer/qbdesktop/docs/get-started/create-an-intuit-developer-account",
+        "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661"
+      ]
+    },
+    {
+      "query": "QuickBooks API scopes permissions",
+      "results": 5,
+      "urls": [
+        "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "https://help.developer.intuit.com/s/question/0D5TR00001FvXDB0A3/how-can-i-give-an-api-read-access-only",
+        "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
+        "https://help.developer.intuit.com/s/question/0D5TR00000aUBQ20AO/how-to-add-scopes-for-payroll-to-a-production-app"
+      ]
+    },
+    {
+      "query": "QuickBooks app review verification process",
+      "results": 5,
+      "urls": [
+        "https://quickbooks.intuit.com/app/apps/appdetails/rapidverify/en-us",
+        "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/verify-principal-officer-business-identity-payroll/L82qAb3me_US_en_US",
+        "https://quickbooks.intuit.com/community/reports-and-accounting-5/can-we-expect-the-app-to-be-published-on-the-marketplace-soon-i-submitted-my-application-for-marketplace-review-a-week-ago-but-have-not-yet-received-any-status-updates-57568",
+        "https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us",
+        "https://www.dancingnumbers.com/quickbooks-payment-in-review"
+      ]
+    },
+    {
+      "query": "QuickBooks production access quota extension",
+      "results": 5,
+      "urls": [
+        "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661",
+        "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+        "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+        "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
+        "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits"
+      ]
+    },
+    {
+      "query": "QuickBooks developer terms of service",
+      "results": 5,
+      "urls": [
+        "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+        "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
+        "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements",
+        "https://www.intuit.com/legal/terms",
+        "https://help.developer.intuit.com/s/question/0D5TR00001RvxTD0AZ/cannot-submit-updated-intuit-developer-terms-of-service"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "title": "Set up OAuth 2.0 \u00b7 QuickBooks Online - Intuit Developer",
+      "description": "Use the OAuth 2.0 protocol to implement authentication and authorization. Authorization is essential for both testing via sandbox companies",
+      "query": "QuickBooks OAuth app registration",
+      "position": 1,
+      "score": 23.7,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
+      "title": "Set up Quickbooks with Nango",
+      "description": "## Documentation Index\nThis guide shows you how to register your own app with Quickbooks to obtain your OAuth credentials (client id & secret).\n\n## [\u200b](https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app#creating-a-quickbooks-app)  Creating a Quickbooks App\nGo to [Intuit Developer signup page](https://developer.intuit.com/app/developer/qbo/docs/get-started) and create a free account.\n\n2. Select **QuickBooks Online and Payments**, click **Next** and provide a name for your app.\n3. Click **Next** to proceed with adding permissions to your app.\n4. Once you have added permissions, click **Done** and confirm the permissions you selected. Your application will be created.\n\n1. Navigate to the **Settings** page, then go to the **Redirect URIs** tab and add the following URL: `https://api.nango.dev/oauth/callback`.\n\n2. Copy the **Client ID** and **Client Secret**.",
+      "query": "QuickBooks OAuth app registration",
+      "position": 4,
+      "score": 17.8,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
+      "title": "Learn about scopes \u00b7 QuickBooks Online - Intuit Developer",
+      "description": "# Learn about scopes\nWhen you set scopes, you're requesting permission to utilize one or more of these defined data types.\n\n## Current scopes for the QuickBooks Online Accounting API\n| Scope | Description |\n|-|-|\n| `com.intuit.quickbooks.accounting` | Grants access to the [QuickBooks Online Accounting API](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account), which focuses on accounting data. |\n| `com.intuit.quickbooks.payment` | Grants access to the [QuickBooks Payments API](https://developer.intuit.com/app/developer/qbpayments/docs/api/resources/all-entities/bankaccounts), which focuses on payments processing. |\n| `openid` | Grants access to [OpenID Connect](https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/openid-connect) features. Include one or more of the following capabilities:<br>- **profile** \u2014 User's given and family names info<br>- **email** \u2014 User's email address info<br>- **phone** \u2014 User's phone number info<br>- **address** \u2014 User's physical address info |\n\n## Current scopes for the QuickBooks Online GraphQL API\n| Scope | Description |\n|-|-|\n| `app-foundations.custom-field-definitions.read` | Grants access to read [Custom Fields](https://developer.intuit.com/app/developer/qbo/docs/workflows/create-custom-fields) definition data. |\n| `app-foundations.custom-field-definitions` | Grants access to read and write [Custom Fields](https://developer.intuit.com/app/developer/qbo/docs/workflows/create-custom-fields) definitions data. |\n| `project-management.project` | Grants access to read and write [Project](https://developer.intuit.com/app/developer/qbo/docs/workflows/manage-projects) data. |\n| `indirect-tax.tax-calculation.quickbooks` | Grants access to the [Sales Tax API](https://developer.intuit.com/app/developer/qbo/docs/workflows/calculate-sales-tax). |\n| `payroll.compensation.read` | Grants read access to pay types (i.e., compensation) using the [Time API](https://developer.intuit.com/app/developer/payroll-time/docs/workflows/use-cases-track-time). Compensation data can only be queried for customers using QuickBooks Payroll. |\n\n[Legal](https://www.intuit.com/legal/) [Privacy](https://www.intuit.com/privacy/) [Security](https://security.intuit.com/)\n\nAll rights reserved. Terms and conditions, features, support, pricing, and service options subject to change without notice.",
+      "query": "QuickBooks API scopes permissions",
+      "position": 1,
+      "score": 16.7,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://quickbooks.intuit.com/app/apps/appdetails/rapidverify/en-us",
+      "title": "Connect RapidVerify with QuickBooks Online - Intuit",
+      "description": "By automating identity verification, this tool not only speeds up the employee setup process but also ensures accuracy and compliance with employment laws.",
+      "query": "QuickBooks app review verification process",
+      "position": 1,
+      "score": 14.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+      "title": "Intuit Developer Terms of Service \u00b7 QuickBooks Online",
+      "description": "As of October 14, 2025.",
+      "query": "QuickBooks developer terms of service",
+      "position": 1,
+      "score": 13.7,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00000aUBQ20AO/how-to-add-scopes-for-payroll-to-a-production-app",
+      "title": "How to add scopes for payroll to a production app? - Help - Intuit",
+      "description": "How to add scopes for payroll to a production app? I haven't been able to send a successful GraphQL request to the QuickBooks Payroll API yet, ...",
+      "query": "QuickBooks API scopes permissions",
+      "position": 5,
+      "score": 13.5,
+      "official": true,
+      "reasons": [
+        "host dominates the search results"
+      ]
+    },
+    {
+      "url": "https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks",
+      "title": "Setting Up QuickBooks OAuth App - Klavis AI",
+      "description": "## [\u200b](https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks#optional-step-6-white-labeling)  (Optional) Step 6: White Labeling\n```\nimport { Klavis } from \"@klavis/sdk\";\n\nconst klavis = new Klavis({\n     apiKey: \"YOUR_API_KEY\"\n});\n\n// Example: Initiating QuickBooks OAuth with white-label\nconst oauthUrl = await klavis.mcpServer.getOAuthUrl({\n     serverName: Klavis.McpServerName.Quickbooks,\n     instanceId: instanceId,\n     clientId: yourClientId,\n     // redirectUri: YOUR_REDIRECT_URI,\n     // scope: \"YOUR_SCOPES\",\n});\n\nwindow.location.href = oauthUrl;\n```\n\n```\nimport webbrowser\nfrom klavis import Klavis\nfrom klavis.types import McpServerName\n\nklavis = Klavis(api_key=\"YOUR_API_KEY\")\n\n# Example: Initiating QuickBooks OAuth with white-label\noauth_url = klavis.mcp_server.get_oauth_url(\n       server_name=McpServerName.QUICKBOOKS,\n       instance_id=instance_id,\n       client_id=your_client_id,\n       # redirect_uri=\"YOUR_REDIRECT_URI\",\n       # scope=\"YOUR_SCOPES\"\n)\n\n# Open OAuth URL in user's default browser\nwebbrowser.open(oauth_url)\n```",
+      "query": "QuickBooks OAuth app registration",
+      "position": 3,
+      "score": 13.1,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us",
+      "title": "VERIFYiQ: Automate File Reviews - QuickBooks - Intuit",
+      "description": "Review your QuickBooks Online data and catch all of the most common errors. \u00b7 Key benefits \u00b7 How it works with QuickBooks \u00b7 Details \u00b7 App information \u00b7 Contact.",
+      "query": "QuickBooks app review verification process",
+      "position": 4,
+      "score": 12.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online",
+      "title": "Configuring the Oauth 2.0 Playground for QuickBooks Online - Help - Intuit",
+      "description": "Get the access token Invoke the OAuth 2.0 playground on your app's dashboard to authorize the connection between your app and the QuickBooks company.",
+      "query": "QuickBooks OAuth app registration",
+      "position": 5,
+      "score": 12.5,
+      "official": true,
+      "reasons": [
+        "host dominates the search results"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
+      "title": "Create and start developing your app \u00b7 QuickBooks Online - Intuit Developer",
+      "description": "Let's get started. The QuickBooks Online Accounting API gives you incredible flexibility to build creative solutions for key business and accounting\u2026",
+      "query": "QuickBooks developer console create app",
+      "position": 2,
+      "score": 12.4,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+      "title": "QuickBooks Online - Intuit Developer",
+      "description": "Learn about Develop on the Intuit Developer platform.",
+      "query": "QuickBooks developer console create app",
+      "position": 3,
+      "score": 12.1,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements",
+      "title": "Intuit Developer Portal Terms of Service \u00b7 QuickBooks Online",
+      "description": "Welcome to the Intuit Developer Portal.",
+      "query": "QuickBooks developer terms of service",
+      "position": 3,
+      "score": 12.1,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbdesktop/docs/get-started/create-an-intuit-developer-account",
+      "title": "Create an Intuit developer account \u00b7 QuickBooks Desktop",
+      "description": "To create your Intuit Developer account, follow the steps below.",
+      "query": "QuickBooks developer console create app",
+      "position": 4,
+      "score": 11.8,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://help.alteryx.com/platform/zh-CHS/connections/configure-connectivity/enable-oauth-2-0-authentication/oauth-2-0-for-quickbooks-online.html",
+      "title": "OAuth 2.0 for QuickBooks Online",
+      "description": "To use OAuth 2.0 for QuickBooks Online, you need to create an OAuth app in the Intuit Developer Portal. To register Your Application in Intuit Developer Portal ...",
+      "query": "QuickBooks OAuth app registration",
+      "position": 2,
+      "score": 11.4,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/verify-principal-officer-business-identity-payroll/L82qAb3me_US_en_US",
+      "title": "Verify the business identity for QuickBooks Online Payroll ... - Intuit",
+      "description": "# Verify the business identity for QuickBooks Online Payroll, QuickBooks Desktop Payroll, QuickBooks Payments, and QuickBooks Bill Pay\n## Actions you'll need to do\n1. Review the email message you receive from **[qbo@intuit.com](mailto:qbo@intuit.com)** or **[AccountValidation@intuit.com](mailto:AccountValidation@intuit.com)**.\n\n5. Select **+Add document**, attach the file, then select **Open**. Repeat this step if we're requesting multiple documents.\n   - **Important**: We won't review your case until all info and documents are provided.\n7. Once you're done, the status will change to **In Review**.",
+      "query": "QuickBooks app review verification process",
+      "position": 2,
+      "score": 11.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
+      "title": "How can I add scopes for the QuickBooks Online GraphQL API",
+      "description": "Your app has not been assigned any of the premium API scopes. Could you please create a support ticket to request access to the new API scopes.",
+      "query": "QuickBooks API scopes permissions",
+      "position": 4,
+      "score": 10.8,
+      "official": true,
+      "reasons": [
+        "host dominates the search results"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/",
+      "title": "Intuit Developer",
+      "description": "",
+      "query": "QuickBooks developer console create app",
+      "position": 1,
+      "score": 8.7,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001RvxTD0AZ/cannot-submit-updated-intuit-developer-terms-of-service",
+      "title": "Cannot submit updated Intuit Developer Terms of Service. - Help",
+      "description": "This issue is still persisting on August 14, 2026 for another developer account. The updated Terms checkbox remains checked and the active ...",
+      "query": "QuickBooks developer terms of service",
+      "position": 5,
+      "score": 8.5,
+      "official": true,
+      "reasons": [
+        "host dominates the search results"
+      ]
+    },
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
+      "title": "Learn about usage limits - QuickBooks - Intuit",
+      "description": "How to see list-specific limits \u00b7 Select Settings \u2699. Then select All Lists. \u00b7 Select the list item you want to view. \u00b7 Select the \u25bd icon next to ...",
+      "query": "QuickBooks production access quota extension",
+      "position": 4,
+      "score": 7.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+      "title": "API call limits and throttling - Help - Intuit",
+      "description": "For production endpoints, the limits are as follows: 500 requests per minute, per realm ID. 10 concurrent requests in one second per realm ID ...",
+      "query": "QuickBooks production access quota extension",
+      "position": 2,
+      "score": 7.4,
+      "official": true,
+      "reasons": [
+        "host dominates the search results"
+      ]
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001FvXDB0A3/how-can-i-give-an-api-read-access-only",
+      "title": "How can I give an API read access only? - Help - Intuit",
+      "description": "For QuickBooks Online Accounting API, permissions allow both read and write access\u2014there isn't a read-only option.",
+      "query": "QuickBooks API scopes permissions",
+      "position": 3,
+      "score": 7.1,
+      "official": true,
+      "reasons": [
+        "host dominates the search results"
+      ]
+    },
+    {
+      "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+      "title": "QuickBooks API Pricing and the Intuit App Partner Program - Apideck",
+      "description": "Monthly Fee: $300 \u00b7 Core API Calls: Unlimited (free) \u00b7 CorePlus API Credits: 1 million per month (~$3,500 worth) \u00b7 Overage Rate: $3.50 per 1,000 ...",
+      "query": "QuickBooks production access quota extension",
+      "position": 3,
+      "score": 7.1,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://www.dancingnumbers.com/quickbooks-payment-in-review",
+      "title": "QuickBooks Payment in Review: Complete Overview",
+      "description": "QuickBooks may contact the payer or payee throughout the review process to verify the details of the transaction or to seek more information. The team might ...",
+      "query": "QuickBooks app review verification process",
+      "position": 5,
+      "score": 6.5,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
+      "title": "How Much Does the QuickBooks API Cost? (2026 Pricing & Rate Limits)",
+      "description": "## [The Hidden Cost of QuickBooks API Rate Limits](https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits/#the-hidden-cost-of-quickbooks-api-rate-limits)\n### [Why 500 req/min Sounds Generous But Isn't](https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits/#why-500-reqmin-sounds-generous-but-isnt)\n```\nQuickBooks APIYour SaaS AppQuickBooks APIYour SaaS AppRate limit exceeded(>500 req/min)Wait (Exponential Backoff)Delay = 2^retries * 100msGET /v3/company/{realmID}/query (Page 1)200 OK (Data)GET /v3/company/{realmID}/query (Page 2)429 Too Many RequestsGET /v3/company/{realmID}/query (Page 2)200 OK (Data)\n```",
+      "query": "QuickBooks production access quota extension",
+      "position": 5,
+      "score": 6.5,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
+      "title": "QBO Terms of Service for QuickBooks - US (https://www.intuit.com/legal ...",
+      "description": "You will provide accurate, up-to-date Account Information, and we disclaim any liability arising from your failure to do so. Such failure may further limit your ...",
+      "query": "QuickBooks developer terms of service",
+      "position": 2,
+      "score": 5.4,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://www.intuit.com/legal/terms",
+      "title": "Legal Information | Intuit I Product Licenses and Terms of Service",
+      "description": "Intuit's Terms of Service outlines the rules and regulations for using our products and services. Learn about our policies on data privacy, security, ...",
+      "query": "QuickBooks developer terms of service",
+      "position": 4,
+      "score": 2.8,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://quickbooks.intuit.com/community/reports-and-accounting-5/can-we-expect-the-app-to-be-published-on-the-marketplace-soon-i-submitted-my-application-for-marketplace-review-a-week-ago-but-have-not-yet-received-any-status-updates-57568",
+      "title": "Can we expect the app to be published on the marketplace soon ...",
+      "description": "During this process, QuickBooks will evaluate the quality, functionality, and branding requirements of your app.",
+      "query": "QuickBooks app review verification process",
+      "position": 3,
+      "score": 1.1,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661",
+      "title": "How do I add a simple APP to provide production API access for a ...",
+      "description": "Go to the Intuit Developer Support website. Choose your QuickBooks product. Log into your existing Intuit Developer Account or create a new one.",
+      "query": "QuickBooks developer console create app",
+      "position": 5,
+      "score": -1.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    }
+  ],
+  "gates": [],
+  "fallbacks": [],
+  "skipped": [
+    {
+      "url": "https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbdesktop/docs/get-started/create-an-intuit-developer-account",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://help.alteryx.com/platform/zh-CHS/connections/configure-connectivity/enable-oauth-2-0-authentication/oauth-2-0-for-quickbooks-online.html",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/verify-principal-officer-business-identity-payroll/L82qAb3me_US_en_US",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.intuit.com/",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001RvxTD0AZ/cannot-submit-updated-intuit-developer-terms-of-service",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001FvXDB0A3/how-can-i-give-an-api-read-access-only",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.dancingnumbers.com/quickbooks-payment-in-review",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.intuit.com/legal/terms",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://quickbooks.intuit.com/community/reports-and-accounting-5/can-we-expect-the-app-to-be-published-on-the-marketplace-soon-i-submitted-my-application-for-marketplace-review-a-week-ago-but-have-not-yet-received-any-status-updates-57568",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661",
+      "reason": "unofficial, official pages suffice"
+    }
+  ],
+  "no_oauth_found": false,
+  "failed": null,
+  "fetch_usage": []
+}
