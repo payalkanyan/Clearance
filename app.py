@@ -337,6 +337,12 @@ def generate_page() -> None:
         "Give an app name or a website. The stages run in order and only the "
         "extraction step calls a model, so a guide costs exactly one call."
     )
+    st.caption(
+        "A new app takes three to six minutes, almost all of it that one call. "
+        "Guides are written to disk; on the hosted app that disk is temporary, "
+        "so a guide you generate lasts until the app restarts, while the ones "
+        "in the library are part of the repository and always here."
+    )
     with st.form("generate"):
         app_input = st.text_input("App name or website", placeholder="Notion")
         refresh = st.checkbox("Rebuild even if a guide already exists")

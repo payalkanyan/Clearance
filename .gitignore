@@ -6,3 +6,6 @@ __pycache__/
 
 # Kept out of the repo deliberately: reverted in 6b21e5b.
 Submission.md
+
+# Streamlit secrets: real keys, never committed.
+.streamlit/secrets.toml

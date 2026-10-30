@@ -78,6 +78,24 @@ Outputs per app: `guides/<slug>.json`, `guides/<slug>.md`, `logs/<slug>.json` (q
 
 A guide whose `meta.provenance` is `human-gold` is never overwritten: the agent writes `<slug>.agent.json` beside it. That is why `guides/github.json` stays the hand-written one.
 
+## Deploying
+
+The app runs unchanged on [Streamlit Community Cloud](https://share.streamlit.io), which is free:
+
+1. Sign in with GitHub and choose **Create app → Deploy a public app from GitHub**.
+2. Repository `payalkanyan/Clearance`, branch `main`, main file `app.py`.
+3. Open **Advanced settings**, set Python to **3.12** (the code uses `StrEnum` and `X | None`, so 3.11 is the floor), and paste the two keys into **Secrets**:
+
+   ```toml
+   FIRECRAWL_API_KEY = "fc-..."
+   GEMINI_API_KEY = "AIza..."
+   LLM_MODEL = "gemini-3.8-flash"
+   ```
+
+Streamlit exports secrets as environment variables, so [clearance/config.py](clearance/config.py) reads them with no deployment-specific code. `.streamlit/secrets.toml` is git-ignored: keys belong in the Secrets box, never in the repository.
+
+Two things to know about a public deployment. The hosted filesystem is temporary, so a guide generated on the live app survives only until it restarts, while the guides committed here are always present. And the Generate page spends your own API credits — roughly 20 Firecrawl credits and one Gemini call per app — for anyone who uses it, so gate or remove that page if you would rather not leave it open.
+
 ## Tests
 
 ```bash
