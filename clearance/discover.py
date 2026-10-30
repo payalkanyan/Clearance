@@ -154,6 +154,14 @@ def host_tokens(url: str) -> set[str]:
     return set(labels)
 
 
+def registrable(url: str) -> str:
+    """intuit.com for developer.intuit.com and quickbooks.intuit.com."""
+    labels = [part for part in urlsplit(url).netloc.lower().split(".") if part]
+    while len(labels) > 2 and labels[-1] in TLD_PARTS and labels[-2] in TLD_PARTS:
+        labels.pop()
+    return ".".join(labels[-2:]) if len(labels) >= 2 else ".".join(labels)
+
+
 def is_community(url: str) -> bool:
     parts = urlsplit(url)
     host = parts.netloc.lower()
@@ -173,6 +181,7 @@ def score_candidate(
     candidate: Candidate,
     tokens: set[str],
     frequent_hosts: set[str],
+    own_domains: set[str],
     *,
     allow_frequency: bool = True,
 ) -> Candidate:
@@ -189,6 +198,10 @@ def score_candidate(
         if tokens & host_tokens(candidate.url):
             score += 6
             reasons.append("host matches the app name")
+        elif registrable(candidate.url) in own_domains:
+            # developer.intuit.com alongside quickbooks.intuit.com: same company.
+            score += 5
+            reasons.append("same domain as the app's own site")
         elif host in frequent_hosts and allow_frequency:
             score += 4
             reasons.append("host dominates the search results")
@@ -281,14 +294,14 @@ def rank(candidates: list[Candidate], app_name: str) -> list[Candidate]:
     # own when the provider's actual domain is absent. SerpApi's pages are about
     # scraping Google, so developers.google.com dominates its results; without
     # this, Google's OAuth docs would be cited as SerpApi's own.
-    own_domain_present = any(
-        tokens & host_tokens(candidate.url)
+    own_domains = {
+        registrable(candidate.url)
         for candidate in candidates
-        if not is_community(candidate.url)
-    )
+        if not is_community(candidate.url) and tokens & host_tokens(candidate.url)
+    }
     scored = [
-        score_candidate(candidate, tokens, frequent,
-                        allow_frequency=not own_domain_present)
+        score_candidate(candidate, tokens, frequent, own_domains,
+                        allow_frequency=not own_domains)
         for candidate in candidates
     ]
     return sorted(scored, key=lambda item: item.score, reverse=True)

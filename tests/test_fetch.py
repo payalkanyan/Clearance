@@ -121,3 +121,13 @@ def test_firecrawl_errors_are_classified(exc, expected):
 def test_gate_detection(status, markdown, expected):
     result = FetchResult(url="u", source="firecrawl", status=status, markdown=markdown)
     assert looks_like_gate(result) == expected
+
+
+def test_a_page_with_almost_no_content_is_not_treated_as_a_page():
+    """A JavaScript-rendered shell comes back tiny. It would otherwise take a
+    scrape slot and tell the model nothing."""
+    from clearance.fetch import MIN_USEFUL_BYTES
+
+    tiny = FetchResult(url="u", source="firecrawl", status=200, markdown="x" * 44)
+    assert len(tiny.markdown.encode()) < MIN_USEFUL_BYTES
+    assert looks_like_gate(tiny) is None  # not a gate, just useless

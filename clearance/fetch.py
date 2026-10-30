@@ -32,6 +32,11 @@ GATE_MARKERS = (
 )
 GATE_MAX_BYTES = 900
 
+# A page this small carries no information. Usually a JavaScript-rendered page
+# that returned its shell, and it would otherwise occupy a scrape slot and tell
+# the model nothing.
+MIN_USEFUL_BYTES = 500
+
 MAX_CONTENT_TOKENS = 60_000
 
 
@@ -165,8 +170,11 @@ def _firecrawl_scrape_once(
     if status and status >= 400:
         result.error = f"HTTP {status}"
         result.error_kind = "http_error"
-    elif not (document.markdown or "").strip():
-        result.error = "empty page"
+    elif len((document.markdown or "").strip().encode("utf-8")) < MIN_USEFUL_BYTES:
+        result.error = (
+            f"page returned almost no content "
+            f"({len((document.markdown or '').strip())} characters)"
+        )
         result.error_kind = "empty"
     return result
 
@@ -311,8 +319,10 @@ def http_scrape(url: str, *, timeout: float = 30.0) -> FetchResult:
     title = soup.title.get_text(strip=True) if soup.title else None
     result.markdown = markdownify(str(soup), heading_style="ATX").strip()
     result.title = title
-    if not result.markdown:
-        result.error = "empty page"
+    if len(result.markdown.encode("utf-8")) < MIN_USEFUL_BYTES:
+        result.error = (
+            f"page returned almost no content ({len(result.markdown)} characters)"
+        )
         result.error_kind = "empty"
     return result
 

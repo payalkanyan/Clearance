@@ -1,16 +1,16 @@
 {
   "slug": "quickbooks",
   "app": "QuickBooks",
-  "at": "2026-10-30T11:46:39Z",
+  "at": "2026-10-30T11:55:17Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
     "probe": 0.0,
     "composio": 0.0,
-    "extract": 0.0,
+    "extract": 62.34,
     "citations": 0.01,
     "score": 0.0,
-    "total": 0.01
+    "total": 62.39
   },
   "discover": {
     "queries": [
@@ -83,12 +83,6 @@
     ],
     "pages": [
       {
-        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
-        "bytes": 45,
-        "source": "firecrawl",
-        "official": true
-      },
-      {
         "url": "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
         "bytes": 160719,
         "source": "firecrawl",
@@ -102,7 +96,7 @@
       },
       {
         "url": "https://quickbooks.intuit.com/app/apps/appdetails/rapidverify/en-us",
-        "bytes": 4096,
+        "bytes": 4316,
         "source": "firecrawl",
         "official": true
       },
@@ -119,8 +113,14 @@
         "official": true
       },
       {
-        "url": "https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us",
-        "bytes": 45,
+        "url": "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online",
+        "bytes": 5540,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
+        "bytes": 7842,
         "source": "firecrawl",
         "official": true
       },
@@ -141,16 +141,12 @@
     "fallbacks": [],
     "skipped": [
       {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "reason": "page returned almost no content (45 characters)"
+      },
+      {
         "url": "https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks",
         "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online",
-        "reason": "page limit reached"
-      },
-      {
-        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
-        "reason": "page limit reached"
       },
       {
         "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
@@ -165,15 +161,19 @@
         "reason": "page limit reached"
       },
       {
+        "url": "https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
+        "reason": "page limit reached"
+      },
+      {
         "url": "https://help.alteryx.com/platform/zh-CHS/connections/configure-connectivity/enable-oauth-2-0-authentication/oauth-2-0-for-quickbooks-online.html",
         "reason": "unofficial, official pages suffice"
       },
       {
         "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/verify-principal-officer-business-identity-payroll/L82qAb3me_US_en_US",
-        "reason": "page limit reached"
-      },
-      {
-        "url": "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
         "reason": "page limit reached"
       },
       {
@@ -185,15 +185,23 @@
         "reason": "page limit reached"
       },
       {
-        "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
-        "reason": "page limit reached"
-      },
-      {
         "url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
         "reason": "page limit reached"
       },
       {
+        "url": "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
+        "reason": "page limit reached"
+      },
+      {
         "url": "https://help.developer.intuit.com/s/question/0D5TR00001FvXDB0A3/how-can-i-give-an-api-read-access-only",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.intuit.com/legal/terms",
         "reason": "page limit reached"
       },
       {
@@ -206,14 +214,6 @@
       },
       {
         "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://www.intuit.com/legal/terms",
         "reason": "unofficial, official pages suffice"
       },
       {
@@ -231,7 +231,7 @@
     {
       "url": "https://developer.intuit.com/app/developer/homepage",
       "observed": "login_wall",
-      "at": "2026-10-30T11:35:42Z",
+      "at": "2026-10-30T11:51:48Z",
       "status": 200,
       "source": "firecrawl",
       "signals": [
@@ -243,25 +243,6 @@
       "bytes": 2816,
       "error": null,
       "why": "path contains /app/developer, link text 'developer homepage'"
-    },
-    {
-      "url": "https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks",
-      "observed": "login_wall",
-      "at": "2026-10-30T11:35:45Z",
-      "status": 200,
-      "source": "firecrawl",
-      "signals": [
-        "signin",
-        "login",
-        "continue with google"
-      ],
-      "fields_visible": [
-        "email",
-        "logo"
-      ],
-      "bytes": 2439,
-      "error": null,
-      "why": "link text 'get started'"
     }
   ],
   "composio": {
@@ -276,13 +257,13 @@
   },
   "extract": {
     "usage": {
-      "input_tokens": 34779,
-      "output_tokens": 2674,
-      "total_tokens": 40502,
-      "calls": 0
+      "input_tokens": 38612,
+      "output_tokens": 3591,
+      "total_tokens": 43699,
+      "calls": 1
     },
-    "cost_usd": 0.036112,
-    "prompt_chars": 130025,
+    "cost_usd": 0.042425,
+    "prompt_chars": 143192,
     "trimmed": [
       {
         "url": "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
@@ -298,31 +279,30 @@
       }
     ],
     "repairs": [
-      "verdict: quote trimmed from 28 to 24 words",
-      "approval_process[0]: quote trimmed from 28 to 24 words"
+      "verdict: quote trimmed from 26 to 24 words",
+      "approval_process[0]: quote trimmed from 28 to 24 words",
+      "approval_process[2]: quote trimmed from 28 to 24 words"
     ],
-    "calls": 0
+    "calls": 1
   },
   "citations": {
     "slug": "quickbooks",
-    "at": "2026-10-30T11:46:39Z",
-    "checked": 13,
-    "verified": 13,
+    "at": "2026-10-30T11:55:17Z",
+    "checked": 25,
+    "verified": 25,
     "downgrades": []
   },
   "score": {
     "difficulty": "Hard",
     "reason": {
-      "text": "Developers can register an account and test immediately in sandbox mode, but public production distribution requires submitting a self-assessment questionnaire and potentially passing technical, security, and marketing reviews.",
+      "text": "App registration and sandbox credential generation are instant upon creating an Intuit Developer account, but moving to production or public distribution requires submitting a self-assessment questionnaire and undergoing technical, security, and marketing reviews.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
       "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a",
       "note": null
     },
     "trigger": "verdict matched 'questionnaire'",
-    "modifiers": [
-      "Requires privacy policy or terms URLs"
-    ],
+    "modifiers": [],
     "matches": [
       {
         "level": "Very hard",
