@@ -27,63 +27,54 @@ Difficulty is never the model's to decide: the rubric in [clearance/rubric.py](c
 
 A failed search is never reported as a finding: if no official page could be read, the run fails with a reason rather than claiming the app has no OAuth.
 
-## Setup
+## Run it yourself
 
 ```bash
-uv venv && uv pip install -r requirements.txt
-cp .env.example .env     # then add the two keys
+git clone https://github.com/payalkanyan/Clearance.git
+cd Clearance
+
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+cp .env.example .env          # then put your two keys in it
 ```
 
-Two keys, both free:
+Python 3.11 or newer. If you use [uv](https://docs.astral.sh/uv/), `uv venv && uv pip install -r requirements.txt` does the same thing faster.
 
-- `FIRECRAWL_API_KEY` from [firecrawl.dev](https://firecrawl.dev) — 1000 credits. A run costs about 20.
-- `GEMINI_API_KEY` from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) — `gemini-3.8-flash` is free-tier eligible.
+Then open the app:
 
-A value containing `xxxx` is treated as unset and removed from the environment, because the SDKs read these variables themselves and would otherwise send a placeholder as a real credential.
+```bash
+streamlit run app.py
+```
+
+The guides already in `guides/` are part of the repository, so the library and every guide page work straight after cloning, with no keys at all. Keys are only needed to generate a new guide.
+
+### The two keys
+
+Both are free:
+
+- **`FIRECRAWL_API_KEY`** from [firecrawl.dev](https://firecrawl.dev) — 1000 credits on signup, and a guide costs about 20.
+- **`GEMINI_API_KEY`** from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) — `gemini-3.8-flash` is free-tier eligible, so a guide costs nothing.
+
+A value containing `xxxx` is treated as unset and deleted from the environment, because the SDKs read these variables themselves and would otherwise send the placeholder from `.env.example` as a real credential.
 
 ## Usage
 
 ```bash
-python -m clearance.run "Spotify"            # build or serve a guide
-python -m clearance.run "Spotify" --refresh  # rebuild from cached stages
-python -m clearance.run "Notion" --no-cache  # re-scrape and re-extract
-python -m clearance.compare github           # diff against the gold guide
-python -m clearance.compare --difficulty     # difficulty table
-streamlit run app.py                         # library, guides, generate
+python -m clearance.run "Spotify"            # build a guide, or serve the saved one
+python -m clearance.run "Spotify" --refresh  # rebuild from cached stages, no model call
+python -m clearance.run "Notion" --no-cache  # re-scrape and re-extract from scratch
+python -m clearance.compare github           # diff the agent's guide against the hand-written one
+python -m clearance.compare --difficulty     # difficulty across every guide, against expectations
 ```
 
-Each stage also runs on its own, which is how the pipeline was built and is the
-quickest way to see what one of them decides:
+A new app takes three to six minutes, nearly all of it the single model call.
 
-```bash
-python -m clearance.discover "Spotify"   # stage 2
-python -m clearance.probe "Spotify"      # stage 3
-python -m clearance.extract "Spotify"    # stage 4
-python -m clearance.citations "Spotify"  # stage 5
-python -m clearance.composio "Spotify"   # stage 6b
-```
-
-Outputs per app: `guides/<slug>.json`, `guides/<slug>.md`, `logs/<slug>.json` (queries, URLs, per-stage timings, fallbacks, gates, downgrades, tokens, cost), and `cache/<slug>/` (the scraped pages a quote is checked against).
+Each run writes `guides/<slug>.json`, a rendered `guides/<slug>.md`, `logs/<slug>.json` (the queries issued, pages scraped, per-stage timings, fallbacks, gates, quote downgrades, tokens and cost) and `cache/<slug>/` (the scraped pages, which are what each quote is checked against).
 
 A guide whose `meta.provenance` is `human-gold` is never overwritten: the agent writes `<slug>.agent.json` beside it. That is why `guides/github.json` stays the hand-written one.
 
-## Deploying
-
-The app runs unchanged on [Streamlit Community Cloud](https://share.streamlit.io), which is free:
-
-1. Sign in with GitHub and choose **Create app → Deploy a public app from GitHub**.
-2. Repository `payalkanyan/Clearance`, branch `main`, main file `app.py`.
-3. Open **Advanced settings**, set Python to **3.12** (the code uses `StrEnum` and `X | None`, so 3.11 is the floor), and paste the two keys into **Secrets**:
-
-   ```toml
-   FIRECRAWL_API_KEY = "fc-..."
-   GEMINI_API_KEY = "AIza..."
-   LLM_MODEL = "gemini-3.8-flash"
-   ```
-
-Streamlit exports secrets as environment variables, so [clearance/config.py](clearance/config.py) reads them with no deployment-specific code. `.streamlit/secrets.toml` is git-ignored: keys belong in the Secrets box, never in the repository.
-
-Two things to know about a public deployment. The hosted filesystem is temporary, so a guide generated on the live app survives only until it restarts, while the guides committed here are always present. And the Generate page spends your own API credits — roughly 20 Firecrawl credits and one Gemini call per app — for anyone who uses it, so gate or remove that page if you would rather not leave it open.
+Every stage is also its own entry point — `clearance.discover`, `.probe`, `.extract`, `.citations`, `.composio` — each taking an app name. That is how the pipeline was built, and it is the quickest way to see what one stage decides without running the rest.
 
 ## Tests
 
