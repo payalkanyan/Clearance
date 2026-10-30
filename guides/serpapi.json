@@ -1,0 +1,189 @@
+{
+  "app_name": "SerpApi",
+  "website": "serpapi.com/users/sign_up?plan=free",
+  "verdict": {
+    "text": "SerpApi uses API key authentication rather than an OAuth app registration process. Access is instant upon signing up and verifying your account, with no review required.",
+    "label": "Inferred",
+    "note": "SerpApi documentation only references authenticating via an account API key rather than registering an OAuth client app."
+  },
+  "quick_setup_checklist": [],
+  "difficulty": "Medium",
+  "difficulty_reason": {
+    "text": "Free tier accounts are limited to 250 searches per month.",
+    "label": "Sourced",
+    "source_url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+    "quote": "Free Plan\u00b7 250 searches / month",
+    "note": "triggered the Medium rating: limits_before_approval[0] matched 'limited to 250'"
+  },
+  "hands_on_time": {
+    "text": "5 to 10 minutes",
+    "label": "Inferred",
+    "note": "Signing up, verifying email details, and retrieving the API key takes only a few minutes."
+  },
+  "waiting_time": {
+    "text": "None",
+    "label": "Inferred",
+    "note": "API keys are generated immediately without an external review period."
+  },
+  "composio_status": {
+    "text": "A Composio toolkit page exists, but it does not state how authentication is provided.",
+    "label": "Uncertain",
+    "source_url": "https://composio.dev/toolkits/serpapi",
+    "note": "the toolkit page did not state its authentication method"
+  },
+  "prerequisites": [
+    {
+      "text": "At https://serpapi.com/users/sign_up?plan=free, a sign-in wall: you must log in before you can register an app. Fields visible: logo.",
+      "label": "Tested",
+      "source_url": "https://serpapi.com/users/sign_up?plan=free",
+      "note": "observed by the agent at 2026-10-30T11:36:08Z, HTTP 200; matched sign in"
+    },
+    {
+      "text": "At https://serpapi.com/manage-api-key, a sign-in wall: you must log in before you can register an app. Fields visible: logo.",
+      "label": "Tested",
+      "source_url": "https://serpapi.com/manage-api-key",
+      "note": "observed by the agent at 2026-10-30T11:36:10Z, HTTP 200; matched sign in"
+    },
+    {
+      "text": "A SerpApi account with a verified email address.",
+      "label": "Sourced",
+      "source_url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+      "quote": "First, create an account and verify your email and other details. After that, get the API key from your account dashboard."
+    }
+  ],
+  "setup_steps": [
+    {
+      "text": "Navigate to https://serpapi.com/users/sign_up?plan=free and sign up for a free account.",
+      "label": "Inferred",
+      "note": "The sign-up page URL is provided in the official blog references and observed endpoints."
+    },
+    {
+      "text": "Verify your email address and any additional details requested during sign-up.",
+      "label": "Sourced",
+      "source_url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+      "quote": "First, create an account and verify your email and other details."
+    },
+    {
+      "text": "Navigate to the API key dashboard at https://serpapi.com/manage-api-key to view your private API key.",
+      "label": "Sourced",
+      "source_url": "https://serpapi.com/blog/scraping-apple-app-store-product-info-and-reviews-with-python",
+      "quote": "Parameter defines the SerpApi private key to use. You can find it under your account -> API key."
+    },
+    {
+      "text": "Copy your private API key and store it securely or paste it into your Composio toolkit configuration.",
+      "label": "Inferred",
+      "note": "The API key must be saved securely or configured in client settings for authentication."
+    }
+  ],
+  "scopes": [
+    {
+      "text": "SerpApi does not use OAuth scopes; authentication is managed entirely through a private account-level API key.",
+      "label": "Inferred",
+      "note": "All documented SerpApi endpoints authorize requests using an api_key parameter."
+    }
+  ],
+  "limits_before_approval": [
+    {
+      "text": "Free tier accounts are limited to 250 searches per month.",
+      "label": "Sourced",
+      "source_url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+      "quote": "Free Plan\u00b7 250 searches / month"
+    }
+  ],
+  "approval_process": [
+    {
+      "text": "There is no formal app approval or review process; API access is activated upon email verification.",
+      "label": "Inferred",
+      "note": "Docs describe obtaining the API key directly from the dashboard after creating and verifying an account."
+    }
+  ],
+  "likely_blockers": [
+    {
+      "text": "Unverified email address preventing dashboard and API key access.",
+      "label": "Inferred",
+      "note": "Email verification is explicitly required during account onboarding."
+    },
+    {
+      "text": "Exceeding the free tier allowance of 250 searches per month, requiring a paid subscription upgrade.",
+      "label": "Inferred",
+      "note": "Accounts requiring higher capacity must upgrade to a paid plan."
+    },
+    {
+      "text": "Requires a paid plan",
+      "label": "Inferred",
+      "note": "rubric modifier: noted as a blocker, it does not change the difficulty level"
+    }
+  ],
+  "agent_can_do": [
+    "Format API requests with the api_key parameter",
+    "Install SerpApi client libraries",
+    "Configure Composio integrations using the API key"
+  ],
+  "you_must_do": [
+    "Sign up on the SerpApi registration page",
+    "Verify your email address",
+    "Copy the API key from your SerpApi dashboard and supply it to your application or agent"
+  ],
+  "open_questions": [
+    {
+      "text": "Does SerpApi provide granular permission keys or restricted tokens for team members?",
+      "label": "Uncertain",
+      "note": "The provided docs mention team management features but do not describe scoped sub-keys."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/Auth/register_oauth_client_app",
+      "title": "Register OAuth App \u00a0|\u00a0 Looker \u00a0|\u00a0 Google Cloud Documentation"
+    },
+    {
+      "url": "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
+      "title": "How to register your own Microsoft OAuth app - Nango Docs"
+    },
+    {
+      "url": "https://learn.boltrics.com/appIntegration/core/AuthorizationOAuth2.html",
+      "title": "Authorization through OAuth 2.0 | Learn 3PL Dynamics "
+    },
+    {
+      "url": "https://serpapi.com/blog/scraping-apple-app-store-product-info-and-reviews-with-python",
+      "title": "Scraping Apple App Store Product Info And Reviews with Python"
+    },
+    {
+      "url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+      "title": "How to scrape Google Play Store app reviews"
+    },
+    {
+      "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+      "title": "Choose Google Drive API scopes \u00a0|\u00a0 Google for Developers"
+    },
+    {
+      "url": "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews",
+      "title": "How To Scrape Home Depot Product Reviews"
+    },
+    {
+      "url": "https://composio.dev/toolkits/serpapi",
+      "title": "Serpapi MCP Server | Composio"
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "title": "Managed OAuth apps | Composio"
+    },
+    {
+      "url": "https://serpapi.com/users/sign_up?plan=free"
+    },
+    {
+      "url": "https://serpapi.com/manage-api-key"
+    }
+  ],
+  "last_verified": {
+    "date": "2026-10-30",
+    "by": "agent"
+  },
+  "meta": {
+    "slug": "serpapi",
+    "provenance": "agent",
+    "generated_at": "2026-10-30T11:38:50Z",
+    "model": "gemini-3.8-flash",
+    "no_oauth_found": false
+  }
+}

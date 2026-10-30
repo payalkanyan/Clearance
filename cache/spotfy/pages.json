@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+    "file": "pages/70152e886f54936f.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:01Z",
+    "title": "Authorization | Spotify for Developers",
+    "status": 200,
+    "bytes": 18101,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy OAuth app registration"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+    "file": "pages/40ef42f2982ae9e8.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:02Z",
+    "title": "Scopes | Spotify for Developers",
+    "status": 200,
+    "bytes": 32771,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy API scopes permissions"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+    "file": "pages/0f80e89942b75198.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:03Z",
+    "title": "Quota modes | Spotify for Developers",
+    "status": 200,
+    "bytes": 19289,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy production access quota extension"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+    "file": "pages/3399c8615c62fd5d.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:05Z",
+    "title": "Apps | Spotify for Developers",
+    "status": 200,
+    "bytes": 17533,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy OAuth app registration"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+    "file": "pages/d6d2e984edec53ef.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:06Z",
+    "title": "Getting started with Web API | Spotify for Developers",
+    "status": 200,
+    "bytes": 21584,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy developer console create app"
+  },
+  {
+    "url": "https://developer.spotify.com/terms",
+    "file": "pages/2d1a54fd5b54dd12.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:07Z",
+    "title": "Spotify Developer Terms | Spotify for Developers",
+    "status": 200,
+    "bytes": 67367,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy developer terms of service"
+  },
+  {
+    "url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+    "file": "pages/9f4642d9eaefe745.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:39:08Z",
+    "title": "Update on Developer Access and Platform Security | Spotify for Developers",
+    "status": 200,
+    "bytes": 3891,
+    "official": true,
+    "kind": "provider",
+    "query": "Spotfy developer terms of service"
+  }
+]

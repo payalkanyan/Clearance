@@ -1,0 +1,337 @@
+{
+  "slug": "serpapi",
+  "app": "SerpApi",
+  "at": "2026-10-30T11:38:50Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 54.38,
+    "probe": 4.39,
+    "composio": 1.35,
+    "extract": 158.51,
+    "citations": 0.01,
+    "score": 0.0,
+    "total": 218.64
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "SerpApi OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/Auth/register_oauth_client_app",
+          "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
+          "https://learn.boltrics.com/appIntegration/core/AuthorizationOAuth2.html",
+          "https://serpapi.com/faq",
+          "https://www.linkedin.com/pulse/implementing-oauth-azure-app-registrations-api-al-ghoniem-mba-ntqtc"
+        ]
+      },
+      {
+        "query": "SerpApi developer console create app",
+        "results": 5,
+        "urls": [
+          "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+          "https://www.youtube.com/watch?v=8ZVE5pXcCxo&vl=en-US",
+          "https://serpapi.com/",
+          "https://stackoverflow.com/questions/21786797/google-developers-console-how-do-i-register-a-new-application",
+          "https://developers.google.com/android-publisher/getting_started"
+        ]
+      },
+      {
+        "query": "SerpApi API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://serpapi.com/search-api",
+          "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+          "https://help.101domain.com/kb/api-key-scopes-and-permissions",
+          "https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey",
+          "https://community.telligent.com/community/12/a/user-documentation/UD694/what-are-rest-api-scopes"
+        ]
+      },
+      {
+        "query": "SerpApi app review verification process",
+        "results": 5,
+        "urls": [
+          "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+          "https://www.trustpilot.com/review/serpapi.com?page=4",
+          "https://serpapi.com/blog/scraping-apple-app-store-product-info-and-reviews-with-python",
+          "https://www.reddit.com/r/n8n/comments/1hy1umq/serpapi_to_scrape_reviews_and_how_to_proceed",
+          "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews"
+        ]
+      },
+      {
+        "query": "SerpApi production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://serpapi.com/pricing",
+          "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+          "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
+          "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+          "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives"
+        ]
+      },
+      {
+        "query": "SerpApi developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://serpapi.com/legal",
+          "https://www.searchapi.io/legal/terms",
+          "https://www.octoparse.com/blog/is-serpapi-legal",
+          "https://developers.google.com/terms",
+          "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/Auth/register_oauth_client_app",
+        "bytes": 11663,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
+        "bytes": 169455,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://learn.boltrics.com/appIntegration/core/AuthorizationOAuth2.html",
+        "bytes": 8836,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://serpapi.com/blog/scraping-apple-app-store-product-info-and-reviews-with-python",
+        "bytes": 20754,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+        "bytes": 20030,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+        "bytes": 17488,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews",
+        "bytes": 23705,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/serpapi",
+        "bytes": 21767,
+        "source": "http",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.101domain.com/kb/api-key-scopes-and-permissions",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://serpapi.com/search-api",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.google.com/terms",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://serpapi.com/pricing",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://serpapi.com/legal",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.trustpilot.com/review/serpapi.com?page=4",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://serpapi.com/",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://serpapi.com/faq",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.linkedin.com/pulse/implementing-oauth-azure-app-registrations-api-al-ghoniem-mba-ntqtc",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://developers.google.com/android-publisher/getting_started",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.octoparse.com/blog/is-serpapi-legal",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://stackoverflow.com/questions/21786797/google-developers-console-how-do-i-register-a-new-application",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.searchapi.io/legal/terms",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.telligent.com/community/12/a/user-documentation/UD694/what-are-rest-api-scopes",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/n8n/comments/1hy1umq/serpapi_to_scrape_reviews_and_how_to_proceed",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8ZVE5pXcCxo&vl=en-US",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [
+    {
+      "url": "https://serpapi.com/users/sign_up?plan=free",
+      "observed": "login_wall",
+      "at": "2026-10-30T11:36:08Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in"
+      ],
+      "fields_visible": [
+        "logo"
+      ],
+      "bytes": 810,
+      "error": null,
+      "why": "link text 'get started'"
+    },
+    {
+      "url": "https://serpapi.com/manage-api-key",
+      "observed": "login_wall",
+      "at": "2026-10-30T11:36:10Z",
+      "status": 200,
+      "source": "http",
+      "signals": [
+        "sign in"
+      ],
+      "fields_visible": [
+        "logo"
+      ],
+      "bytes": 342,
+      "error": null,
+      "why": "link text 'dashboard'"
+    }
+  ],
+  "composio": {
+    "kind": "unknown",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/serpapi",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 51824,
+      "output_tokens": 1385,
+      "total_tokens": 55041,
+      "calls": 1
+    },
+    "cost_usd": 0.044062,
+    "prompt_chars": 169074,
+    "trimmed": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
+        "kept_chars": 40000,
+        "original_chars": 169374,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [],
+    "calls": 1
+  },
+  "citations": {
+    "slug": "serpapi",
+    "at": "2026-10-30T11:38:50Z",
+    "checked": 4,
+    "verified": 4,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Medium",
+    "reason": {
+      "text": "Free tier accounts are limited to 250 searches per month.",
+      "label": "Sourced",
+      "source_url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+      "quote": "Free Plan\u00b7 250 searches / month",
+      "note": null
+    },
+    "trigger": "limits_before_approval[0] matched 'limited to 250'",
+    "modifiers": [
+      "Requires a paid plan"
+    ],
+    "matches": [
+      {
+        "level": "Very hard",
+        "skipped": "credentials are available without approval ('no review required'), so approval before keys cannot apply"
+      },
+      {
+        "level": "Hard",
+        "pattern": "review (?:is )?required",
+        "where": "verdict",
+        "skipped": "negated by 'no review' next to the match"
+      },
+      {
+        "level": "Medium",
+        "pattern": "limited to \\d+",
+        "where": "limits_before_approval[0]",
+        "matched": "limited to 250"
+      }
+    ]
+  }
+}
