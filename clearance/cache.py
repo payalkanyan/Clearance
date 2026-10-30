@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit, urlunsplit
@@ -15,6 +16,23 @@ from urllib.parse import urlsplit, urlunsplit
 from pydantic import BaseModel
 
 from .config import CACHE_DIR, utc_now
+
+# Provider documentation shows example credentials, and an example is sometimes a
+# real leaked token. Storing one would put it in this repository, so these are
+# redacted before a page is written. Redaction happens before the page is used,
+# so the extraction prompt, the quote and the citation check all read the same
+# text and quoting still works.
+SECRET_PATTERNS = (
+    (re.compile(r"xox[abprs]-[A-Za-z0-9-]{10,}"), "slack token"),
+    (re.compile(r"gh[pousr]_[A-Za-z0-9]{20,}"), "github token"),
+    (re.compile(r"github_pat_[A-Za-z0-9_]{20,}"), "github token"),
+    (re.compile(r"AIza[0-9A-Za-z_-]{30,}"), "google api key"),
+    (re.compile(r"AKIA[0-9A-Z]{16}"), "aws access key"),
+    (re.compile(r"\bsk-(?:ant-)?[A-Za-z0-9_-]{20,}"), "api key"),
+    (re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"), "private key"),
+)
+
+REDACTED = "<redacted-by-clearance>"
 
 
 class PageRecord(BaseModel):
@@ -29,7 +47,17 @@ class PageRecord(BaseModel):
     bytes: int = 0
     official: bool = True  # third-party pages can only support Inferred
     kind: str = "provider"  # "provider" | "composio"
+    redactions: int = 0
     query: str | None = None
+
+
+def redact(text: str) -> tuple[str, int]:
+    """Replace anything shaped like a live credential. Returns the count too."""
+    total = 0
+    for pattern, _ in SECRET_PATTERNS:
+        text, count = pattern.subn(REDACTED, text)
+        total += count
+    return text, total
 
 
 def normalise_url(url: str) -> str:
@@ -87,6 +115,7 @@ def store_page(
 ) -> PageRecord:
     ensure_slug_dir(slug)
     relative = f"pages/{url_key(url)}.md"
+    markdown, redactions = redact(markdown)
     (slug_dir(slug) / relative).write_text(markdown, encoding="utf-8")
     return PageRecord(
         url=url,
@@ -98,6 +127,7 @@ def store_page(
         bytes=len(markdown.encode("utf-8")),
         official=official,
         kind=kind,
+        redactions=redactions,
         query=query,
     )
 

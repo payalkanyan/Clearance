@@ -131,3 +131,32 @@ def test_gold_time_estimate_was_downgraded():
 )
 def test_slugify(raw, expected):
     assert slugify(raw) == expected
+
+
+def test_cached_pages_never_keep_credential_shaped_text(tmp_path, monkeypatch):
+    """Provider docs show example tokens, and GitHub's push protection rightly
+    refuses them. Redaction happens before the page is stored, so the prompt,
+    the quote and the citation check all read the same text.
+
+    The fixtures are assembled at runtime: a literal token shape in this file
+    would itself be flagged by a secret scanner.
+    """
+    from clearance import cache as cache_module
+    from clearance.cache import REDACTED, page_text, store_page
+
+    monkeypatch.setattr(cache_module, "CACHE_DIR", tmp_path / "cache")
+    slack_shaped = "xoxb" + "-1234567890-" + "abcdefghijklmnop"
+    github_shaped = "ghp" + "_" + "a1b2c3d4e5" * 4
+    body = (
+        f'Example response: {{"access_token": "{slack_shaped}"}}\n'
+        f"Use {github_shaped} as your token.\n"
+        "Keep your client secret safe.\n"
+    )
+    page = store_page("example", "https://docs.example.com/oauth", body,
+                      source="firecrawl")
+
+    stored = page_text("example", page)
+    assert page.redactions == 2
+    assert slack_shaped not in stored and github_shaped not in stored
+    assert stored.count(REDACTED) == 2
+    assert "Keep your client secret safe." in stored  # ordinary prose untouched
