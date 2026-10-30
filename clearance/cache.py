@@ -28,6 +28,7 @@ class PageRecord(BaseModel):
     status: int | None = None
     bytes: int = 0
     official: bool = True  # third-party pages can only support Inferred
+    kind: str = "provider"  # "provider" | "composio"
     query: str | None = None
 
 
@@ -81,6 +82,7 @@ def store_page(
     title: str | None = None,
     status: int | None = None,
     official: bool = True,
+    kind: str = "provider",
     query: str | None = None,
 ) -> PageRecord:
     ensure_slug_dir(slug)
@@ -95,6 +97,7 @@ def store_page(
         status=status,
         bytes=len(markdown.encode("utf-8")),
         official=official,
+        kind=kind,
         query=query,
     )
 

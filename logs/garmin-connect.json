@@ -1,0 +1,274 @@
+{
+  "slug": "garmin-connect",
+  "app": "Garmin Connect",
+  "at": "2026-10-30T11:35:11Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 50.51,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 60.03,
+    "citations": 0.01,
+    "score": 0.0,
+    "total": 110.55
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "Garmin Connect OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+          "https://dev.to/alexanderhodes/implement-garmin-connect-oauth2-authentication-in-react-native-with-expo-1j55",
+          "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+          "https://forums.garmin.com/developer/connect-iq/f/discussion/3556/oauth-api-example-with-google-services",
+          "https://forums.garmin.com/developer/connect-iq/f/discussion/294189/how-do-i-use-the-oauth-2-0-api"
+        ]
+      },
+      {
+        "query": "Garmin Connect developer console create app",
+        "results": 5,
+        "urls": [
+          "https://developer.garmin.com/",
+          "https://www.reddit.com/r/Garmin/comments/84zd02/how_hard_is_it_to_create_an_app_for_a_garmin",
+          "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+          "https://developer.garmin.com/connect-iq/connect-iq-basics",
+          "https://developer.garmin.com/gc-developer-program"
+        ]
+      },
+      {
+        "query": "Garmin Connect API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://developer.garmin.com/gc-developer-program/personal",
+          "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+          "https://www.reddit.com/r/Garmin/comments/114eh9y/personal_use_of_garmin_api",
+          "https://developer.garmin.com/gc-developer-program",
+          "https://apis.io/apis/garmin/garmin-connect-health-api"
+        ]
+      },
+      {
+        "query": "Garmin Connect app review verification process",
+        "results": 5,
+        "urls": [
+          "https://support.garmin.com/en-US?faq=N7qM9eVuzl77PNYKV8ORX5",
+          "https://www.trustpilot.com/review/connect.garmin.com",
+          "https://forums.garmin.com/developer/connect-iq/f/connect-iq-web-store/428068/app-approval-process-taking-longer-than-usual-10-days",
+          "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgarmin+connect+app+review+verification+process",
+          "https://www.youtube.com/watch?v=aIDsXz7qyp4"
+        ]
+      },
+      {
+        "query": "Garmin Connect production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://tryrook.io/blog/garmin-connect-api-access",
+          "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+          "https://developer.garmin.com/gc-developer-program",
+          "https://sahha.ai/blog/garmin-connect-api-reopened-fees",
+          "https://apps.garmin.com/en-US/apps/0c4dcc10-c5af-4940-bdf2-7471467d0b6c"
+        ]
+      },
+      {
+        "query": "Garmin Connect developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://www8.garmin.com/en-US/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT_EN.pdf",
+          "https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html",
+          "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+          "https://tryrook.io/blog/garmin-connect-api-access",
+          "https://developer.garmin.com/gc-developer-program"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+        "bytes": 152717,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+        "bytes": 8715,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.garmin.com/gc-developer-program/personal",
+        "bytes": 1640,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+        "bytes": 4372,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.garmin.com/gc-developer-program",
+        "bytes": 2181,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+        "bytes": 2950,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.garmin.com/",
+        "bytes": 2703,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://www8.garmin.com/en-US/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT_EN.pdf",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.garmin.com/connect-iq/connect-iq-basics",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://apps.garmin.com/en-US/apps/0c4dcc10-c5af-4940-bdf2-7471467d0b6c",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.garmin.com/en-US?faq=N7qM9eVuzl77PNYKV8ORX5",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.trustpilot.com/review/connect.garmin.com",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgarmin+connect+app+review+verification+process",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://tryrook.io/blog/garmin-connect-api-access",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://sahha.ai/blog/garmin-connect-api-reopened-fees",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://apis.io/apis/garmin/garmin-connect-health-api",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/3556/oauth-api-example-with-google-services",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/294189/how-do-i-use-the-oauth-2-0-api",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://dev.to/alexanderhodes/implement-garmin-connect-oauth2-authentication-in-react-native-with-expo-1j55",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://forums.garmin.com/developer/connect-iq/f/connect-iq-web-store/428068/app-approval-process-taking-longer-than-usual-10-days",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Garmin/comments/84zd02/how_hard_is_it_to_create_an_app_for_a_garmin",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Garmin/comments/114eh9y/personal_use_of_garmin_api",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=aIDsXz7qyp4",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [],
+  "composio": {
+    "kind": "none",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/garmin-connect",
+        "status": 404,
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://composio.dev/toolkits/garminconnect",
+        "status": 404,
+        "error": "HTTP 404"
+      },
+      {
+        "url": "https://composio.dev/toolkits/garmin",
+        "status": 404,
+        "error": "HTTP 404"
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 19824,
+      "output_tokens": 2638,
+      "total_tokens": 23204,
+      "calls": 1
+    },
+    "cost_usd": 0.024761,
+    "prompt_chars": 63344,
+    "trimmed": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+        "kept_chars": 40000,
+        "original_chars": 152694,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [],
+    "calls": 1
+  },
+  "citations": {
+    "slug": "garmin-connect",
+    "at": "2026-10-30T11:35:11Z",
+    "checked": 15,
+    "verified": 15,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Medium",
+    "reason": {
+      "text": "Starter Access limits user capacity to up to 1,000 connected users.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Up to 1,000 connected users",
+      "note": null
+    },
+    "trigger": "limits_before_approval[0] matched 'user cap'",
+    "modifiers": [],
+    "matches": [
+      {
+        "level": "Medium",
+        "pattern": "user (?:cap|limit)",
+        "where": "limits_before_approval[0]",
+        "matched": "user cap"
+      }
+    ]
+  }
+}

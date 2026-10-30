@@ -123,3 +123,38 @@ def test_probe_facts_are_tested_and_carry_their_evidence():
     assert fact.source_url == "https://www.example.com/settings/applications/new"
     assert "2026-10-30T10:00:00Z" in fact.note
     assert "sign in" in fact.note
+
+
+def test_composio_pages_are_not_mined_for_the_providers_console():
+    """Composio's own login page is not where you register with the provider."""
+    provider = store_page(
+        "example",
+        DOCS_URL,
+        "[developer dashboard](https://www.example.com/settings/applications/new)",
+        source="firecrawl",
+    )
+    composio = store_page(
+        "example",
+        "https://composio.dev/toolkits/example",
+        "[get started](https://dashboard.composio.dev/login)",
+        source="firecrawl",
+        kind="composio",
+    )
+    urls = [item["url"] for item in candidate_urls("example", [provider, composio])]
+    assert urls == ["https://www.example.com/settings/applications/new"]
+
+
+def test_a_console_url_named_by_a_third_party_page_is_still_probed():
+    """The URL comes from a blog, but it must be on the provider's host, and
+    what gets recorded is what the agent sees when it opens it."""
+    official = store_page("example", DOCS_URL, "no links here", source="firecrawl")
+    blog = store_page(
+        "example",
+        "https://medium.com/@x/guide",
+        "[create an app](https://www.example.com/settings/applications/new) and "
+        "[this one](https://someoneelse.com/apps/new)",
+        source="firecrawl",
+        official=False,
+    )
+    urls = [item["url"] for item in candidate_urls("example", [official, blog])]
+    assert urls == ["https://www.example.com/settings/applications/new"]

@@ -1,0 +1,524 @@
+{
+  "slug": "serpapi",
+  "app_name": "SerpApi",
+  "website": "docs.cloud.google.com",
+  "queries": [
+    {
+      "query": "SerpApi OAuth app registration",
+      "results": 5,
+      "urls": [
+        "https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/Auth/register_oauth_client_app",
+        "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
+        "https://learn.boltrics.com/appIntegration/core/AuthorizationOAuth2.html",
+        "https://serpapi.com/faq",
+        "https://www.linkedin.com/pulse/implementing-oauth-azure-app-registrations-api-al-ghoniem-mba-ntqtc"
+      ]
+    },
+    {
+      "query": "SerpApi developer console create app",
+      "results": 5,
+      "urls": [
+        "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+        "https://www.youtube.com/watch?v=8ZVE5pXcCxo&vl=en-US",
+        "https://serpapi.com/",
+        "https://stackoverflow.com/questions/21786797/google-developers-console-how-do-i-register-a-new-application",
+        "https://developers.google.com/android-publisher/getting_started"
+      ]
+    },
+    {
+      "query": "SerpApi API scopes permissions",
+      "results": 5,
+      "urls": [
+        "https://serpapi.com/search-api",
+        "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+        "https://help.101domain.com/kb/api-key-scopes-and-permissions",
+        "https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey",
+        "https://community.telligent.com/community/12/a/user-documentation/UD694/what-are-rest-api-scopes"
+      ]
+    },
+    {
+      "query": "SerpApi app review verification process",
+      "results": 5,
+      "urls": [
+        "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+        "https://www.trustpilot.com/review/serpapi.com?page=4",
+        "https://serpapi.com/blog/scraping-apple-app-store-product-info-and-reviews-with-python",
+        "https://www.reddit.com/r/n8n/comments/1hy1umq/serpapi_to_scrape_reviews_and_how_to_proceed",
+        "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews"
+      ]
+    },
+    {
+      "query": "SerpApi production access quota extension",
+      "results": 5,
+      "urls": [
+        "https://serpapi.com/pricing",
+        "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+        "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
+        "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+        "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives"
+      ]
+    },
+    {
+      "query": "SerpApi developer terms of service",
+      "results": 5,
+      "urls": [
+        "https://serpapi.com/legal",
+        "https://www.searchapi.io/legal/terms",
+        "https://www.octoparse.com/blog/is-serpapi-legal",
+        "https://developers.google.com/terms",
+        "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/Auth/register_oauth_client_app",
+      "title": "Register OAuth App | Looker - Google Cloud Documentation",
+      "description": "- [Register an OAuth2 Client App](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/Auth/register_oauth_client_app#register-an-oauth2-client-app)\n\n# Register OAuth App    Stay organized with collections      Save and categorize content based on your preferences.\n### Register an OAuth2 Client App\nThe app registration must provide a unique client_guid and redirect_uri that the app will present",
+      "query": "SerpApi OAuth app registration",
+      "position": 1,
+      "score": 18.7,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app",
+      "title": "How to register your own Microsoft OAuth app - Nango Docs",
+      "description": "## Documentation Index\nThis guide shows you how to register your own app with Microsoft to obtain your OAuth credentials (client id & secret).\n\n## [\u200b](https://nango.dev/docs/api-integrations/microsoft/how-to-register-your-own-microsoft-api-oauth-app#creating-your-microsoft-oauth-app)  Creating your Microsoft OAuth app\nRegister an application in Microsoft Entra ID\n\n3. From the search bar at the top of the Azure portal, search for **App registrations** and select it. Then choose **New registration**. Or from your left navigation tab, navigate to **Applications** > **App registrations** then choose **New registration**.\n7. Click **Register** to complete the app registration.\n\nRecord the **Application (client) ID**, which uniquely identifies your application and is used in your application\u2019s code as part of validating security tokens.\n\n2. Click **Add a permission**.\n4. Choose the type of permissions:\n   - **Application permissions** - Your app accesses the API directly without a signed-in user.\n\n4. Click **Add**.",
+      "query": "SerpApi OAuth app registration",
+      "position": 2,
+      "score": 16.4,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://learn.boltrics.com/appIntegration/core/AuthorizationOAuth2.html",
+      "title": "Authorization through OAuth 2.0 | Learn 3PL Dynamics",
+      "description": "Go to Microsoft Entra ID and open App registrations. Select New registration. Fill in: Name (e.g. MyIntegration); Supported account types (typically Single ...",
+      "query": "SerpApi OAuth app registration",
+      "position": 3,
+      "score": 15.1,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/blog/scraping-apple-app-store-product-info-and-reviews-with-python",
+      "title": "Scraping Apple App Store Product Info And Reviews with Python - SerpApi",
+      "description": "This blog post is a step-by-step tutorial for scraping Apple App Store product info and reviews using Python and SerpApi.",
+      "query": "SerpApi app review verification process",
+      "position": 3,
+      "score": 14.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews",
+      "title": "How to scrape Google Play Store app reviews - SerpApi",
+      "description": "First, create an account and verify your email and other details. After that, get the API key from your account dashboard. The API key in the ...",
+      "query": "SerpApi developer console create app",
+      "position": 1,
+      "score": 13.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+      "title": "Choose Google Drive API scopes",
+      "description": "To authorize your app, the Google Drive API requires you to define OAuth scopes in two places: the Google Cloud console and your app. In the ...",
+      "query": "SerpApi API scopes permissions",
+      "position": 2,
+      "score": 11.4,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews",
+      "title": "How To Scrape Home Depot Product Reviews - SerpApi",
+      "description": "In this post, we'll explore how to collect product reviews from Home Depot using SerpApi's Home Depot Product Reviews API. SerpApi lets you ...",
+      "query": "SerpApi app review verification process",
+      "position": 5,
+      "score": 10.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+      "title": "Quota and Compliance Audits | YouTube Data API",
+      "description": "If you have completed an API Compliance Audit within the last 12 months but require an additional quota extension, fill out and submit the Audit and Quota ...",
+      "query": "SerpApi production access quota extension",
+      "position": 2,
+      "score": 10.4,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://help.101domain.com/kb/api-key-scopes-and-permissions",
+      "title": "API Key Scopes and Permissions | Help - 101domain",
+      "description": "### **What are API Scopes?**\nIn our case, they limit the endpoints that API keys are able to call via API or MCP tools. They set permissions, data access levels , and actions(e.g; read, write, delete) that a client application can perform.\n\nAll 101domain MCP tools inherit the permissions of the underlying API key.\n\n### **Available Scopes:**\n- `account:read`\n- `account:write`\n- `domains:read`\n- `domains:write`\n- `dns:read`\n- `dns:write`\n- `products:read`\n- `products:write`\n- `finance:read`\n- `finance:write`",
+      "query": "SerpApi API scopes permissions",
+      "position": 3,
+      "score": 10.1,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/search-api",
+      "title": "Google Search Engine Results API - SerpApi",
+      "description": "# Footer Links\n## API Parameters\n### Geographic Location\n- Desktop: `1..199`",
+      "query": "SerpApi API scopes permissions",
+      "position": 1,
+      "score": 9.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/terms",
+      "title": "Google APIs Terms of Service - Google for Developers",
+      "description": "YOU AGREE THAT GOOGLE MAY MONITOR USE OF THE APIS TO ENSURE QUALITY, IMPROVE GOOGLE PRODUCTS AND SERVICES, AND VERIFY YOUR COMPLIANCE WITH THE ...",
+      "query": "SerpApi developer terms of service",
+      "position": 4,
+      "score": 8.8,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/pricing",
+      "title": "Plans and Pricing - SerpApi",
+      "description": "SerpApi provides simple pricing to suit your every need. Starter $ 25 / month. Most popular Production $ 150 / month Get started 15,000 searches per month 3, ...",
+      "query": "SerpApi production access quota extension",
+      "position": 1,
+      "score": 8.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/legal",
+      "title": "Legal Documents - SerpApi",
+      "description": "Review SerpApi's legal terms of service. Read more about terms for SerpApi SLA and U.S Legal Shield.",
+      "query": "SerpApi developer terms of service",
+      "position": 1,
+      "score": 8.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://www.trustpilot.com/review/serpapi.com?page=4",
+      "title": "Read Customer Service Reviews of serpapi.com | 4 of 6 - Trustpilot",
+      "description": "Rating 4.9(105)SerpApi has 5 stars! Check out what 105 people have written so far, and share your own experience. | Read 61-80 Reviews out of 103.",
+      "query": "SerpApi app review verification process",
+      "position": 2,
+      "score": 8.4,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/",
+      "title": "SerpApi: Google Search API",
+      "description": "SerpApi is a real-time API to access Google search results. We handle proxies, solve captchas, and parse all rich structured data for you.",
+      "query": "SerpApi developer console create app",
+      "position": 3,
+      "score": 8.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://serpapi.com/faq",
+      "title": "FAQ - SerpApi",
+      "description": "Find the help and support you need on our FAQ page. Get your questions answered and concerns addressed.",
+      "query": "SerpApi OAuth app registration",
+      "position": 4,
+      "score": 7.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/implementing-oauth-azure-app-registrations-api-al-ghoniem-mba-ntqtc",
+      "title": "Implementing OAuth in Azure with App Registrations & API Management",
+      "description": "Register the Client App: Create an app registration for your client. Add delegated permission to call your API app registration.",
+      "query": "SerpApi OAuth app registration",
+      "position": 5,
+      "score": 7.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/android-publisher/getting_started",
+      "title": "Getting Started | Google Play Developer API",
+      "description": "# Getting Started    Stay organized with collections      Save and categorize content based on your preferences.\n## Additional information\n### Obtain your Developer ID\n```\nhttps://play.google.com/console/developers/1234567890123456789/api-access\n```",
+      "query": "SerpApi developer console create app",
+      "position": 5,
+      "score": 7.5,
+      "official": true,
+      "reasons": [
+        "host dominates the search results",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "title": "Quota modes - Spotify for Developers",
+      "description": "# Quota modes\n## Development mode\n### Quota counting\n```\n\"error\": {\n\n    \"status\": 429,\n\n    \"message\": \"Too many requests\",\n\n    \"reason\": \"QUOTA_EXCEEDED\"\n\n}\n```",
+      "query": "SerpApi production access quota extension",
+      "position": 4,
+      "score": 6.8,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://www.octoparse.com/blog/is-serpapi-legal",
+      "title": "Is SerpApi Legal? The Google Lawsuit, Explained (2026) - Octoparse",
+      "description": "Is SerpApi legal? In July 2026 a US court dismissed Google's DMCA lawsuit against it. Here's what the ruling means for using a SERP API in 2026.",
+      "query": "SerpApi developer terms of service",
+      "position": 3,
+      "score": 5.1,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://stackoverflow.com/questions/21786797/google-developers-console-how-do-i-register-a-new-application",
+      "title": "Google Developers Console: how do I register a new application?",
+      "description": "Go to the Google Developers Console. Select a project. In the sidebar on the left, select APIs & auth. select Credentials. Add this step: Click ...",
+      "query": "SerpApi developer console create app",
+      "position": 4,
+      "score": 3.8,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.searchapi.io/legal/terms",
+      "title": "Terms of Service - Google Search API",
+      "description": "All the terms that you agree to when you sign up for a SearchApi product.",
+      "query": "SerpApi developer terms of service",
+      "position": 2,
+      "score": 3.4,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
+      "title": "SERP API Pricing: Plans and Costs (2026 Guide) - Activepieces",
+      "description": "7 days ago \u00b7 Check 500 keywords daily and you run 500 \u00d7 30 = 15,000 searches, which is exactly the Production quota. That's $10.00 per 1,000 with no ...",
+      "query": "SerpApi production access quota extension",
+      "position": 3,
+      "score": 3.1,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives",
+      "title": "Best SERP APIs in 2026: Official Google Alternatives & Third-Party ...",
+      "description": "A SERP API allows developers to access search engine results programmatically, streamlining the process of data extraction for analysis and SEO ...",
+      "query": "SerpApi production access quota extension",
+      "position": 5,
+      "score": 2.5,
+      "official": false,
+      "reasons": [
+        "cannot confirm this is the provider"
+      ]
+    },
+    {
+      "url": "https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey",
+      "title": "Required scopes and permissions for /rest/api/3/issue/{issueIdOrKey",
+      "description": "# Required scopes and permissions for /rest/api/3/issue/{issueIdOrKey\n[![User: \"Nivi Mor_m15kf7\"](https://us.v-cdn.net/6038660/uploads/avatars/c8/34/nc834f32a10e780d60045b6ad22448520.webp)](https://community.atlassian.com/forums/profile/5951396/Nivi%20Mor_m15kf7)\n\nMember\n\nI want to use the\u00a0/rest/api/3/issue/{issueIdOrKey endpoint to query issues. I followed [the docs](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-get) and created a token with classic\u00a0read:jira-work scope.\n\nWhen I query an existing issue I get:\n\n{\"errorMessages\":[\"Issue does not exist or you do not have permission to see it.\"],\"errors\":{}}%\n\nAs the user who created this token, I have permission to browse the project where the issue is.\n\nShare Share\n\nSort by Oldest\u00a0\u25be\n\n1 - 3 of 3\u21911\u2191\n\n[![User: \"Nivi Mor_m15kf7\"](https://us.v-cdn.net/6038660/uploads/avatars/c8/34/nc834f32a10e780d60045b6ad22448520.webp)](https://community.atlassian.com/forums/profile/5951396/Nivi%20Mor_m15kf7)\n\nMember\n\nOP\n\nScopes are only relevant for OAuth 2, not for basic auth.\n\nShare Share\n\n[![User: \"Gor Greyan\"](https://us.v-cdn.net/6038660/uploads/avatars/01/53/n0153740a6795e0d8f67316585374a979.png)](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\n[Gor Greyan](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\nExpert\n\nScopes are only enforced when you\u2019re using OAuth 2.0 authentication (for example, when an external app integrates with Jira Cloud via the Atlassian platform). In that case, the access token\u2019s scopes (like `read:jira-work`, `write:jira-work`, etc.) determine what the app can do.\n\n- It completely ignores OAuth scopes.\n- Your request\u2019s permissions depend only on your Jira account permissions (project browse rights, issue security, etc.).\n\nShare Share\n\n[![User: \"Jesper Evo Matthiesen\"](https://us.v-cdn.net/6038660/uploads/avatars/35/23/n352326934f8299b55baf4ff0f16e68bf.webp)](https://community.atlassian.com/forums/profile/2708284/Jesper%20Evo%20Matthiesen)\n\n[Jesper Evo Matthiesen](https://community.atlassian.com/forums/profile/2708284/Jesper%20Evo%20Matthiesen)\n\nMember\n\ndeleted..\n\nShare Share\n\nSort by Oldest\u00a0\u25be\n\n1 - 1 of 1\u21911\u2191\n\n[![User: \"Gor Greyan\"](https://us.v-cdn.net/6038660/uploads/avatars/01/53/n0153740a6795e0d8f67316585374a979.png)](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\n[Gor Greyan](https://community.atlassian.com/forums/profile/5476846/Gor%20Greyan)\n\nExpert\n\nScopes are only enforced when you\u2019re using OAuth 2.0 authentication (for example, when an external app integrates with Jira Cloud via the Atlassian platform). In that case, the access token\u2019s scopes (like `read:jira-work`, `write:jira-work`, etc.) determine what the app can do.\n\n- It completely ignores OAuth scopes.\n- Your request\u2019s permissions depend only on your Jira account permissions (project browse rights, issue security, etc.).\n\nShare Share",
+      "query": "SerpApi API scopes permissions",
+      "position": 4,
+      "score": 1.8,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://community.telligent.com/community/12/a/user-documentation/UD694/what-are-rest-api-scopes",
+      "title": "What are REST API Scopes? - User Documentation - Telligent Community",
+      "description": "A scope simply states that a caller can access a specific resource, not that the resource has permission to see or modify the content within ...",
+      "query": "SerpApi API scopes permissions",
+      "position": 5,
+      "score": -1.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/n8n/comments/1hy1umq/serpapi_to_scrape_reviews_and_how_to_proceed",
+      "title": "Serpapi to scrape reviews and how to proceed (quite n00b-ish) - Reddit",
+      "description": "Scrape reviews for a certain app on the Google Play store Filter out the relevant information. Format it and put the results in a Google Sheet. ...",
+      "query": "SerpApi app review verification process",
+      "position": 4,
+      "score": -2.2,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS",
+      "title": "How to make an SERP API software legally and without violating ... - Quora",
+      "description": "The only way I can think of doing it legally is to use Google (paid) search APIs. Anything else will likely violate Google ToS and will end ...",
+      "query": "SerpApi developer terms of service",
+      "position": 5,
+      "score": -5.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8ZVE5pXcCxo&vl=en-US",
+      "title": "How Developers Are Using SerpApi to Build Better AI - YouTube",
+      "description": "AI Research Tools 01:55 Why Real-Time Web Data Matters 02:19 SerpApi for AI Apps & AI Agents 02:56 Structured Search Results API 03:18 ...",
+      "query": "SerpApi developer console create app",
+      "position": 2,
+      "score": -5.6,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    }
+  ],
+  "gates": [],
+  "fallbacks": [],
+  "skipped": [
+    {
+      "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://help.101domain.com/kb/api-key-scopes-and-permissions",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://serpapi.com/search-api",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.google.com/terms",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://serpapi.com/pricing",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://serpapi.com/legal",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.trustpilot.com/review/serpapi.com?page=4",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://serpapi.com/",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://serpapi.com/faq",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/implementing-oauth-azure-app-registrations-api-al-ghoniem-mba-ntqtc",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://developers.google.com/android-publisher/getting_started",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.octoparse.com/blog/is-serpapi-legal",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/21786797/google-developers-console-how-do-i-register-a-new-application",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.searchapi.io/legal/terms",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://community.atlassian.com/forums/discussion/3135981/required-scopes-and-permissions-for-rest-api-3-issue-issueidorkey",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://community.telligent.com/community/12/a/user-documentation/UD694/what-are-rest-api-scopes",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.reddit.com/r/n8n/comments/1hy1umq/serpapi_to_scrape_reviews_and_how_to_proceed",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8ZVE5pXcCxo&vl=en-US",
+      "reason": "unofficial, official pages suffice"
+    }
+  ],
+  "no_oauth_found": false,
+  "failed": null,
+  "fetch_usage": []
+}

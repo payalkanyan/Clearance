@@ -14,6 +14,7 @@ from urllib.parse import urljoin, urlsplit
 from pydantic import BaseModel
 
 from .cache import load_pages, normalise_url, page_text, read_json, slug_dir, write_json
+from .composio import COMPOSIO_HOSTS
 from .config import slugify, utc_now
 from .fetch import scrape
 from .schema import Fact, Label
@@ -24,6 +25,8 @@ PATH_HINTS = (
     "/apps/create", "/oauth/applications", "/settings/developers",
     "/settings/applications", "/my-apps", "/dashboard", "/developer/register",
     "/register", "/signup", "/sign-up", "/create", "/apps", "/console",
+    # Intuit and others put the portal under /app/developer rather than /apps.
+    "/app/developer", "/developer/homepage", "/developer/dashboard",
 )
 
 # Link text that points at the same thing.
@@ -31,7 +34,8 @@ LABEL_HINTS = (
     "create an app", "create app", "new app", "register an app", "register app",
     "my apps", "developer dashboard", "dashboard", "app registration",
     "create a client", "register your application", "developer portal",
-    "sign up", "get started", "request access",
+    "sign up", "get started", "request access", "developer homepage",
+    "developer home", "developer console",
 )
 
 LOGIN_MARKERS = (
@@ -124,15 +128,30 @@ def links_in(markdown: str, base_url: str) -> list[tuple[str, str]]:
 def candidate_urls(slug: str, pages=None) -> list[dict]:
     """Rank links from the cached pages by how much they look like a signup page."""
     pages = pages if pages is not None else load_pages(slug)
-    provider_hosts = {urlsplit(page.url).netloc.lower() for page in pages if page.official}
+    # Composio's pages are evidence about Composio. The console we want to see
+    # belongs to the provider.
+    def is_composio(url: str) -> bool:
+        host = urlsplit(url).netloc.lower()
+        return any(host == name or host.endswith("." + name) for name in COMPOSIO_HOSTS)
+
+    # The kind field covers pages cached from now on; the host check covers any
+    # pages.json written before that field existed.
+    provider_pages = [
+        page for page in pages
+        if page.kind != "composio" and not is_composio(page.url)
+    ]
+    provider_hosts = {
+        urlsplit(page.url).netloc.lower() for page in provider_pages if page.official
+    }
     roots = {host.split(".")[-2] for host in provider_hosts if "." in host}
 
     already_read = {normalise_url(page.url) for page in pages}
 
     scored: dict[str, dict] = {}
-    for page in pages:
-        if not page.official:
-            continue
+    # A third-party page may name the real console URL. Taking the URL from it is
+    # safe: it has to be on the provider's own host, and what we then record is
+    # what the agent sees there, not what the page claimed.
+    for page in provider_pages:
         for url, label in links_in(page_text(slug, page), page.url):
             host = urlsplit(url).netloc.lower()
             # Stay on the provider: a signup page is never on someone else's site.
@@ -140,6 +159,8 @@ def candidate_urls(slug: str, pages=None) -> list[dict]:
                 continue
             if url in already_read:
                 continue  # already scraped as documentation in stage 2
+            if is_composio(url):
+                continue
             first_label = host.split(".")[0]
             if any(marker in first_label for marker in ASSET_HOST_MARKERS):
                 continue

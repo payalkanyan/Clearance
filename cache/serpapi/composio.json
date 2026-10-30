@@ -1,0 +1,38 @@
+{
+  "slug": "serpapi",
+  "kind": "unknown",
+  "url": "https://composio.dev/toolkits/serpapi",
+  "status": 200,
+  "tried": [
+    {
+      "url": "https://composio.dev/toolkits/serpapi",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "quote": null,
+  "pages": [
+    {
+      "url": "https://composio.dev/toolkits/serpapi",
+      "file": "pages/a1c9cbd368a6423f.md",
+      "source": "http",
+      "fetched_at": "2026-10-30T11:36:11Z",
+      "title": "Serpapi MCP Server | Composio",
+      "status": 200,
+      "bytes": 21767,
+      "official": true,
+      "query": null
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "file": "pages/a0f9c2141dd2d96c.md",
+      "source": "firecrawl",
+      "fetched_at": "2026-10-30T11:36:11Z",
+      "title": "Managed OAuth apps | Composio",
+      "status": 200,
+      "bytes": 3369,
+      "official": true,
+      "query": null
+    }
+  ]
+}

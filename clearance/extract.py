@@ -79,6 +79,11 @@ OAuth app with a provider. You are given pages scraped from that provider's own
 documentation, plus notes on what an agent observed when it opened the
 provider's app-creation page.
 
+The verdict is about getting approved with the provider itself: how quickly you
+can register an app, and what review stands between you and real users. It is
+not about Composio. Composio's position is recorded separately and must not
+appear in the verdict or be restated as a fact of your own.
+
 Write only what the supplied pages support. Never use knowledge from memory as
 if it came from a page. Never invent a step, a time, a limit or a URL.
 
@@ -123,8 +128,9 @@ Other rules:
   likely_blockers to at most 6 entries each, strongest first. A guide is read by
   a developer in a hurry.
 
-Do not restate the agent's observations as your own facts: they are already
-recorded separately.
+Do not restate the agent's observations, or Composio's position, as facts of
+your own: both are already recorded separately. They are context, so that your
+setup steps can mention pasting credentials into Composio where that applies.
 """
 
 

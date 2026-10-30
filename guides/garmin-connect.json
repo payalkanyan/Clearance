@@ -1,0 +1,228 @@
+{
+  "app_name": "Garmin Connect",
+  "website": "developerportal.garmin.com",
+  "verdict": {
+    "text": "Access to create multi-user OAuth 2.0 applications requires applying for the Garmin Connect Developer Program (Starter Access application form). Once approved, developers can register apps with up to 1,000 users.",
+    "label": "Sourced",
+    "source_url": "https://developer.garmin.com/gc-developer-program",
+    "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
+  },
+  "quick_setup_checklist": [],
+  "difficulty": "Medium",
+  "difficulty_reason": {
+    "text": "Starter Access limits user capacity to up to 1,000 connected users.",
+    "label": "Sourced",
+    "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+    "quote": "Up to 1,000 connected users",
+    "note": "triggered the Medium rating: limits_before_approval[0] matched 'user cap'"
+  },
+  "hands_on_time": {
+    "text": "15 to 30 minutes",
+    "label": "Inferred",
+    "note": "Submitting the Starter Access request form and configuring application details, callback URLs, and API access takes roughly 15-30 minutes."
+  },
+  "waiting_time": {
+    "text": "Unknown",
+    "label": "Uncertain",
+    "note": "Garmin documentation does not state the turnaround time for Starter Access form approval or Enterprise review."
+  },
+  "composio_status": {
+    "text": "No Composio toolkit page found for this app.",
+    "label": "Inferred",
+    "note": "tried https://composio.dev/toolkits/garmin-connect, https://composio.dev/toolkits/garminconnect, https://composio.dev/toolkits/garmin; a toolkit may exist under a different slug"
+  },
+  "prerequisites": [
+    {
+      "text": "A Garmin Connect user account to access developer portals and manage developer programs.",
+      "label": "Inferred",
+      "note": "Accessing the developer portal and authorization pages requires a Garmin Connect login."
+    },
+    {
+      "text": "Application submitted for the Garmin Connect Developer Program Starter Access.",
+      "label": "Sourced",
+      "source_url": "https://developer.garmin.com/gc-developer-program",
+      "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
+    }
+  ],
+  "setup_steps": [
+    {
+      "text": "Submit the Starter Access application form at https://www.garmin.com/en-US/forms/StarterGarminConnectDeveloperAccess/.",
+      "label": "Inferred",
+      "note": "Page 5 links to the Starter Access form under Business 'REQUEST NOW'."
+    },
+    {
+      "text": "Log in to the Garmin Developer Portal at https://developerportal.garmin.com/developer-programs/myapp and create a new application (or convert an existing app).",
+      "label": "Inferred",
+      "note": "Derived from developer portal app creation link and Nango integration instructions."
+    },
+    {
+      "text": "Configure the redirect callback URI for your application.",
+      "label": "Inferred",
+      "note": "Referenced in Nango docs and OAuth 2.0 specification parameters."
+    },
+    {
+      "text": "Select and configure the API sections your application requires (e.g., Activity, Health, Training, Courses, Women's Health).",
+      "label": "Inferred",
+      "note": "Supported by OAuth spec stating API sections are managed during app creation."
+    },
+    {
+      "text": "Copy the generated OAuth2 Client ID and Client Secret.",
+      "label": "Inferred",
+      "note": "Mentioned in Nango instructions and standard OAuth 2.0 PKCE spec."
+    },
+    {
+      "text": "Configure data delivery settings and webhooks via Garmin API Tools at https://healthapi.garmin.com/tools/login.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Configure your data delivery settings using API Tools"
+    },
+    {
+      "text": "Implement OAuth 2.0 with PKCE (S256 code challenge method) using the authorization endpoint https://connect.garmin.com/oauth2Confirm and token endpoint https://diauth.garmin.com/di-oauth2-service/oauth/token.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "quote": "Garmin Connect Developer Program uses the OAuth2.0 PKCE version."
+    }
+  ],
+  "scopes": [
+    {
+      "text": "API scopes cannot be requested or customized in authorization or token URL parameters; scope is returned by default by the API based on application configuration (e.g., 'PARTNER_WRITE PARTNER_READ CONNECT_READ CONNECT_WRITE').",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "quote": "Scope is a default API scope and cannot be modified. API sections are managed during the app creation process."
+    },
+    {
+      "text": "Granular user permissions (such as ACTIVITY_EXPORT, WORKOUT_IMPORT, HEALTH_EXPORT, COURSE_IMPORT, MCT_EXPORT) are chosen directly by the user on the Garmin consent screen.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "quote": "Users control permissions granted during the authorization step."
+    }
+  ],
+  "limits_before_approval": [
+    {
+      "text": "Starter Access limits user capacity to up to 1,000 connected users.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Up to 1,000 connected users"
+    },
+    {
+      "text": "Starter Access delivers data via Push only (no Ping/Pull).",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Delivery: Push only"
+    },
+    {
+      "text": "Historical data is not included under Starter Access.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Historical Data: Not included"
+    },
+    {
+      "text": "Access tokens expire after 24 hours (86,400 seconds) while refresh tokens are valid for approximately 90 days (7,775,998 seconds).",
+      "label": "Inferred",
+      "note": "Derived from token response examples in the OAuth2 PKCE specification."
+    }
+  ],
+  "approval_process": [
+    {
+      "text": "Organizations must apply for the Garmin Connect Developer Program to receive Starter Access credentials.",
+      "label": "Sourced",
+      "source_url": "https://developer.garmin.com/gc-developer-program",
+      "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
+    },
+    {
+      "text": "To scale beyond 1,000 users, receive historical data (1 month+), or use Ping/Pull delivery, an organization must request Enterprise Access with Garmin.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Available options and commercial terms are tailored based on business and technical requirements."
+    }
+  ],
+  "likely_blockers": [
+    {
+      "text": "Commercial terms or tailored business evaluation required for Enterprise Access if needing more than 1,000 users.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "quote": "Available options and commercial terms are tailored based on business and technical requirements."
+    },
+    {
+      "text": "Attempting to build multi-user apps using the Personal API instead of the Developer Program (Personal API keys are strictly single-user).",
+      "label": "Sourced",
+      "source_url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+      "quote": "It is not intended for commercial applications serving multiple end users."
+    },
+    {
+      "text": "Failing to implement required PKCE parameters (code_verifier and code_challenge with S256) on authorization and token exchanges.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "quote": "Garmin Connect Developer Program uses the OAuth2.0 PKCE version."
+    },
+    {
+      "text": "Failing to implement the mandatory user deregistration endpoint (DELETE /wellness-api/rest/user/registration) when users disconnect or delete their accounts.",
+      "label": "Sourced",
+      "source_url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "quote": "This endpoint must be called if the partner website or application provides a \u201cDelete My Account\u201d or \u201cDisconnect\u201d mechanism"
+    }
+  ],
+  "agent_can_do": [
+    "Generate code verifier and code challenge using S256 for PKCE implementation",
+    "Format OAuth2 authorization and token refresh HTTP requests",
+    "Draft the integration code for user permission checks and account deregistration webhooks"
+  ],
+  "you_must_do": [
+    "Fill out and submit the Garmin Connect Developer Program Starter Access request form",
+    "Log into the Garmin Developer Portal to configure callback URLs and API access",
+    "Securely copy and store the OAuth2 Client ID and Client Secret"
+  ],
+  "open_questions": [
+    {
+      "text": "What are the specific review criteria and average response time for Starter Access form submissions?",
+      "label": "Uncertain",
+      "note": "Documentation provides the form link but does not document evaluation criteria or review turnaround times."
+    },
+    {
+      "text": "What are the commercial pricing tiers and legal contract requirements for Enterprise Access?",
+      "label": "Uncertain",
+      "note": "Documentation states options and terms are tailored based on requirements, but details are not published."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+      "title": "How to register your own Garmin OAuth2 app - Nango Docs"
+    },
+    {
+      "url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "title": "[PDF] Garmin Connect Developer Program OAuth2.0 PKCE Specification"
+    },
+    {
+      "url": "https://developer.garmin.com/gc-developer-program/personal",
+      "title": "Program FAQ | Garmin Connect Developer Program | Garmin Developers"
+    },
+    {
+      "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+      "title": "Program FAQ | Garmin Connect Developer Program | Garmin Developers"
+    },
+    {
+      "url": "https://developer.garmin.com/gc-developer-program",
+      "title": "Overview | Garmin Connect Developer Program | Garmin Developers"
+    },
+    {
+      "url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "title": "Garmin Connect Developer | Garmin Developer Portal"
+    },
+    {
+      "url": "https://developer.garmin.com/",
+      "title": "Home | Garmin Developers"
+    }
+  ],
+  "last_verified": {
+    "date": "2026-10-30",
+    "by": "agent"
+  },
+  "meta": {
+    "slug": "garmin-connect",
+    "provenance": "agent",
+    "generated_at": "2026-10-30T11:35:11Z",
+    "model": "gemini-3.8-flash",
+    "no_oauth_found": false
+  }
+}

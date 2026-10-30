@@ -19,6 +19,10 @@ from .config import slugify
 from .fetch import scrape
 from .schema import Fact, Label
 
+# Composio's own hosts. Its pages are evidence about Composio, never about the
+# provider whose console we want to open.
+COMPOSIO_HOSTS = ("composio.dev",)
+
 TOOLKIT_URL = "https://composio.dev/toolkits/{slug}"
 MANAGED_AUTH_URL = "https://docs.composio.dev/toolkits/managed-auth"
 
@@ -166,6 +170,7 @@ def managed_auth_page(slug: str) -> PageRecord | None:
         source="firecrawl",
         title="Managed OAuth apps | Composio",
         status=200,
+        kind="composio",
     )
 
 
@@ -207,6 +212,7 @@ def lookup(
             source=fetched.source,
             title=fetched.title,
             status=fetched.status,
+            kind="composio",
         )
         status.pages = [page]
         definition = managed_auth_page(slug)

@@ -1,0 +1,49 @@
+{
+  "slug": "serpapi",
+  "observations": [
+    {
+      "url": "https://serpapi.com/users/sign_up?plan=free",
+      "observed": "login_wall",
+      "at": "2026-10-30T11:36:08Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in"
+      ],
+      "fields_visible": [
+        "logo"
+      ],
+      "bytes": 810,
+      "error": null,
+      "why": "link text 'get started'"
+    },
+    {
+      "url": "https://serpapi.com/manage-api-key",
+      "observed": "login_wall",
+      "at": "2026-10-30T11:36:10Z",
+      "status": 200,
+      "source": "http",
+      "signals": [
+        "sign in"
+      ],
+      "fields_visible": [
+        "logo"
+      ],
+      "bytes": 342,
+      "error": null,
+      "why": "link text 'dashboard'"
+    }
+  ],
+  "considered": [
+    {
+      "url": "https://serpapi.com/users/sign_up?plan=free",
+      "score": 4,
+      "why": "link text 'get started'"
+    },
+    {
+      "url": "https://serpapi.com/manage-api-key",
+      "score": 4,
+      "why": "link text 'dashboard'"
+    }
+  ]
+}
