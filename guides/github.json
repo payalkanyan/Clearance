@@ -1,0 +1,170 @@
+{
+  "app_name": "GitHub",
+  "website": "github.com/settings/developers",
+  "verdict": {
+    "text": "Fully self-serve. You can create an OAuth app and have real users connect in minutes, with no review.",
+    "label": "Sourced"
+  },
+  "quick_setup_checklist": [
+    {
+      "text": "Go to GitHub \u2192 Settings \u2192 Developer settings \u2192 OAuth Apps \u2192 **New OAuth App**.",
+      "label": "Sourced",
+      "note": "Sourced; upgrade to Tested if you did this in your lab"
+    }
+  ],
+  "difficulty": "Easy",
+  "hands_on_time": {
+    "text": "5 to 15 minutes",
+    "label": "Inferred",
+    "note": "Tested only if you timed it | converted to Inferred: guide-spec section 2 says a time estimate is never Tested unless someone waited it out"
+  },
+  "waiting_time": {
+    "text": "None",
+    "label": "Sourced"
+  },
+  "composio_status": {
+    "text": "Toolkit available, with a Composio managed app. Bring-your-own is optional, used for your own branding on the consent screen.",
+    "label": "Sourced",
+    "note": "Sourced: Composio docs; Tested if you saw both consent screens"
+  },
+  "prerequisites": [
+    {
+      "text": "A GitHub account",
+      "label": "Sourced"
+    },
+    {
+      "text": "A homepage URL for your app (any valid URL works)",
+      "label": "Sourced"
+    },
+    {
+      "text": "The callback URL from Composio's dashboard if you're using Composio",
+      "label": "Sourced"
+    }
+  ],
+  "setup_steps": [
+    {
+      "text": "Start here: On GitHub, go to Settings \u2192 Developer settings \u2192 OAuth Apps \u2192 New OAuth App.",
+      "label": "Tested"
+    },
+    {
+      "text": "Fill in the application name and homepage URL. While testing, any valid URL works, such as your portfolio or GitHub profile; GitHub doesn\u2019t verify it.",
+      "label": "Tested"
+    },
+    {
+      "text": "Click Register application and copy the Client ID.",
+      "label": "Tested"
+    },
+    {
+      "text": "Click Generate a new client secret and copy it immediately, since it\u2019s shown only once.",
+      "label": "Tested",
+      "note": "Tested, if you saw it disappear after leaving the page; otherwise Sourced"
+    },
+    {
+      "text": "In Composio, go to Toolkits and select GitHub. GitHub appears as two toolkits: choose the GitHub card (OAuth2, marked \u201cManaged\u201d), not GitHub MCP, which uses an API key and skips OAuth entirely.",
+      "label": "Tested"
+    },
+    {
+      "text": "Click Add to Project.",
+      "label": "Tested"
+    },
+    {
+      "text": "Create the auth config with your own credentials: keep the default config name or give your own, paste the Client ID and Secret, then click Create Auth Config.",
+      "label": "Tested"
+    },
+    {
+      "text": "Copy the callback URL Composio shows and paste it into your GitHub OAuth app\u2019s \u201cAuthorization callback URL\u201d field, then save on GitHub.",
+      "label": "Tested",
+      "note": "Tested, if you did this; adjust the order to match what you actually did"
+    },
+    {
+      "text": "In Composio, go to Auth Configs \u2192 select your GitHub config \u2192 Connect Account. You\u2019re redirected to GitHub\u2019s own login page, where you sign in with your GitHub username/email and password.",
+      "label": "Tested"
+    },
+    {
+      "text": "On GitHub\u2019s consent screen, confirm it shows your OAuth app\u2019s name, check the requested permissions, and click Authorize.",
+      "label": "Tested"
+    }
+  ],
+  "scopes": [
+    {
+      "text": "Request only what you need, e.g. `read:user`, `repo` (full repo access) or `public_repo`. Scopes are chosen at authorization time, not in the app settings.",
+      "label": "Sourced"
+    }
+  ],
+  "limits_before_approval": [
+    {
+      "text": "None; there's no approval step for OAuth apps.",
+      "label": "Sourced"
+    }
+  ],
+  "approval_process": [
+    {
+      "text": "None for using the app. Listing on GitHub Marketplace is optional and has its own review.",
+      "label": "Sourced"
+    }
+  ],
+  "likely_blockers": [
+    {
+      "text": "**Organisation restrictions:** If a user's organisation restricts third-party OAuth apps, an org owner must approve your app before it can access org repos. Users may connect successfully but see no org data.",
+      "label": "Sourced",
+      "note": "Sourced; this is a great \"gotcha\" to verify if you have an org"
+    },
+    {
+      "text": "**One callback URL per OAuth app**, so you may need separate apps for development and production.",
+      "label": "Sourced",
+      "note": "Sourced; worth verifying"
+    },
+    {
+      "text": "**GitHub Apps vs OAuth Apps:** GitHub generally recommends GitHub Apps for finer permissions. Check which type Composio's custom auth expects.",
+      "label": "Uncertain",
+      "note": "Uncertain, confirm in Composio docs"
+    },
+    {
+      "text": "**Rate limits** apply per user token.",
+      "label": "Sourced"
+    }
+  ],
+  "agent_can_do": [
+    "Find the right console pages and docs",
+    "Explain scopes and recommend minimal ones",
+    "Fill in the guide and check Composio's status"
+  ],
+  "you_must_do": [
+    "Log in to GitHub",
+    "Create the app and generate the secret",
+    "Store the secret safely and paste it into Composio",
+    "Click Allow on the consent screen"
+  ],
+  "open_questions": [
+    {
+      "text": "Exact rate limits under Composio's managed app vs your own app",
+      "label": "Uncertain"
+    },
+    {
+      "text": "Whether Composio's GitHub custom auth supports GitHub Apps as well as OAuth Apps",
+      "label": "Uncertain"
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub Docs \"Creating an OAuth app\" and \"Authorizing OAuth apps\""
+    },
+    {
+      "title": "GitHub Docs on organisation OAuth app access restrictions"
+    },
+    {
+      "title": "Composio docs \"Managed vs custom auth.\""
+    }
+  ],
+  "last_verified": {
+    "date": "2026-10-29",
+    "by": "human",
+    "by_name": "0xpastril",
+    "note": "the flow was confirmed"
+  },
+  "meta": {
+    "slug": "github",
+    "provenance": "human-gold",
+    "no_oauth_found": false
+  }
+}

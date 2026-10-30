@@ -1,0 +1,8 @@
+[project]
+name = "clearance"
+version = "0.1.0"
+description = "Tells you how hard it is to get an OAuth app approved with any provider, with every claim labelled by how it was verified."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
