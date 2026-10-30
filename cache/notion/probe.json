@@ -1,0 +1,62 @@
+{
+  "slug": "notion",
+  "observations": [
+    {
+      "url": "https://www.notion.so/signup",
+      "observed": "open_form",
+      "at": "2026-10-30T11:58:27Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [],
+      "fields_visible": [
+        "organization",
+        "email",
+        "privacy policy"
+      ],
+      "bytes": 509,
+      "error": null,
+      "why": "path /signup"
+    },
+    {
+      "url": "https://app.notion.com/developers/connections",
+      "observed": "application_form",
+      "at": "2026-10-30T11:58:39Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "log in",
+        "login"
+      ],
+      "fields_visible": [
+        "organization",
+        "email",
+        "privacy policy"
+      ],
+      "bytes": 574,
+      "error": null,
+      "why": "link text 'developer portal'"
+    }
+  ],
+  "considered": [
+    {
+      "url": "https://www.notion.so/signup",
+      "score": 6,
+      "why": "path /signup"
+    },
+    {
+      "url": "https://app.notion.com/developers/connections",
+      "score": 4,
+      "why": "link text 'developer portal'"
+    },
+    {
+      "url": "https://www.notion.so/developers",
+      "score": 4,
+      "why": "link text 'developer portal'"
+    },
+    {
+      "url": "https://www.notion.com/help/sharing-and-permissions?_ck=7456e6173dacc14c48d3a66d893f2d2573341a2a50acb17e4b6b924eda816c00\\",
+      "score": 4,
+      "why": "link text 'request access'"
+    }
+  ]
+}

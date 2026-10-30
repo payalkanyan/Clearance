@@ -1,0 +1,344 @@
+{
+  "slug": "notion",
+  "app": "Notion",
+  "at": "2026-10-30T12:06:54Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 0.0,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 0.0,
+    "citations": 0.02,
+    "score": 0.0,
+    "total": 0.02
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "Notion OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://developers.notion.com/workers/guides/oauth",
+          "https://developers.notion.com/guides/get-started/authorization",
+          "https://nango.dev/docs/api-integrations/notion/how-to-register-your-own-notion-api-oauth-app",
+          "https://developers.apideck.com/apis/issue-tracking/notion/configuration",
+          "https://www.youtube.com/watch?v=st5tG1XqZbk"
+        ]
+      },
+      {
+        "query": "Notion developer console create app",
+        "results": 5,
+        "urls": [
+          "https://www.notion.com/product/dev",
+          "https://developers.notion.com/guides/get-started/overview",
+          "https://www.notion.com/help/turn-on-developer-mode-to-use-developer-tools-in-notion",
+          "https://www.notion.com/blog/introducing-developer-platform",
+          "https://www.reddit.com/r/Notion/comments/1tjkscu/plainenglish_guide_to_notions_new_developer"
+        ]
+      },
+      {
+        "query": "Notion API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://developers.notion.com/guides/get-started/authorization",
+          "https://developers.notion.com/reference/admin/scopes",
+          "https://developers.notion.com/guides/get-started/overview",
+          "https://community.latenode.com/t/do-guest-users-affect-notion-api-database-access-permissions/38632",
+          "https://www.reddit.com/r/Notion/comments/1f1iv0m/notion_api_help"
+        ]
+      },
+      {
+        "query": "Notion app review verification process",
+        "results": 5,
+        "urls": [
+          "https://www.notion.com/help/guides/verify-knowledge-your-teammates-can-trust-with-page-verification",
+          "https://www.trustpilot.com/review/notion.so",
+          "https://www.notion.com/product/notion",
+          "https://www.capterra.com/p/186596/Notion",
+          "https://www.reddit.com/r/Notion/comments/1f97xnn/assigning_docs_for_review"
+        ]
+      },
+      {
+        "query": "Notion production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://developers.notion.com/reference/request-limits",
+          "https://www.notion.com/pricing",
+          "https://www.notion.com/help/sharing-and-permissions",
+          "https://www.notion.com/templates/product-limit-and-quota-policy?srsltid=AYCX9vKQ6fDfYSLxQFt98WbztwIgCEQWUYJYsIJq_78yHOZ-YMCUS442",
+          "https://matthiasfrank.de/en/access-rights-in-notion"
+        ]
+      },
+      {
+        "query": "Notion developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://www.notion.com/help/template-gallery-guidelines-and-terms",
+          "https://www.notion.com/trust/privacy-policy",
+          "https://www.reddit.com/r/Notion/comments/colav8/crazy_terms_of_service_am_i_reading_this_right",
+          "https://www.notion.com/templates/terms-and-conditions-document?srsltid=AYCX9vJ37aMmXm2Nm2t4SB9-UmLVbgGyUTuQduHNGGXOm7bQb3_TttHT",
+          "https://vrew-help.notion.site/Terms-of-Service-d51a7e63e8654424ab0fba938b81d253"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/notion/how-to-register-your-own-notion-api-oauth-app",
+        "bytes": 154305,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://developers.notion.com/workers/guides/oauth",
+        "bytes": 102747,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.notion.com/guides/get-started/authorization",
+        "bytes": 174848,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.notion.com/reference/admin/scopes",
+        "bytes": 49825,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://www.notion.com/help/guides/verify-knowledge-your-teammates-can-trust-with-page-verification",
+        "bytes": 11112,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://www.notion.com/help/sharing-and-permissions",
+        "bytes": 23730,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://www.notion.com/templates/product-limit-and-quota-policy?srsltid=AYCX9vKQ6fDfYSLxQFt98WbztwIgCEQWUYJYsIJq_78yHOZ-YMCUS442",
+        "bytes": 6574,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/notion",
+        "bytes": 24092,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://developers.notion.com/reference/request-limits",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.notion.com/guides/get-started/overview",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/help/turn-on-developer-mode-to-use-developer-tools-in-notion",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/blog/introducing-developer-platform",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/help/template-gallery-guidelines-and-terms",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/trust/privacy-policy",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/templates/terms-and-conditions-document?srsltid=AYCX9vJ37aMmXm2Nm2t4SB9-UmLVbgGyUTuQduHNGGXOm7bQb3_TttHT",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/product/dev",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://vrew-help.notion.site/Terms-of-Service-d51a7e63e8654424ab0fba938b81d253",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/pricing",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.notion.com/product/notion",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.trustpilot.com/review/notion.so",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://developers.apideck.com/apis/issue-tracking/notion/configuration",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.capterra.com/p/186596/Notion",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://matthiasfrank.de/en/access-rights-in-notion",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://community.latenode.com/t/do-guest-users-affect-notion-api-database-access-permissions/38632",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Notion/comments/1f97xnn/assigning_docs_for_review",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Notion/comments/1tjkscu/plainenglish_guide_to_notions_new_developer",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Notion/comments/colav8/crazy_terms_of_service_am_i_reading_this_right",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Notion/comments/1f1iv0m/notion_api_help",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=st5tG1XqZbk",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [
+    {
+      "url": "https://www.notion.so/signup",
+      "observed": "open_form",
+      "at": "2026-10-30T11:58:27Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [],
+      "fields_visible": [
+        "organization",
+        "email",
+        "privacy policy"
+      ],
+      "bytes": 509,
+      "error": null,
+      "why": "path /signup"
+    },
+    {
+      "url": "https://app.notion.com/developers/connections",
+      "observed": "application_form",
+      "at": "2026-10-30T11:58:39Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "log in",
+        "login"
+      ],
+      "fields_visible": [
+        "organization",
+        "email",
+        "privacy policy"
+      ],
+      "bytes": 574,
+      "error": null,
+      "why": "link text 'developer portal'"
+    }
+  ],
+  "composio": {
+    "kind": "managed",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/notion",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 72803,
+      "output_tokens": 2395,
+      "total_tokens": 80748,
+      "calls": 0
+    },
+    "cost_usd": 0.063584,
+    "prompt_chars": 230455,
+    "trimmed": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/notion/how-to-register-your-own-notion-api-oauth-app",
+        "kept_chars": 40000,
+        "original_chars": 154266,
+        "reason": "per-page cap"
+      },
+      {
+        "url": "https://developers.notion.com/workers/guides/oauth",
+        "kept_chars": 40000,
+        "original_chars": 102669,
+        "reason": "per-page cap"
+      },
+      {
+        "url": "https://developers.notion.com/guides/get-started/authorization",
+        "kept_chars": 40000,
+        "original_chars": 174620,
+        "reason": "per-page cap"
+      },
+      {
+        "url": "https://developers.notion.com/reference/admin/scopes",
+        "kept_chars": 40000,
+        "original_chars": 49799,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [],
+    "calls": 0
+  },
+  "citations": {
+    "slug": "notion",
+    "at": "2026-10-30T12:06:54Z",
+    "checked": 17,
+    "verified": 17,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Hard",
+    "reason": {
+      "text": "Creating a public connection is straightforward in the Developer portal, but submitting the connection for review is required before the authorization URL populates.",
+      "label": "Inferred",
+      "source_url": null,
+      "quote": null,
+      "note": "Based on the public connection auth flow documentation stating the authorization URL field populates after submission for review."
+    },
+    "trigger": "verdict matched 'review is required'",
+    "modifiers": [
+      "Requires privacy policy or terms URLs"
+    ],
+    "matches": [
+      {
+        "level": "Hard",
+        "pattern": "review (?:is )?required",
+        "where": "verdict",
+        "matched": "review is required"
+      }
+    ]
+  }
+}

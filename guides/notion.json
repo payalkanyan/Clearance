@@ -1,0 +1,244 @@
+{
+  "app_name": "Notion",
+  "website": "www.notion.so/signup",
+  "verdict": {
+    "text": "Creating a public connection is straightforward in the Developer portal, but submitting the connection for review is required before the authorization URL populates.",
+    "label": "Inferred",
+    "note": "Based on the public connection auth flow documentation stating the authorization URL field populates after submission for review."
+  },
+  "quick_setup_checklist": [],
+  "difficulty": "Hard",
+  "difficulty_reason": {
+    "text": "Creating a public connection is straightforward in the Developer portal, but submitting the connection for review is required before the authorization URL populates.",
+    "label": "Inferred",
+    "note": "triggered the Hard rating: verdict matched 'review is required'"
+  },
+  "hands_on_time": {
+    "text": "10 to 15 minutes",
+    "label": "Inferred",
+    "note": "Estimated time required to fill out connection details, set redirect URIs, and retrieve client credentials in the Developer portal."
+  },
+  "waiting_time": {
+    "text": "Unknown",
+    "label": "Uncertain",
+    "note": "The documentation mentions submitting the connection for review, but does not provide approval timelines or review duration."
+  },
+  "composio_status": {
+    "text": "Toolkit available with a Composio managed OAuth app, so you can connect without registering your own. Bringing your own app is optional, for your name on the consent screen.",
+    "label": "Sourced",
+    "source_url": "https://composio.dev/toolkits/notion",
+    "quote": "Composio provides a managed OAuth app for Notion, so you sign in with your normal Notion account and approve access.",
+    "note": "read from Composio's own toolkit page"
+  },
+  "prerequisites": [
+    {
+      "text": "At https://app.notion.com/developers/connections, an application form is shown, behind a sign-in or an access request. Fields visible: organization, email, privacy policy.",
+      "label": "Tested",
+      "source_url": "https://app.notion.com/developers/connections",
+      "note": "observed by the agent at 2026-10-30T11:58:39Z, HTTP 200; matched log in, login"
+    },
+    {
+      "text": "A Notion account with Workspace Owner permissions in the workspace where the connection is managed.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "You are required to be a workspace owner to create a connection."
+    }
+  ],
+  "setup_steps": [
+    {
+      "text": "At https://www.notion.so/signup, the app registration form is open: its fields were visible without signing in. Fields visible: organization, email, privacy policy.",
+      "label": "Tested",
+      "source_url": "https://www.notion.so/signup",
+      "note": "observed by the agent at 2026-10-30T11:58:27Z, HTTP 200"
+    },
+    {
+      "text": "Navigate to the Notion Developer portal at https://app.notion.com/developers/connections.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "Navigate to the Developer portal and create a new public connection."
+    },
+    {
+      "text": "Start creating a new public connection and set the installation scope to either 'Any workspace' or 'Selected workspaces only' (this cannot be changed after creation).",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "This can\u2019t be changed after creation."
+    },
+    {
+      "text": "Under the OAuth configuration section, enter your redirect URI(s). If integrating via Composio, provide your Composio callback URI.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "Fill out the form with your connection details, including your redirect URI(s) under the OAuth configuration section and the connection\u2019s installation scope"
+    },
+    {
+      "text": "Optionally, enter a Notion page URL in the 'Notion URL for optional template' input if you want users to duplicate a template page during authorization.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "add the URL of the Notion page you selected to the Notion URL for optional template input."
+    },
+    {
+      "text": "Submit the public connection for review to populate the Authorization URL field.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "The Authorization URL field populates after a public connection is submitted for review"
+    },
+    {
+      "text": "Open the Configuration tab, copy your Client ID and Client Secret, and store them securely or input them into Composio.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "access the connection\u2019s secrets in the Configuration tab. Similarly to the internal connections, these values should be protected and should never be included in"
+    }
+  ],
+  "scopes": [
+    {
+      "text": "Standard public OAuth connections do not use a scope parameter in the authorization URL; permissions are granted dynamically when the user selects pages to share via Notion's page picker.",
+      "label": "Inferred",
+      "note": "Notion's public connection authorization URL specification lists only client_id, redirect_uri, response_type, owner, and state, with access governed by the user's selected pages."
+    },
+    {
+      "text": "Admin API connections use resource and capability pairs (such as workspace:read or workflows:write) to govern access for organization bot tokens.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/reference/admin/scopes",
+      "quote": "When you create an organization bot token, you assign scopes that control which resources the token can access and which actions it can take."
+    },
+    {
+      "text": "The user and permission-group Admin API scopes require an eligible Enterprise organization plan.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/reference/admin/scopes",
+      "quote": "The user and permission-group scopes are available only to eligible Enterprise organizations. If these scopes don\u2019t appear in the organization console, contact your Notion representative."
+    }
+  ],
+  "limits_before_approval": [
+    {
+      "text": "The Authorization URL field is only populated after the public connection is submitted for review.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "The Authorization URL field populates after a public connection is submitted for review"
+    },
+    {
+      "text": "Users can only share pages and databases with the connection if they have full access to those resources.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "The page picker only displays pages or databases to which a user has full access, because a user needs full access to a resource"
+    }
+  ],
+  "approval_process": [
+    {
+      "text": "The public connection configuration must be submitted for review before the public authorization URL becomes available.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "The Authorization URL field populates after a public connection is submitted for review"
+    },
+    {
+      "text": "Marketplace listing details such as descriptions, categories, and images are managed separately through the Listings section.",
+      "label": "Inferred",
+      "note": "Documentation distinguishes technical OAuth public connection setup from public Marketplace listing management."
+    }
+  ],
+  "likely_blockers": [
+    {
+      "text": "Only workspace owners have permission to create connections in the Developer portal.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "You are required to be a workspace owner to create a connection."
+    },
+    {
+      "text": "The connection's installation scope ('Any workspace' vs 'Selected workspaces only') is fixed at creation time and cannot be changed later.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "This can\u2019t be changed after creation."
+    },
+    {
+      "text": "End users cannot share pages or databases with the connection if they lack full access permissions to those resources.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "The page picker only displays pages or databases to which a user has full access, because a user needs full access to a resource"
+    },
+    {
+      "text": "Enterprise-specific Admin API scopes cannot be used without an eligible Enterprise plan.",
+      "label": "Sourced",
+      "source_url": "https://developers.notion.com/reference/admin/scopes",
+      "quote": "The user and permission-group scopes are available only to eligible Enterprise organizations. If these scopes don\u2019t appear in the organization console, contact your Notion representative."
+    },
+    {
+      "text": "Requires privacy policy or terms URLs",
+      "label": "Inferred",
+      "note": "rubric modifier: noted as a blocker, it does not change the difficulty level"
+    }
+  ],
+  "agent_can_do": [
+    "Explain Notion OAuth parameters, redirect requirements, and token exchange requests.",
+    "Format client credentials and redirect callback URIs for your integration configuration."
+  ],
+  "you_must_do": [
+    "Sign in to the Notion Developer portal as a Workspace Owner.",
+    "Fill in the public connection details and submit the application for review.",
+    "Copy the Client ID and Client Secret and store them in your secure environment or Composio."
+  ],
+  "open_questions": [
+    {
+      "text": "How long does the review process take after submitting a public connection?",
+      "label": "Uncertain",
+      "note": "The documentation mentions that the authorization URL populates upon review submission, but does not provide review duration or criteria."
+    },
+    {
+      "text": "Can a public connection be tested by external users before the review process is approved?",
+      "label": "Uncertain",
+      "note": "The docs explain how the authorization URL generates upon submission, but do not specify whether development/sandbox test modes exist prior to review."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nango.dev/docs/api-integrations/notion/how-to-register-your-own-notion-api-oauth-app",
+      "title": "How to register your own Notion OAuth app - Nango Docs"
+    },
+    {
+      "url": "https://developers.notion.com/workers/guides/oauth",
+      "title": "OAuth - Notion Docs"
+    },
+    {
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "title": "Authorization - Notion Docs"
+    },
+    {
+      "url": "https://developers.notion.com/reference/admin/scopes",
+      "title": "Scopes - Notion Docs"
+    },
+    {
+      "url": "https://www.notion.com/help/guides/verify-knowledge-your-teammates-can-trust-with-page-verification",
+      "title": "Verify knowledge your teammates can trust"
+    },
+    {
+      "url": "https://www.notion.com/help/sharing-and-permissions",
+      "title": "Sharing & permissions settings in Notion | Notion Help"
+    },
+    {
+      "url": "https://www.notion.com/templates/product-limit-and-quota-policy?srsltid=AYCX9vKQ6fDfYSLxQFt98WbztwIgCEQWUYJYsIJq_78yHOZ-YMCUS442",
+      "title": "Product Limit and Quota Policy Template by RunBook | Notion Marketplace"
+    },
+    {
+      "url": "https://composio.dev/toolkits/notion",
+      "title": "Notion MCP Server | Composio"
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "title": "Managed OAuth apps | Composio"
+    },
+    {
+      "url": "https://app.notion.com/developers/connections"
+    },
+    {
+      "url": "https://www.notion.so/signup"
+    }
+  ],
+  "last_verified": {
+    "date": "2026-10-30",
+    "by": "agent"
+  },
+  "meta": {
+    "slug": "notion",
+    "provenance": "agent",
+    "generated_at": "2026-10-30T12:06:54Z",
+    "model": "gemini-3.8-flash",
+    "no_oauth_found": false
+  }
+}

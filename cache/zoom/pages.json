@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+    "file": "pages/a3e21335cb0c4948.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:02:33Z",
+    "title": "Server-to-Server OAuth app permissions and scopes - API and Webhooks / Meetings - Zoom Developer Forum",
+    "status": 200,
+    "bytes": 3862,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom API scopes permissions"
+  },
+  {
+    "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+    "file": "pages/36803b4bebac44de.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:02:36Z",
+    "title": "Integrations - OAuth scopes - Integrations - Zoom Developer Docs",
+    "status": 200,
+    "bytes": 16831,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom API scopes permissions"
+  },
+  {
+    "url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+    "file": "pages/43c91085e417c684.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:03:08Z",
+    "title": "Integrations - Classic scopes - Integrations - Zoom Developer Docs",
+    "status": 200,
+    "bytes": 648612,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom API scopes permissions"
+  },
+  {
+    "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+    "file": "pages/fd6d2b51a74afef5.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:03:46Z",
+    "title": "Granular scopes - Integrations - Zoom Developer Docs",
+    "status": 200,
+    "bytes": 577558,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom API scopes permissions"
+  },
+  {
+    "url": "https://devforum.zoom.us/t/how-to-add-change-scopes-in-an-oauth-app-i-created/78166",
+    "file": "pages/dbfae88b0281eabc.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:04:04Z",
+    "title": "How to add / change scopes in an OAuth app I created? - API and Webhooks - Zoom Developer Forum",
+    "status": 200,
+    "bytes": 6391,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom API scopes permissions"
+  },
+  {
+    "url": "https://developers.zoom.us/docs/integrations/oauth",
+    "file": "pages/e2b9842f041f55b1.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:04:05Z",
+    "title": "OAuth 2.0 - Integrations - Zoom Developer Docs",
+    "status": 200,
+    "bytes": 38298,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom OAuth app registration"
+  },
+  {
+    "url": "https://developers.zoom.us/docs/distribute/app-review-process",
+    "file": "pages/473590757b456b44.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:04:10Z",
+    "title": "App Review Process - Distribute - Zoom Developer Docs",
+    "status": 200,
+    "bytes": 14517,
+    "official": true,
+    "kind": "provider",
+    "query": "Zoom app review verification process"
+  },
+  {
+    "url": "https://composio.dev/toolkits/zoom",
+    "file": "pages/429c9c28a3e653d0.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:04:52Z",
+    "title": "Zoom MCP Server | Composio",
+    "status": 200,
+    "bytes": 26713,
+    "official": true,
+    "kind": "composio",
+    "query": null
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/managed-auth",
+    "file": "pages/a0f9c2141dd2d96c.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:04:52Z",
+    "title": "Managed OAuth apps | Composio",
+    "status": 200,
+    "bytes": 3369,
+    "official": true,
+    "kind": "composio",
+    "query": null
+  }
+]

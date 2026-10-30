@@ -1,7 +1,7 @@
 {
   "slug": "serpapi",
   "app": "SerpApi",
-  "at": "2026-10-30T11:46:40Z",
+  "at": "2026-10-30T12:06:54Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -57,25 +57,11 @@
       },
       {
         "query": "SerpApi production access quota extension",
-        "results": 5,
-        "urls": [
-          "https://serpapi.com/pricing",
-          "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
-          "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
-          "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
-          "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives"
-        ]
+        "error": "Rate Limit Exceeded: Failed to search. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry"
       },
       {
         "query": "SerpApi developer terms of service",
-        "results": 5,
-        "urls": [
-          "https://serpapi.com/legal",
-          "https://www.searchapi.io/legal/terms",
-          "https://www.octoparse.com/blog/is-serpapi-legal",
-          "https://developers.google.com/terms",
-          "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS"
-        ]
+        "error": "Rate Limit Exceeded: Failed to search. Rate limit exceeded. Consumed (req/min): 12, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry"
       }
     ],
     "pages": [
@@ -142,18 +128,6 @@
         "reason": "unofficial, official pages suffice"
       },
       {
-        "url": "https://serpapi.com/pricing",
-        "reason": "page limit reached"
-      },
-      {
-        "url": "https://serpapi.com/legal",
-        "reason": "page limit reached"
-      },
-      {
-        "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
         "url": "https://www.trustpilot.com/review/serpapi.com?page=4",
         "reason": "unofficial, official pages suffice"
       },
@@ -170,23 +144,7 @@
         "reason": "unofficial, official pages suffice"
       },
       {
-        "url": "https://developers.google.com/youtube/data/guides/quota_and_compliance_audits",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://developers.google.com/terms",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://www.octoparse.com/blog/is-serpapi-legal",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://developers.google.com/android-publisher/getting_started",
+        "url": "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
         "reason": "unofficial, official pages suffice"
       },
       {
@@ -194,15 +152,7 @@
         "reason": "unofficial, official pages suffice"
       },
       {
-        "url": "https://www.searchapi.io/legal/terms",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://www.activepieces.com/blog/serp-api-pricing-plans-and-costs-2026-guide",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://scrapfly.io/blog/posts/google-serp-api-and-alternatives",
+        "url": "https://developers.google.com/android-publisher/getting_started",
         "reason": "unofficial, official pages suffice"
       },
       {
@@ -215,10 +165,6 @@
       },
       {
         "url": "https://www.reddit.com/r/n8n/comments/1hy1umq/serpapi_to_scrape_reviews_and_how_to_proceed",
-        "reason": "unofficial, official pages suffice"
-      },
-      {
-        "url": "https://www.quora.com/How-do-I-make-an-SERP-API-software-legally-and-without-violating-Googles-ToS",
         "reason": "unofficial, official pages suffice"
       },
       {

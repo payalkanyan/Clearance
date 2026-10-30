@@ -27,19 +27,23 @@ GATING_SECTIONS = (
     "likely_blockers",
 )
 
-# An optional programme is not a gate on using your own OAuth app. Listing on a
-# marketplace has its own review, and that does not make the app hard to ship.
+# An optional programme is not a gate on using your own OAuth app. These are
+# the words that make something optional: a paid tier, a badge, a verified
+# publisher.
+#
+# "marketplace" is deliberately not here. For GitHub, listing is an extra you
+# can skip; for Zoom, Marketplace review is how an app reaches anyone outside
+# your own account. Treating the word itself as optional rated Zoom Easy
+# despite six sourced facts about its multi-stage security review.
 OPTIONAL_MARKERS = (
     "optional",
-    "marketplace",
     "publisher verification",
     "badge",
     "paid plan",
     "paid plans",
-    "listing",
-    "directory",
     "if you want to list",
     "to offer paid",
+    "verified publisher",
 )
 
 LEVEL_PATTERNS: dict[Difficulty, tuple[str, ...]] = {
@@ -149,6 +153,13 @@ CREDENTIALS_NOW_PATTERNS = (
     r"test mode",
     r"sandbox",
     r"self-serve",
+    # "Private and beta apps require no review and can be used immediately":
+    # whatever the public path demands, credentials exist before any review.
+    r"require no review",
+    r"requires? no (?:review|approval)",
+    r"exempt from .{0,30}review",
+    r"(?:can be )?used immediately",
+    r"(?:private|internal|beta) apps?",
 )
 
 # What the agent saw at the console can settle the level on its own.

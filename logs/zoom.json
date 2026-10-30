@@ -1,0 +1,366 @@
+{
+  "slug": "zoom",
+  "app": "Zoom",
+  "at": "2026-10-30T12:06:54Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 0.0,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 0.0,
+    "citations": 0.02,
+    "score": 0.0,
+    "total": 0.02
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "Zoom OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://developers.zoom.us/docs/integrations/create",
+          "https://developers.zoom.us/docs/integrations/oauth",
+          "https://developers.zoom.us/docs/internal-apps/create",
+          "https://marketplace.zoom.us/",
+          "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057962"
+        ]
+      },
+      {
+        "query": "Zoom developer console create app",
+        "results": 5,
+        "urls": [
+          "https://developers.zoom.us/docs/zoom-apps/create",
+          "https://marketplace.zoom.us/",
+          "https://developers.zoom.us/",
+          "https://developers.zoom.us/docs/build-flow",
+          "https://devforum.zoom.us/t/how-to-use-developer-console-in-zoom-internal-web-client/79379"
+        ]
+      },
+      {
+        "query": "Zoom API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+          "https://developers.zoom.us/docs/integrations/oauth-scopes",
+          "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+          "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+          "https://devforum.zoom.us/t/how-to-add-change-scopes-in-an-oauth-app-i-created/78166"
+        ]
+      },
+      {
+        "query": "Zoom app review verification process",
+        "results": 5,
+        "urls": [
+          "https://developers.zoom.us/docs/distribute/app-review-process",
+          "https://devforum.zoom.us/t/improvement-to-zoom-security-and-app-review-process/146269",
+          "https://devforum.zoom.us/t/zoom-app-review-question/140365/9",
+          "https://www.recall.ai/blog/explaining-the-zoom-app-submission-process",
+          "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058021"
+        ]
+      },
+      {
+        "query": "Zoom production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://zoom.us/pricing/events",
+          "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057903",
+          "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066826",
+          "https://zoom.us/pricing",
+          "https://devforum.zoom.us/t/clarification-on-zoom-api-usage-and-associated-costs-for-saas-educational-platform/132208"
+        ]
+      },
+      {
+        "query": "Zoom developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://www.zoom.com/en/trust/legal/zoom-api-license-and-tou",
+          "https://www.zoom.com/en/trust/marketplace-developer-agreement",
+          "https://developers.zoom.us/",
+          "https://www.zoom.com/en/trust/terms",
+          "https://devforum.zoom.us/t/where-do-i-review-and-sign-zoom-api-license-and-terms-of-use/120925"
+        ]
+      },
+      {
+        "query": "Zoom OAuth app access restrictions admin approval",
+        "results": 5,
+        "urls": [
+          "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+          "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+          "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060122",
+          "https://developers.zoom.us/docs/integrations/oauth",
+          "https://devforum.zoom.us/t/cannot-edit-scopes-of-created-zoom-application-despite-being-account-app-admin/137264"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+        "bytes": 3862,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "bytes": 16831,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+        "bytes": 648612,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "bytes": 577558,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://devforum.zoom.us/t/how-to-add-change-scopes-in-an-oauth-app-i-created/78166",
+        "bytes": 6391,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.zoom.us/docs/integrations/oauth",
+        "bytes": 38298,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "bytes": 14517,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/zoom",
+        "bytes": 26713,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://devforum.zoom.us/t/cannot-edit-scopes-of-created-zoom-application-despite-being-account-app-admin/137264",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://devforum.zoom.us/t/improvement-to-zoom-security-and-app-review-process/146269",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://devforum.zoom.us/t/zoom-app-review-question/140365/9",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.zoom.us/docs/zoom-apps/create",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://devforum.zoom.us/t/where-do-i-review-and-sign-zoom-api-license-and-terms-of-use/120925",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.zoom.us/docs/internal-apps/create",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.zoom.us/docs/integrations/create",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.zoom.com/en/trust/marketplace-developer-agreement",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.zoom.us/",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developers.zoom.us/docs/build-flow",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.zoom.com/en/trust/legal/zoom-api-license-and-tou",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://devforum.zoom.us/t/how-to-use-developer-console-in-zoom-internal-web-client/79379",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.zoom.com/en/trust/terms",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://zoom.us/pricing/events",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://devforum.zoom.us/t/clarification-on-zoom-api-usage-and-associated-costs-for-saas-educational-platform/132208",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057903",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066826",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060122",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://marketplace.zoom.us/",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://zoom.us/pricing",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057962",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058021",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.recall.ai/blog/explaining-the-zoom-app-submission-process",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [],
+  "composio": {
+    "kind": "managed",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/zoom",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 53706,
+      "output_tokens": 4222,
+      "total_tokens": 61110,
+      "calls": 0
+    },
+    "cost_usd": 0.056112,
+    "prompt_chars": 190902,
+    "trimmed": [
+      {
+        "url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+        "kept_chars": 40000,
+        "original_chars": 648586,
+        "reason": "per-page cap"
+      },
+      {
+        "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "kept_chars": 40000,
+        "original_chars": 577554,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [
+      "prerequisites[0]: quote trimmed from 28 to 24 words",
+      "limits_before_approval[4]: quote trimmed from 29 to 16 words",
+      "approval_process[0]: quote trimmed from 26 to 17 words",
+      "approval_process[1]: quote trimmed from 26 to 13 words",
+      "approval_process[2]: quote trimmed from 30 to 20 words",
+      "likely_blockers[0]: quote trimmed from 30 to 20 words",
+      "likely_blockers[4]: quote trimmed from 26 to 24 words"
+    ],
+    "calls": 0
+  },
+  "citations": {
+    "slug": "zoom",
+    "at": "2026-10-30T12:06:54Z",
+    "checked": 34,
+    "verified": 29,
+    "downgrades": [
+      {
+        "section": "setup_steps",
+        "index": 2,
+        "text": "If building a native or public client without a backend secret, navigate to App Credentials under Basic Information and toggle 'Use Public Client OAuth' to on.",
+        "reason": "quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth",
+        "quote": "Open your app and navigate to App Credentials under Basic Information. Toggle Use Public Client OAuth to on."
+      },
+      {
+        "section": "setup_steps",
+        "index": 3,
+        "text": "Navigate to Scopes, click 'Add Scopes', and select the granular scopes required for your integration.",
+        "reason": "quote does not appear in the cited page",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "Under Scopes, click Add Scopes. Select the granular scopes you'd like to use in the app."
+      },
+      {
+        "section": "approval_process",
+        "index": 3,
+        "text": "Security testing: Apps undergo automated web scanning, least-privilege verification, library vulnerability checks, and manual assessments against OWASP Top 10 risks.",
+        "reason": "quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning."
+      },
+      {
+        "section": "likely_blockers",
+        "index": 1,
+        "text": "Security vulnerabilities or failing OWASP Top 10 assessments during technical security scanning.",
+        "reason": "quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning."
+      },
+      {
+        "section": "likely_blockers",
+        "index": 4,
+        "text": "Violating Zoom branding guidelines or intellectual property rules in the app name, description, or assets.",
+        "reason": "quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Zoom reserves the right to remove or require a revision to any content, in whole or part, including an app name, that violates: Zoom's"
+      }
+    ]
+  },
+  "score": {
+    "difficulty": "Hard",
+    "reason": {
+      "text": "Ongoing monitoring: Zoom continuously monitors published apps and may request remediation or suspend apps that pose significant risks.",
+      "label": "Sourced",
+      "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+      "quote": "We monitor applications that have passed app review and been published to the App Marketplace to ensure continued compliance with our guidelines.",
+      "note": null
+    },
+    "trigger": "approval_process[5] matched 'app review'",
+    "modifiers": [],
+    "matches": [
+      {
+        "level": "Very hard",
+        "skipped": "credentials are available without approval ('require no review'), so approval before keys cannot apply"
+      },
+      {
+        "level": "Hard",
+        "pattern": "(?:app|application) review",
+        "where": "approval_process[5]",
+        "matched": "app review"
+      }
+    ]
+  }
+}

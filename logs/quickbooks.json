@@ -1,16 +1,16 @@
 {
   "slug": "quickbooks",
   "app": "QuickBooks",
-  "at": "2026-10-30T11:55:17Z",
+  "at": "2026-10-30T12:06:53Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
     "probe": 0.0,
     "composio": 0.0,
-    "extract": 62.34,
+    "extract": 0.0,
     "citations": 0.01,
     "score": 0.0,
-    "total": 62.39
+    "total": 0.01
   },
   "discover": {
     "queries": [
@@ -260,7 +260,7 @@
       "input_tokens": 38612,
       "output_tokens": 3591,
       "total_tokens": 43699,
-      "calls": 1
+      "calls": 0
     },
     "cost_usd": 0.042425,
     "prompt_chars": 143192,
@@ -283,11 +283,11 @@
       "approval_process[0]: quote trimmed from 28 to 24 words",
       "approval_process[2]: quote trimmed from 28 to 24 words"
     ],
-    "calls": 1
+    "calls": 0
   },
   "citations": {
     "slug": "quickbooks",
-    "at": "2026-10-30T11:55:17Z",
+    "at": "2026-10-30T12:06:53Z",
     "checked": 25,
     "verified": 25,
     "downgrades": []

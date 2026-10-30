@@ -1,0 +1,340 @@
+{
+  "slug": "zoom",
+  "model": "gemini-3.8-flash",
+  "draft": {
+    "app_name": "Zoom",
+    "website": "devforum.zoom.us",
+    "verdict": {
+      "text": "Private and beta apps require no review and can be used immediately within an account, but public and unlisted apps require a formal multi-stage review covering submission completeness, branding, functionality, usability, compliance, and security testing against OWASP Top 10 risks.",
+      "label": "Sourced",
+      "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+      "quote": "Private and beta apps do not require review.",
+      "note": null
+    },
+    "hands_on_time": {
+      "text": "15 to 30 minutes",
+      "label": "Inferred",
+      "source_url": null,
+      "quote": null,
+      "note": "Creating the app in the Marketplace build flow, setting up credentials, configuring redirect URIs, and picking granular scopes takes under 30 minutes for a standard setup."
+    },
+    "waiting_time": {
+      "text": "Unknown",
+      "label": "Sourced",
+      "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+      "quote": "An app's review time varies based on app quality, usability, quantity and function of features, and clarity of information (descriptions, images, videos).",
+      "note": null
+    },
+    "prerequisites": [
+      {
+        "text": "Account administrator role or role permissions granting 'View' and 'Edit' for 'Zoom for developers' in the Zoom web portal under User Management > Roles > Role Settings > Advanced Features.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "In the Zoom web portal, the administrator must go to User Management > Roles > Role Settings > Advanced Features and select the View",
+        "note": null
+      },
+      {
+        "text": "An account admin or user with Marketplace permissions must pre-approve the app to enable it for end-users.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "To enable apps for end-users, an account admin, or user with Marketplace permissions for their Zoom Account, must pre-approve the app.",
+        "note": null
+      },
+      {
+        "text": "For public or unlisted marketplace apps, comprehensive technical design documentation outlining architecture, security controls, and data handling is required.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "As part of the app submission process, all developers must complete the Technical Design section of the build flow.",
+        "note": null
+      }
+    ],
+    "setup_steps": [
+      {
+        "text": "Log in to the Zoom Marketplace and create a new application using the build flow.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "Create a new application in the Zoom Marketplace.",
+        "note": null
+      },
+      {
+        "text": "Configure basic information and set your OAuth Redirect URL (or loopback URI like http://127.0.0.1:port/callback for PKCE/native clients) in your Marketplace app configuration.",
+        "label": "Inferred",
+        "source_url": null,
+        "quote": null,
+        "note": "Derived from the Zoom OAuth redirect URI instructions and loopback URI specifications in the OAuth documentation."
+      },
+      {
+        "text": "If building a native or public client without a backend secret, navigate to App Credentials under Basic Information and toggle 'Use Public Client OAuth' to on.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth",
+        "quote": "Open your app and navigate to App Credentials under Basic Information. Toggle Use Public Client OAuth to on.",
+        "note": null
+      },
+      {
+        "text": "Navigate to Scopes, click 'Add Scopes', and select the granular scopes required for your integration.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "Under Scopes, click Add Scopes. Select the granular scopes you'd like to use in the app.",
+        "note": null
+      },
+      {
+        "text": "Mark non-essential granular scopes as 'Optional' so that users can authorize minimal permissions initially.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "In that list, you can mark a scope Optional. Scopes not marked as optional will be required when using the basic authorization query.",
+        "note": null
+      },
+      {
+        "text": "Copy your Client ID and Client Secret from App Credentials (and paste them into your integration platform or Composio custom auth config if applicable).",
+        "label": "Inferred",
+        "source_url": null,
+        "quote": null,
+        "note": "Standard procedure for confidential OAuth clients to obtain credentials from the App Credentials screen."
+      },
+      {
+        "text": "Test your app locally by going to the Local Test page and selecting 'Add App Now' to obtain user authorization within your account.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth",
+        "quote": "To do this, navigate to the Local Test page, and choose Add App Now.",
+        "note": null
+      },
+      {
+        "text": "If publishing publicly or unlisted, complete the submission forms (including technical design, branding, and compliance) and submit for App Marketplace review.",
+        "label": "Inferred",
+        "source_url": null,
+        "quote": null,
+        "note": "Inferred from the review submission instructions detailed in the app review documentation."
+      }
+    ],
+    "scopes": [
+      {
+        "text": "meeting:read:list_meetings: View user meetings (granular scope).",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "quote": "List meetings | meeting:read:list_meetings",
+        "note": null
+      },
+      {
+        "text": "meeting:write:meeting: Create and manage meetings.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "quote": "Create a meeting | meeting:write:meeting",
+        "note": null
+      },
+      {
+        "text": "cloud_recording:read:list_user_recordings: View and list cloud recordings.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "quote": "List all recordings | cloud_recording:read:list_user_recordings",
+        "note": null
+      },
+      {
+        "text": "chat:read: View chat message and shared space information.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+        "quote": "View Chat Message Info",
+        "note": null
+      },
+      {
+        "text": "chat:write: Manage chat messages, channels, and spaces.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+        "quote": "Manage Chat Message Info",
+        "note": null
+      },
+      {
+        "text": "report:read:meeting:admin: Access meeting detail and activity reports.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "quote": "Get meeting detail reports | report:read:meeting:admin",
+        "note": null
+      }
+    ],
+    "limits_before_approval": [
+      {
+        "text": "Private and beta apps are exempt from marketplace review and can be shared and used internally without submitting for review.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Private and beta apps do not require review.",
+        "note": null
+      },
+      {
+        "text": "Access tokens expire after 1 hour (3600 seconds) and must be refreshed.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth",
+        "quote": "Access tokens expire after one hour. After your access token expires, you can follow the refresh flow to get a new one.",
+        "note": null
+      },
+      {
+        "text": "Refresh tokens expire after 90 days, requiring users to re-authenticate if inactive.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth",
+        "quote": "Refresh tokens expire after 90 days. You should always use the latest refresh token for the next refresh request.",
+        "note": null
+      },
+      {
+        "text": "Non-admin end-users cannot install or use apps until an account admin pre-approves the app.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "To enable apps for end-users, an account admin, or user with Marketplace permissions for their Zoom Account, must pre-approve the app.",
+        "note": null
+      },
+      {
+        "text": "Production apps must implement a deauthorization notification endpoint URL to handle user data deletion upon app uninstall.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth",
+        "quote": "The request goes to the deauthorization notification endpoint URL you specified on the App Listing page.",
+        "note": null
+      }
+    ],
+    "approval_process": [
+      {
+        "text": "Submission completeness & branding review: Zoom verifies minimal submission criteria, metadata, technical design documentation, and adherence to Zoom branding guidelines.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "We verify that your app meets the minimal criteria required to be accepted into our review process.",
+        "note": null
+      },
+      {
+        "text": "Functionality & usability review: The review team tests installation, uninstallation, configuration settings, user sign-up, and real data flow.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "We review your app's functionality and confirm that it works as you described.",
+        "note": null
+      },
+      {
+        "text": "Scope evaluation: The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
+        "note": null
+      },
+      {
+        "text": "Security testing: Apps undergo automated web scanning, least-privilege verification, library vulnerability checks, and manual assessments against OWASP Top 10 risks.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning.",
+        "note": null
+      },
+      {
+        "text": "Remediation & re-submission: Zoom provides a report explaining reasons for rejection and action items to fix before resubmitting.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "We provide a report explaining the reasons we did not accept the app and action items you can complete to remediate the issues.",
+        "note": null
+      },
+      {
+        "text": "Ongoing monitoring: Zoom continuously monitors published apps and may request remediation or suspend apps that pose significant risks.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "We monitor applications that have passed app review and been published to the App Marketplace to ensure continued compliance with our guidelines.",
+        "note": null
+      }
+    ],
+    "likely_blockers": [
+      {
+        "text": "Requesting excessive or unjustified scopes beyond the minimal requirements of the integration.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
+        "note": null
+      },
+      {
+        "text": "Security vulnerabilities or failing OWASP Top 10 assessments during technical security scanning.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning.",
+        "note": null
+      },
+      {
+        "text": "Presenting ads to users or collecting user data for marketing purposes, which violates usability policies.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Your app should not present advertising to Zoom users or collect user information for marketing purposes.",
+        "note": null
+      },
+      {
+        "text": "Incomplete technical design documentation or unclear test plans and listing descriptions.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Apps with poorly described scopes, confusing UI, or unclear listing information may require a lengthy review process.",
+        "note": null
+      },
+      {
+        "text": "Violating Zoom branding guidelines or intellectual property rules in the app name, description, or assets.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
+        "quote": "Zoom reserves the right to remove or require a revision to any content, in whole or part, including an app name, that violates: Zoom's",
+        "note": null
+      },
+      {
+        "text": "Missing account administrator permissions or pre-approval in the Zoom organization.",
+        "label": "Sourced",
+        "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "quote": "To enable apps for end-users, an account admin, or user with Marketplace permissions for their Zoom Account, must pre-approve the app.",
+        "note": null
+      }
+    ],
+    "agent_can_do": [
+      "Read Zoom API and OAuth specification documentation",
+      "Identify exact granular scopes needed for specific API endpoints",
+      "Generate code for OAuth token exchanges and PKCE challenge generation",
+      "Draft technical architecture descriptions and compliance notes for review"
+    ],
+    "you_must_do": [
+      "Sign in to the Zoom Marketplace as an account administrator or authorized developer",
+      "Create the app in the Marketplace build flow and copy the Client ID and Secret",
+      "Configure redirect URIs and deauthorization webhooks",
+      "Authorize the app during local testing or production OAuth consent",
+      "Submit the app for Marketplace review and remediate any reported security findings"
+    ],
+    "open_questions": [
+      {
+        "text": "What is the typical SLA or average duration in business days for the Zoom Marketplace team to complete the security review?",
+        "label": "Uncertain",
+        "source_url": null,
+        "quote": null,
+        "note": "The documentation states review time varies by quality, feature count, and documentation clarity, but does not specify a turnaround time."
+      },
+      {
+        "text": "Does Zoom offer an isolated developer sandbox environment for public OAuth testing separate from production customer accounts?",
+        "label": "Uncertain",
+        "source_url": null,
+        "quote": null,
+        "note": "The supplied pages mention testing via 'Local Test' with 'Add App Now' on regular Zoom accounts, but do not detail separate sandbox accounts."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 53706,
+    "output_tokens": 4222,
+    "total_tokens": 61110,
+    "calls": 1
+  },
+  "cost_usd": 0.056112,
+  "prompt_chars": 190902,
+  "trimmed": [
+    {
+      "url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+      "kept_chars": 40000,
+      "original_chars": 648586,
+      "reason": "per-page cap"
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+      "kept_chars": 40000,
+      "original_chars": 577554,
+      "reason": "per-page cap"
+    }
+  ],
+  "repairs": [
+    "prerequisites[0]: quote trimmed from 28 to 24 words",
+    "limits_before_approval[4]: quote trimmed from 29 to 16 words",
+    "approval_process[0]: quote trimmed from 26 to 17 words",
+    "approval_process[1]: quote trimmed from 26 to 13 words",
+    "approval_process[2]: quote trimmed from 30 to 20 words",
+    "likely_blockers[0]: quote trimmed from 30 to 20 words",
+    "likely_blockers[4]: quote trimmed from 26 to 24 words"
+  ],
+  "error": null
+}

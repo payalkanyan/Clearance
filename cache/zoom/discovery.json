@@ -1,0 +1,555 @@
+{
+  "slug": "zoom",
+  "app_name": "Zoom",
+  "website": "devforum.zoom.us",
+  "queries": [
+    {
+      "query": "Zoom OAuth app registration",
+      "results": 5,
+      "urls": [
+        "https://developers.zoom.us/docs/integrations/create",
+        "https://developers.zoom.us/docs/integrations/oauth",
+        "https://developers.zoom.us/docs/internal-apps/create",
+        "https://marketplace.zoom.us/",
+        "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057962"
+      ]
+    },
+    {
+      "query": "Zoom developer console create app",
+      "results": 5,
+      "urls": [
+        "https://developers.zoom.us/docs/zoom-apps/create",
+        "https://marketplace.zoom.us/",
+        "https://developers.zoom.us/",
+        "https://developers.zoom.us/docs/build-flow",
+        "https://devforum.zoom.us/t/how-to-use-developer-console-in-zoom-internal-web-client/79379"
+      ]
+    },
+    {
+      "query": "Zoom API scopes permissions",
+      "results": 5,
+      "urls": [
+        "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "https://developers.zoom.us/docs/integrations/oauth-scopes",
+        "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+        "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+        "https://devforum.zoom.us/t/how-to-add-change-scopes-in-an-oauth-app-i-created/78166"
+      ]
+    },
+    {
+      "query": "Zoom app review verification process",
+      "results": 5,
+      "urls": [
+        "https://developers.zoom.us/docs/distribute/app-review-process",
+        "https://devforum.zoom.us/t/improvement-to-zoom-security-and-app-review-process/146269",
+        "https://devforum.zoom.us/t/zoom-app-review-question/140365/9",
+        "https://www.recall.ai/blog/explaining-the-zoom-app-submission-process",
+        "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058021"
+      ]
+    },
+    {
+      "query": "Zoom production access quota extension",
+      "results": 5,
+      "urls": [
+        "https://zoom.us/pricing/events",
+        "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057903",
+        "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066826",
+        "https://zoom.us/pricing",
+        "https://devforum.zoom.us/t/clarification-on-zoom-api-usage-and-associated-costs-for-saas-educational-platform/132208"
+      ]
+    },
+    {
+      "query": "Zoom developer terms of service",
+      "results": 5,
+      "urls": [
+        "https://www.zoom.com/en/trust/legal/zoom-api-license-and-tou",
+        "https://www.zoom.com/en/trust/marketplace-developer-agreement",
+        "https://developers.zoom.us/",
+        "https://www.zoom.com/en/trust/terms",
+        "https://devforum.zoom.us/t/where-do-i-review-and-sign-zoom-api-license-and-terms-of-use/120925"
+      ]
+    },
+    {
+      "query": "Zoom OAuth app access restrictions admin approval",
+      "results": 5,
+      "urls": [
+        "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+        "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+        "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060122",
+        "https://developers.zoom.us/docs/integrations/oauth",
+        "https://devforum.zoom.us/t/cannot-edit-scopes-of-created-zoom-application-despite-being-account-app-admin/137264"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://devforum.zoom.us/t/server-to-server-oauth-app-permissions-and-scopes/92331",
+      "title": "Server-to-Server OAuth app permissions and scopes - Meetings",
+      "description": "User querying must have right user permissions required by the scope; App must have the right scopes added; Generate an access token that ...",
+      "query": "Zoom API scopes permissions",
+      "position": 4,
+      "score": 23.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
+      "title": "Integrations - OAuth scopes",
+      "description": "# Integrations - OAuth scopes\n## Classic scopes [#](https://developers.zoom.us/docs/integrations/oauth-scopes-overview/#classic-scopes)\nSee [shared access permissions](https://developers.zoom.us/docs/api/using-zoom-apis/#shared-access-permissions) for important details about your app's access to information.\n\n## Granular scopes [#](https://developers.zoom.us/docs/integrations/oauth-scopes-overview/#granular-scopes)\n### Prerequisites [#](https://developers.zoom.us/docs/integrations/oauth-scopes-overview/#prerequisites)\n- Account administrators or users with role-based access permission to view and manage applications in the Zoom Marketplace can use granular scopes.\n\n## User experience [#](https://developers.zoom.us/docs/integrations/oauth-scopes-overview/#user-experience)\nZoom presents these as required or optional permissions for your app.\n\nUsers can select all, some, or no optional permissions during authorization.",
+      "query": "Zoom API scopes permissions",
+      "position": 1,
+      "score": 21.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/oauth-scopes",
+      "title": "Classic scopes - Integrations - Zoom Developer Docs",
+      "description": "Explore OAuth scopes available for Zoom integrations and learn how to upgrade your app from classic scopes to current scope standards.",
+      "query": "Zoom API scopes permissions",
+      "position": 2,
+      "score": 21.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/oauth-scopes-granular",
+      "title": "Granular scopes - Integrations - Zoom Developer Docs",
+      "description": "# Granular scopes\n## Zoom Meeting [#](https://developers.zoom.us/docs/integrations/oauth-scopes-granular/#zoom-meeting)\n### Cloud Recording [#](https://developers.zoom.us/docs/integrations/oauth-scopes-granular/#cloud-recording)\n| API endpoint | granular scope |\n|-|-|\n| [Get a meeting or webinar recording's analytics details](https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/analytics_details) | `cloud_recording:read:recording_analytics_details``cloud_recording:read:recording_analytics_details:master``cloud_recording:read:recording_analytics_details:admin` |\n| [Recover meeting recordings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/recordingStatusUpdate) | `cloud_recording:update:recover_meeting_recordings``cloud_recording:update:recover_meeting_recordings:master``cloud_recording:update:recover_meeting_recordings:admin` |\n| [Recover meeting recordings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/recordingStatusUpdate) | `cloud_recording:update:recover_meeting_recordings:master` |\n| [Create a recording registrant](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/meetingRecordingRegistrantCreate) | `cloud_recording:write:recording_registrant:master` |\n| [Update a registrant's status](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/meetingRecordingRegistrantStatus) | `cloud_recording:update:registrant_status:master` |\n| [Get meeting recordings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/recordingGet) | `cloud_recording:read:list_recording_files:admin``cloud_recording:read:list_recording_files``cloud_recording:read:list_recording_files:master` |\n| [Get meeting recordings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/recordingGet) | `cloud_recording:read:list_recording_files:master` |\n| [Get a meeting or webinar recording's analytics summary](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/analytics_summary) | `cloud_recording:read:recording_analytics_summary:master` |\n| [Recover a single recording](https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/recordingStatusUpdateOne) | `cloud_recording:update:recover_single_recording``cloud_recording:update:recover_single_recording:master``cloud_recording:update:recover_single_recording:admin` |\n| [Recover a single recording](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/recordingStatusUpdateOne) | `cloud_recording:update:recover_single_recording:master` |\n| [Delete a recording file for a meeting or webinar](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/recordingDeleteOne) | `cloud_recording:delete:recording_file:master` |\n| [Delete meeting or webinar recordings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/recordingDelete) | `cloud_recording:delete:meeting_recording:master` |\n| [Update meeting recording settings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/recordingSettingsUpdate) | `cloud_recording:update:recording_settings``cloud_recording:update:recording_settings:master``cloud_recording:update:recording_settings:admin` |\n| [Update meeting recording settings](https://developers.zoom.us/docs/api/rest/reference/zoom-api/ma/#operation/recordingSettingsUpdate) | `cloud_recording:update:recording_settings:master` |\n\n## Zoom Account [#](https://developers.zoom.us/docs/integrations/oauth-scopes-granular/#zoom-account)\n### Dashboards [#](https://developers.zoom.us/docs/integrations/oauth-scopes-granular/#dashboards)\n| API endpoint | granular scope |\n|-|-|\n| [Get meeting participant QoS](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardMeetingParticipantQOS) | `dashboard:read:meeting_participant_qos:master` |\n| [Get zoom meetings client feedback](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardClientFeedbackDetail) | `dashboard:read:meeting_feedback:master` |\n| [Get Zoom Rooms details](https://developers.zoom.us/docs/api/rest/reference/account/methods/#operation/dashboardZoomRoom) | `dashboard:read:zoomroom:admin` |\n| [Get Zoom Rooms details](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardZoomRoom) | `dashboard:read:zoomroom:master` |\n| [Get post meeting feedback](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/participantFeedback) | `dashboard:read:post_meeting_feedback:master` |\n| [Get top 25 Zoom Rooms with issues](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardIssueZoomRoom) | `dashboard:read:list_zoomrooms:master` |\n| [Get webinar participant QoS](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardWebinarParticipantQOS) | `dashboard:read:webinar_participant_qos:master` |\n| [List Zoom meetings client feedback](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardClientFeedback) | `dashboard:read:list_meetings_feedback:master` |\n| [Get post webinar feedback](https://developers.zoom.us/docs/api/rest/reference/account/methods/#operation/participantWebinarFeedback) | `dashboard:read:post_webinar_feedback:admin` |\n| [Get post webinar feedback](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/participantWebinarFeedback) | `dashboard:read:post_webinar_feedback:master` |\n| [Get CRC port usage](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardCRC) | `dashboard:read:crc_port_usage:master` |\n| [Get meeting details](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardMeetingDetail) | `dashboard:read:meeting:master` |\n| [Get webinar sharing/recording details](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardWebinarParticipantShare) | `dashboard:read:webinar_sharing:master` |\n| [Get chat metrics](https://developers.zoom.us/docs/api/rest/reference/account/methods/#operation/dashboardChat) | `dashboard:read:chat:admin` |\n| [Get meeting sharing/recording details](https://developers.zoom.us/docs/api/rest/reference/account/ma/#operation/dashboardMeetingParticipantShare) | `dashboard:read:meeting_sharing:master` |\n\n## Zoom Video Management [#](https://developers.zoom.us/docs/integrations/oauth-scopes-granular/#zoom-video-management)\n### Permissions [#](https://developers.zoom.us/docs/integrations/oauth-scopes-granular/#permissions)\n| API endpoint | granular scope |\n|-|-|\n| [List channel permissions](https://developers.zoom.us/docs/api/rest/reference/video-management/methods/#operation/listChannelPermissions) | `video_mgmt:read:list_permissions``video_mgmt:read:list_permissions:admin` |\n| [Update channel permissions](https://developers.zoom.us/docs/api/rest/reference/video-management/methods/#operation/updateChannelPermissions) | `video_mgmt:update:permissions``video_mgmt:update:permissions:admin` |\n| [Create channel permissions](https://developers.zoom.us/docs/api/rest/reference/video-management/methods/#operation/createChannelPermissions) | `video_mgmt:write:permissions``video_mgmt:write:permissions:admin` |\n| [Delete channel permissions](https://developers.zoom.us/docs/api/rest/reference/video-management/methods/#operation/DeleteChannelPermissions) | `video_mgmt:delete:permissions``video_mgmt:delete:permissions:admin` |",
+      "query": "Zoom API scopes permissions",
+      "position": 3,
+      "score": 21.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/how-to-add-change-scopes-in-an-oauth-app-i-created/78166",
+      "title": "How to add / change scopes in an OAuth app I created?",
+      "description": "The scope you mentioned is only available for Account Level apps. If you have created a user managed app, you may not be able to see that scope.",
+      "query": "Zoom API scopes permissions",
+      "position": 5,
+      "score": 20.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/oauth",
+      "title": "OAuth 2.0 - Integrations - Zoom Developer Docs",
+      "description": "OAuth 2.0 lets your app securely access Zoom APIs for users or accounts. Zoom supports industry-standard OAuth 2.0 (rfc6749 ) flows to handle authorization ...",
+      "query": "Zoom OAuth app registration",
+      "position": 2,
+      "score": 17.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/distribute/app-review-process",
+      "title": "App Review Process - Distribute - Zoom Developer Docs",
+      "description": "# App Review Process\nOnce an app is submitted, the Zoom App Marketplace team conducts the review and either approves the app or provides feedback to the developer on any required remediation work.\n\n## Functionality, usability, and compliance review [#](https://developers.zoom.us/docs/distribute/app-review-process/#functionality-usability-and-compliance-review)\n### Functionality [#](https://developers.zoom.us/docs/distribute/app-review-process/#functionality)\nWe confirm the installation and uninstallation processes, configuration settings, and user sign-up process.",
+      "query": "Zoom app review verification process",
+      "position": 1,
+      "score": 15.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/cannot-edit-scopes-of-created-zoom-application-despite-being-account-app-admin/137264",
+      "title": "Cannot edit scopes of created Zoom application despite being account ...",
+      "description": "If the Server-to-Server OAuth option is greyed out, it may have been disabled by Zoom support or restricted due to an account plan change.",
+      "query": "Zoom OAuth app access restrictions admin approval",
+      "position": 5,
+      "score": 15.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/improvement-to-zoom-security-and-app-review-process/146269",
+      "title": "Improvement to zoom security and app review process",
+      "description": "I understand why Zoom has a thorough verification process for Marketplace apps. In fact, going through it has made me more confident in the ...",
+      "query": "Zoom app review verification process",
+      "position": 2,
+      "score": 13.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/zoom-app-review-question/140365/9",
+      "title": "Zoom App Review Question - #9 by expertswho",
+      "description": "Hello, I'm working on a zoom app that will be unlisted. Is it possible to submit the zoom app for review under our staging site?",
+      "query": "Zoom app review verification process",
+      "position": 3,
+      "score": 13.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/zoom-apps/create",
+      "title": "Create a Zoom App - Zoom Developer Platform",
+      "description": "# Create a Zoom App\n- [Creating a Zoom App](https://developers.zoom.us/docs/zoom-apps/create/#creating-a-zoom-app)",
+      "query": "Zoom developer console create app",
+      "position": 1,
+      "score": 12.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/where-do-i-review-and-sign-zoom-api-license-and-terms-of-use/120925",
+      "title": "Where do I \"review and sign Zoom API License and Terms of Use\"?",
+      "description": "Select the 3 dots on the created app and click. Click 'Agree' on the Marketplace Developer Agreement modal dialog. Click the checkboxes at the ...",
+      "query": "Zoom developer terms of service",
+      "position": 5,
+      "score": 12.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/internal-apps/create",
+      "title": "Create a Server-to-Server OAuth app - Zoom Developer Platform",
+      "description": "Learn how to create a Server-to-Server OAuth app in the Zoom App Marketplace, configure scopes, and manage app credentials for API authentication.",
+      "query": "Zoom OAuth app registration",
+      "position": 3,
+      "score": 12.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/create",
+      "title": "Create an OAuth app - Integrations - Zoom Developer Docs",
+      "description": "Step 1: Create a general app# \u00b7 Step 2: Maintain basic information# \u00b7 Step 3: Select Zoom products and features# \u00b7 Step 4: Select the scopes (Zoom API methods)#.Select in-client app features \u00b7 Step 4: Select the scopes...",
+      "query": "Zoom OAuth app registration",
+      "position": 1,
+      "score": 10.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://www.zoom.com/en/trust/marketplace-developer-agreement",
+      "title": "Marketplace Developer Agreement - Zoom",
+      "description": "# Marketplace Developer Agreement\n6. **Service Level Agreement**\n   1. **Service Level Agreement by Zoom.** The availability and functionality of the Marketplace and any advice, consultation, or services that Zoom provides you in connection with the Marketplace is provided \u201cas is\u201d and without warranties or guarantees of any kind.\u00a0 Zoom is not obligated to provide any support to you for the Marketplace or your Application, and Zoom does not guarantee any uptime, availability, performance, or integrity of the Marketplace.\u00a0 Zoom is not required to provide any prior notice to you of planned or unplanned downtime of the Marketplace.",
+      "query": "Zoom developer terms of service",
+      "position": 2,
+      "score": 10.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/",
+      "title": "Zoom Developer Platform",
+      "description": "# One platform toconnect, access, build.One platform toconnect\n## What are you building?\n[AI & real-time data\\\n\\\n**Add AI features to meetings** \\\nTap into live audio, transcripts, and summaries to power intelligent in-meeting experiences.\\\n\\\nScribeSummarizerTranslator](https://developers.zoom.us/docs/ai-services/) [HD Video\\\n\\\n**Embed video into my app** \\\nAdd HD video sessions, screen sharing, and media controls directly inside your product.\\\n\\\nVideo SDKUI ToolkitMeeting SDK](https://developers.zoom.us/docs/video-sdk/) [Marketplace app\\\n\\\n**Build a Zoom App** \\\nCreate an app that lives inside the Zoom client \u2014 in meetings, in Team Chat, or as a standalone Zoom App.\\\n\\\nZoom AppsOAuthTeam Chat](https://developers.zoom.us/docs/zoom-apps/) [Backend integration\\\n\\\n**Automate with APIs** \\\nManage meetings, users, recordings, and more from your backend \u2014 no client required.\\\n\\\nREST APIsWebhooksServer OAuth](https://developers.zoom.us/docs/api/)",
+      "query": "Zoom developer console create app",
+      "position": 3,
+      "score": 10.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developers.zoom.us/docs/build-flow",
+      "title": "Zoom App creation build flow - Zoom Developer Platform",
+      "description": "You can use the build flow to create apps to surface third party applications into Zoom products and to integrate Zoom products into third party applications.",
+      "query": "Zoom developer console create app",
+      "position": 4,
+      "score": 9.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://www.zoom.com/en/trust/legal/zoom-api-license-and-tou",
+      "title": "Zoom API License and Terms of Use",
+      "description": "# Zoom API License and Terms of Use\n1. **Overview**\n   2. **Applicable Agreements**. The Zoom [Terms of Service](https://www.zoom.com/en/trust/terms/) or Master Subscription Agreement, as applicable, the [Developer Documentation](https://marketplace.zoom.us/docs/guides), and these API Terms (collectively, the \u201c **Terms**\u201d) govern your use of Zoom APIs and by accessing or using the Zoom APIs you agree to such Terms. In the event of a conflict between these API Terms and the Zoom [Terms of Service](https://www.zoom.com/en/trust/terms/) or Master Subscription Agreement (as applicable) or [Developer Documentation](https://marketplace.zoom.us/docs/guides), these API Terms control with respect to your use of the Zoom APIs.",
+      "query": "Zoom developer terms of service",
+      "position": 1,
+      "score": 9.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/how-to-use-developer-console-in-zoom-internal-web-client/79379",
+      "title": "How to use developer console in Zoom (internal) web client",
+      "description": "Hello, we are developing a Zoom app based on an existing web application. We are wondering if it is possible to use the developer console of ...",
+      "query": "Zoom developer console create app",
+      "position": 5,
+      "score": 9.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://www.zoom.com/en/trust/terms",
+      "title": "Zoom Terms of Service",
+      "description": "# ZOOM TERMS OF SERVICE\n**1.1 Registration; Username and Passwords**.\n\nYour right to use or access the Services and Software is personal to you and not assignable or transferable.\n\n**2.2 Minimum Commitment**.\n\n**ACCESS AND USE; SOFTWARE LICENSE**\n\n**3.1 Access and Use; Software License**. If access to or use of any portion of the Services requires or allows for you to download, use, or install Zoom software (\u201c **Software**\u201d), Zoom grants you a limited, revocable, non-exclusive, non-transferable, non-assignable, non-sublicensable, and royalty-free license to use the Software in object code format on a compatible device for your internal use only, solely to access and use the Services during the applicable Initial Subscription Term or then-current Renewal Term.\n\n**3.3 Ownership**. None of the Services, Software, or Documentation, or any component thereof, is or shall be deemed to be a \u201cwork made for hire,\u201d as that term is defined in 17 U.S.C.\n\n**4.1 Use of the Services; End User Responsibility**. Use of the Services is void where prohibited.\n\n**SYSTEM REQUIREMENTS; CHANGES**\n\nHigh-speed Internet access is recommended.\n\nData, content, communications, messages, files, documents, or other materials that you or your End Users generate or provide in connection with the Services or Software, together with any resulting transcripts, recordings, outputs, visual displays, or other content, is referred to as\u00a0**Customer Content**.\n\n**10.2 Permitted Uses and Customer License Grant**.\n\n**ELIGIBILITY; RESTRICTION ON USE BY CHILDREN**\n\n**12.1** **Charges**.\n\n**12.2** **Non-Cancelable and Non-Refundable Charges**.\n\n**12.5** **Collection of Charges**.\n\n**12.7 Termination or Suspension for Nonpayment**.\n\nYou will pay Zoom, and you are solely responsible for, any applicable Taxes and Fees.\n\n**13.7 Use and Enjoyment**.\n\n**TERM; TERMINATION AND SUSPENSION**\n\n**14.1 Term; Automatic Renewal**.\n\n**14.4 Effect of Termination or Suspension**.\n\n**14.5 Deletion and Access to Customer Content After Termination**.\n\nIf you or any of your employees, contractors, agents, or End Users send, transmit, or otherwise provide any feedback, comments, suggestions, questions, or the like, regarding the Services or Software, including any ideas, know-how, concepts, enhancements, recommendations, or other information relating to the Services or Software, including suggesting or recommending changes to the Services or Software such as new features or functionality relating thereto (collectively, \u201c **Feedback**\u201d), you acknowledge that (i) Zoom owns, and Zoom shall retain ownership of, all right, title, and interest in and to such Feedback, including any Proprietary Rights therein, and (ii) Zoom may, but is not required to use, the Feedback, including any Proprietary Rights therein, for any purpose whatsoever without any attribution, financial compensation, or reimbursement of any kind to you or any third party.\n\nDepartment of Commerce or the U.S.\n\n**DISPUTE RESOLUTION, ARBITRATION AGREEMENT, AND CLASS ACTION WAIVER**\n\n**POLICIES; DATA PROCESSING ADDENDUM**\n\n**33.1 Assignment; Successors and Assigns**.\n\n\u201c **Initial Subscription Term**\u201d means the initial subscription term for a Service as specified in an Order Form.",
+      "query": "Zoom developer terms of service",
+      "position": 4,
+      "score": 8.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://zoom.us/pricing/events",
+      "title": "Events and Webinars Pricing - Zoom",
+      "description": "Access both our standard and modern webinar platforms with AI, on-demand video, and pro production tools. $99.00 per month \u00b7 billed monthly $82.50 per month ...",
+      "query": "Zoom production access quota extension",
+      "position": 1,
+      "score": 8.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://devforum.zoom.us/t/clarification-on-zoom-api-usage-and-associated-costs-for-saas-educational-platform/132208",
+      "title": "Clarification on Zoom API Usage and Associated Costs for SaaS ...",
+      "description": "Hello Zoom Community, I'm seeking clarity on the Zoom API's usage limits and associated costs for our SaaS educational platform.",
+      "query": "Zoom production access quota extension",
+      "position": 5,
+      "score": 8.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057903",
+      "title": "Using Production Studio for Zoom Webinars Plus",
+      "description": "Plus events allows hosts to customize what an attendee sees. The maximum duration for video scenes is 120 minutes, while the file size limit is 4GB. you can ...",
+      "query": "Zoom production access quota extension",
+      "position": 2,
+      "score": 8.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066826",
+      "title": "Release notes for Zoom Webinars Plus and Events",
+      "description": "Event organizers can host Production Studio webinars with up to 100,000 attendees, aligning with standard webinar capacity limits.",
+      "query": "Zoom production access quota extension",
+      "position": 3,
+      "score": 8.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060122",
+      "title": "Admin management of the Zoom App Marketplace",
+      "description": "# Admin management of the Zoom App Marketplace\n- Zoom account owner or admin permissions\n\n## How to configure admin approval of apps\nBy default, any single-user account that has not yet accessed Marketplace has pre-approval disabled, whereas multi-user accounts that have not yet accessed Marketplace have pre-approval enabled.",
+      "query": "Zoom OAuth app access restrictions admin approval",
+      "position": 3,
+      "score": 8.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://marketplace.zoom.us/",
+      "title": "Zoom App Marketplace",
+      "description": "Discover apps. Filters. Explore 3,991 apps in Zoom App Marketplace.",
+      "query": "Zoom OAuth app registration",
+      "position": 4,
+      "score": 7.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://zoom.us/pricing",
+      "title": "Zoom Workplace Pricing",
+      "description": "All plans allow up to 100 participants by default in each meeting (up to 1,000 with Large Meeting add-on). How many people can use one Zoom Meetings license?",
+      "query": "Zoom production access quota extension",
+      "position": 4,
+      "score": 7.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057962",
+      "title": "Migrating the Zoom app in Microsoft Entra to OAuth",
+      "description": "Click the this link to enable OAuth support in Microsoft Entra and sign in if you are not already signed in. \u00b7 Click Enterprise Applications. \u00b7 Search and click ...",
+      "query": "Zoom OAuth app registration",
+      "position": 5,
+      "score": 7.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058021",
+      "title": "Zoom Security Review Process for Applications on App Marketplace",
+      "description": "# Zoom Security Review Process for Applications on App Marketplace\n## How to understand the app review process\n- Confirm that the app is ready for use by end users.\n\n### Security review\n- Verification of requested OAuth scope to confirm least-privilege design",
+      "query": "Zoom app review verification process",
+      "position": 5,
+      "score": 7.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://www.recall.ai/blog/explaining-the-zoom-app-submission-process",
+      "title": "Explaining the Zoom App Submission Process | Recall.ai Blog",
+      "description": "Step 1: Login to the Zoom App Marketplace & create an app \u00b7 Step 2: Configure your new Zoom app \u00b7 Step 3: Get your Zoom app credentials \u00b7 Step 4: ...",
+      "query": "Zoom app review verification process",
+      "position": 4,
+      "score": 5.8,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    }
+  ],
+  "gates": [],
+  "fallbacks": [],
+  "skipped": [
+    {
+      "url": "https://devforum.zoom.us/t/cannot-edit-scopes-of-created-zoom-application-despite-being-account-app-admin/137264",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://devforum.zoom.us/t/improvement-to-zoom-security-and-app-review-process/146269",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://devforum.zoom.us/t/zoom-app-review-question/140365/9",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.zoom.us/docs/zoom-apps/create",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://devforum.zoom.us/t/where-do-i-review-and-sign-zoom-api-license-and-terms-of-use/120925",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.zoom.us/docs/internal-apps/create",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.zoom.us/docs/integrations/create",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.zoom.com/en/trust/marketplace-developer-agreement",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.zoom.us/",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developers.zoom.us/docs/build-flow",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.zoom.com/en/trust/legal/zoom-api-license-and-tou",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://devforum.zoom.us/t/how-to-use-developer-console-in-zoom-internal-web-client/79379",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.zoom.com/en/trust/terms",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://zoom.us/pricing/events",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://devforum.zoom.us/t/clarification-on-zoom-api-usage-and-associated-costs-for-saas-educational-platform/132208",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057903",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066826",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060122",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://marketplace.zoom.us/",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://zoom.us/pricing",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057962",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058021",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.recall.ai/blog/explaining-the-zoom-app-submission-process",
+      "reason": "unofficial, official pages suffice"
+    }
+  ],
+  "no_oauth_found": false,
+  "failed": null,
+  "fetch_usage": []
+}

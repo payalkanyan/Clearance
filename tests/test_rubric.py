@@ -85,6 +85,28 @@ def test_an_optional_programme_does_not_set_the_level():
     assert any("optional programme" in m.get("skipped", "") for m in result.matches)
 
 
+def test_a_marketplace_review_that_gates_distribution_is_not_optional():
+    """Zoom: Marketplace review is how an app reaches anyone outside your own
+    account, so it sets the level. Contrast with the GitHub case above, where
+    listing is an extra you can skip."""
+    result = score(
+        facts(
+            approval_process=[
+                "Public and unlisted apps require a formal multi-stage app review "
+                "covering branding, functionality and security testing.",
+            ],
+            limits_before_approval=[
+                "Private and beta apps require no review and can be used "
+                "immediately within an account.",
+            ],
+        )
+    )
+    assert result.difficulty is Difficulty.HARD
+    # Credentials exist before any review, so Very hard cannot apply.
+    assert any("approval before keys cannot apply" in m.get("skipped", "")
+               for m in result.matches)
+
+
 def test_a_denial_does_not_trigger_a_level():
     result = score(facts(approval_process=["No review is required before production use."]))
     assert result.difficulty is Difficulty.EASY
