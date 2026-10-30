@@ -18,6 +18,21 @@ DOCS_DIR = ROOT / "docs"
 
 load_dotenv(ROOT / ".env")
 
+
+def _scrub_placeholders() -> None:
+    """Remove .env.example's xxxx values from the environment.
+
+    The Firecrawl and Anthropic SDKs read their keys from the environment on
+    their own, so a placeholder left in place is sent as a real credential and
+    comes back as "Invalid token".
+    """
+    for name in ("ANTHROPIC_API_KEY", "FIRECRAWL_API_KEY"):
+        value = os.environ.get(name)
+        if value and re.search(r"x{4,}", value, re.I):
+            del os.environ[name]
+
+_scrub_placeholders()
+
 DEFAULT_LLM_MODEL = "claude-opus-5-5"
 DEFAULT_FETCH_MODEL = "claude-haiku-5-5"
 
@@ -39,12 +54,24 @@ def fetch_model() -> str:
     return os.environ.get("FETCH_MODEL") or DEFAULT_FETCH_MODEL
 
 
+def looks_like_placeholder(value: str | None) -> bool:
+    """True for the xxxx values in .env.example, so they count as unset."""
+    return bool(value) and bool(re.search(r"x{4,}", value, re.I))
+
+
+def _key(name: str) -> str | None:
+    value = (os.environ.get(name) or "").strip()
+    if not value or looks_like_placeholder(value):
+        return None
+    return value
+
+
 def anthropic_api_key() -> str | None:
-    return os.environ.get("ANTHROPIC_API_KEY") or None
+    return _key("ANTHROPIC_API_KEY")
 
 
 def firecrawl_api_key() -> str | None:
-    return os.environ.get("FIRECRAWL_API_KEY") or None
+    return _key("FIRECRAWL_API_KEY")
 
 
 def base_url() -> str:
