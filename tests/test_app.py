@@ -119,3 +119,14 @@ def test_generating_a_guide_shows_each_stage_then_opens_it(monkeypatch):
     # The guide itself renders below the stage list, with its shareable link.
     assert "GitHub, github.com/settings/developers" in reported
     assert any("view=guide&app=github" in block.value for block in result.code)
+
+
+def test_a_guide_built_from_a_misspelled_input_says_so():
+    """Two cards would otherwise both read "Spotify" with no way to tell them
+    apart."""
+    from clearance.config import GUIDES_DIR
+
+    if not (GUIDES_DIR / "spotfy.json").exists():
+        pytest.skip("the misspelled-input guide has not been generated")
+    captions = " ".join(block.value for block in app().caption)
+    assert "asked for" in captions and "spotfy" in captions

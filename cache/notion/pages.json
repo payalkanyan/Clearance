@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://nango.dev/docs/api-integrations/notion/how-to-register-your-own-notion-api-oauth-app",
+    "file": "pages/3022eecab8852120.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:57:59Z",
+    "title": "How to register your own Notion OAuth app - Nango Docs",
+    "status": 200,
+    "bytes": 154305,
+    "official": false,
+    "kind": "provider",
+    "query": "Notion OAuth app registration"
+  },
+  {
+    "url": "https://developers.notion.com/workers/guides/oauth",
+    "file": "pages/f02e2507feb04921.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:58:02Z",
+    "title": "OAuth - Notion Docs",
+    "status": 200,
+    "bytes": 102747,
+    "official": true,
+    "kind": "provider",
+    "query": "Notion OAuth app registration"
+  },
+  {
+    "url": "https://developers.notion.com/guides/get-started/authorization",
+    "file": "pages/9234e4dea6c0039e.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:58:04Z",
+    "title": "Authorization - Notion Docs",
+    "status": 200,
+    "bytes": 174848,
+    "official": true,
+    "kind": "provider",
+    "query": "Notion OAuth app registration"
+  },
+  {
+    "url": "https://developers.notion.com/reference/admin/scopes",
+    "file": "pages/01c2978f336bfdc7.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:58:06Z",
+    "title": "Scopes - Notion Docs",
+    "status": 200,
+    "bytes": 49825,
+    "official": true,
+    "kind": "provider",
+    "query": "Notion API scopes permissions"
+  },
+  {
+    "url": "https://www.notion.com/help/guides/verify-knowledge-your-teammates-can-trust-with-page-verification",
+    "file": "pages/5d02da37cbcdbf63.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:58:11Z",
+    "title": "Verify knowledge your teammates can trust",
+    "status": 200,
+    "bytes": 11112,
+    "official": true,
+    "kind": "provider",
+    "query": "Notion app review verification process"
+  },
+  {
+    "url": "https://www.notion.com/help/sharing-and-permissions",
+    "file": "pages/0e9dffde9488b25c.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:58:13Z",
+    "title": "Sharing & permissions settings in Notion | Notion Help",
+    "status": 200,
+    "bytes": 23730,
+    "official": true,
+    "kind": "provider",
+    "query": "Notion production access quota extension"
+  },
+  {
+    "url": "https://www.notion.com/templates/product-limit-and-quota-policy?srsltid=AYCX9vKQ6fDfYSLxQFt98WbztwIgCEQWUYJYsIJq_78yHOZ-YMCUS442",
+    "file": "pages/a46b95d340dbc223.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:58:16Z",
+    "title": "Product Limit and Quota Policy Template by RunBook | Notion Marketplace",
+    "status": 200,
+    "bytes": 6574,
+    "official": true,
+    "kind": "provider",
+    "query": "Notion production access quota extension"
+  }
+]

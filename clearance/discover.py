@@ -41,6 +41,10 @@ QUERY_TEMPLATES = (
     "{app} app review verification process",
     "{app} production access quota extension",
     "{app} developer terms of service",
+    # Blockers often live on the user's side rather than the developer's: an
+    # organisation admin who must approve third-party apps before they see any
+    # data. Comparing against the hand-written GitHub guide showed that gap.
+    "{app} OAuth app access restrictions admin approval",
 )
 
 # Hosts that can never carry a Sourced fact.

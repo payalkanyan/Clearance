@@ -11,7 +11,7 @@ import html
 
 import streamlit as st
 
-from clearance.config import GUIDES_DIR, base_url
+from clearance.config import GUIDES_DIR, base_url, slugify
 from clearance.pipeline import run
 from clearance.schema import Fact, Guide, Label, Source, load_guide
 
@@ -149,6 +149,10 @@ def library_page() -> None:
             )
             st.markdown(f"### {html.escape(guide.app_name)}")
             st.markdown(f"{badge} &nbsp; {origin}", unsafe_allow_html=True)
+            # The misspelled-input case resolves to the real provider name, so
+            # say which input produced this guide.
+            if slugify(guide.app_name) != guide.meta.slug:
+                st.caption(f"asked for “{guide.meta.slug}”")
             st.markdown(f"**Hands-on:** {guide.hands_on_time.text}")
             st.markdown(f"**Waiting:** {guide.waiting_time.text}")
             st.caption(guide.verdict.text[:160])
