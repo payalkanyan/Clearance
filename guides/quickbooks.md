@@ -15,6 +15,12 @@
 
 **Prerequisites**
 
+- At https://developer.intuit.com/app/developer/homepage, a sign-in wall: you must log in before you can register an app. Fields visible: platform. *(Tested)*
+  > [source](https://developer.intuit.com/app/developer/homepage)
+  > observed by the agent at 2026-10-30T11:35:42Z, HTTP 200; matched sign in
+- At https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks, a sign-in wall: you must log in before you can register an app. Fields visible: email, logo. *(Tested)*
+  > [source](https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks)
+  > observed by the agent at 2026-10-30T11:35:45Z, HTTP 200; matched signin, login, continue with google
 - An Intuit Developer account created via the developer portal. *(Sourced)*
   > "To enroll, you must create a Developer Account in the Portal by providing complete and accurate information" — [source](https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services)
 - Accurate enrollment details including legal identity name, domicile address, valid email, and authorized users. *(Sourced)*
@@ -122,6 +128,8 @@
 - [QuickBooks App Store](https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us)
 - [QuickBooks MCP Server for AI Agents | Composio](https://composio.dev/toolkits/quickbooks)
 - [Managed OAuth apps | Composio](https://docs.composio.dev/toolkits/managed-auth)
+- [https://developer.intuit.com/app/developer/homepage](https://developer.intuit.com/app/developer/homepage)
+- [https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks](https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks)
 
 **Last verified:** 2026-10-30, by agent.
 

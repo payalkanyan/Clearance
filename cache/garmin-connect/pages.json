@@ -8,6 +8,7 @@
     "status": 200,
     "bytes": 152717,
     "official": false,
+    "kind": "provider",
     "query": "Garmin Connect OAuth app registration"
   },
   {
@@ -19,6 +20,7 @@
     "status": 200,
     "bytes": 8715,
     "official": true,
+    "kind": "provider",
     "query": "Garmin Connect OAuth app registration"
   },
   {
@@ -30,6 +32,7 @@
     "status": 200,
     "bytes": 1640,
     "official": true,
+    "kind": "provider",
     "query": "Garmin Connect API scopes permissions"
   },
   {
@@ -41,6 +44,7 @@
     "status": 200,
     "bytes": 4372,
     "official": true,
+    "kind": "provider",
     "query": "Garmin Connect API scopes permissions"
   },
   {
@@ -52,6 +56,7 @@
     "status": 200,
     "bytes": 2181,
     "official": true,
+    "kind": "provider",
     "query": "Garmin Connect developer console create app"
   },
   {
@@ -63,6 +68,7 @@
     "status": 200,
     "bytes": 2950,
     "official": true,
+    "kind": "provider",
     "query": "Garmin Connect developer console create app"
   },
   {
@@ -74,6 +80,7 @@
     "status": 200,
     "bytes": 2703,
     "official": true,
+    "kind": "provider",
     "query": "Garmin Connect developer console create app"
   }
 ]

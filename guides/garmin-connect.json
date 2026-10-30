@@ -8,13 +8,13 @@
     "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access."
   },
   "quick_setup_checklist": [],
-  "difficulty": "Medium",
+  "difficulty": "Very hard",
   "difficulty_reason": {
-    "text": "Starter Access limits user capacity to up to 1,000 connected users.",
+    "text": "Access to create multi-user OAuth 2.0 applications requires applying for the Garmin Connect Developer Program (Starter Access application form). Once approved, developers can register apps with up to 1,000 users.",
     "label": "Sourced",
-    "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
-    "quote": "Up to 1,000 connected users",
-    "note": "triggered the Medium rating: limits_before_approval[0] matched 'user cap'"
+    "source_url": "https://developer.garmin.com/gc-developer-program",
+    "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access.",
+    "note": "triggered the Very hard rating: verdict matched 'apply for the garmin connect developer program'"
   },
   "hands_on_time": {
     "text": "15 to 30 minutes",
@@ -221,7 +221,7 @@
   "meta": {
     "slug": "garmin-connect",
     "provenance": "agent",
-    "generated_at": "2026-10-30T11:35:11Z",
+    "generated_at": "2026-10-30T11:38:15Z",
     "model": "gemini-3.8-flash",
     "no_oauth_found": false
   }

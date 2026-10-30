@@ -1,7 +1,7 @@
 {
   "slug": "github",
   "app": "GitHub",
-  "at": "2026-10-30T11:24:28Z",
+  "at": "2026-10-30T11:38:15Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -293,7 +293,7 @@
   },
   "citations": {
     "slug": "github",
-    "at": "2026-10-30T11:24:28Z",
+    "at": "2026-10-30T11:38:15Z",
     "checked": 29,
     "verified": 29,
     "downgrades": []

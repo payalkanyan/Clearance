@@ -1,16 +1,16 @@
 {
   "slug": "garmin-connect",
   "app": "Garmin Connect",
-  "at": "2026-10-30T11:35:11Z",
+  "at": "2026-10-30T11:38:15Z",
   "model": "gemini-3.8-flash",
   "seconds": {
-    "discover": 50.51,
+    "discover": 0.0,
     "probe": 0.0,
     "composio": 0.0,
-    "extract": 60.03,
+    "extract": 0.0,
     "citations": 0.01,
     "score": 0.0,
-    "total": 110.55
+    "total": 0.01
   },
   "discover": {
     "queries": [
@@ -229,7 +229,7 @@
       "input_tokens": 19824,
       "output_tokens": 2638,
       "total_tokens": 23204,
-      "calls": 1
+      "calls": 0
     },
     "cost_usd": 0.024761,
     "prompt_chars": 63344,
@@ -246,28 +246,28 @@
   },
   "citations": {
     "slug": "garmin-connect",
-    "at": "2026-10-30T11:35:11Z",
+    "at": "2026-10-30T11:38:15Z",
     "checked": 15,
     "verified": 15,
     "downgrades": []
   },
   "score": {
-    "difficulty": "Medium",
+    "difficulty": "Very hard",
     "reason": {
-      "text": "Starter Access limits user capacity to up to 1,000 connected users.",
+      "text": "Access to create multi-user OAuth 2.0 applications requires applying for the Garmin Connect Developer Program (Starter Access application form). Once approved, developers can register apps with up to 1,000 users.",
       "label": "Sourced",
-      "source_url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
-      "quote": "Up to 1,000 connected users",
+      "source_url": "https://developer.garmin.com/gc-developer-program",
+      "quote": "Apply for the Garmin Connect Developer Program and create an app with Starter Access.",
       "note": null
     },
-    "trigger": "limits_before_approval[0] matched 'user cap'",
+    "trigger": "verdict matched 'apply for the garmin connect developer program'",
     "modifiers": [],
     "matches": [
       {
-        "level": "Medium",
-        "pattern": "user (?:cap|limit)",
-        "where": "limits_before_approval[0]",
-        "matched": "user cap"
+        "level": "Very hard",
+        "pattern": "apply (?:for|to join) (?:the )?[a-z' ]{0,40}program",
+        "where": "verdict",
+        "matched": "apply for the garmin connect developer program"
       }
     ]
   }

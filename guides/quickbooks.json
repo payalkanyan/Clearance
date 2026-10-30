@@ -35,6 +35,18 @@
   },
   "prerequisites": [
     {
+      "text": "At https://developer.intuit.com/app/developer/homepage, a sign-in wall: you must log in before you can register an app. Fields visible: platform.",
+      "label": "Tested",
+      "source_url": "https://developer.intuit.com/app/developer/homepage",
+      "note": "observed by the agent at 2026-10-30T11:35:42Z, HTTP 200; matched sign in"
+    },
+    {
+      "text": "At https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks, a sign-in wall: you must log in before you can register an app. Fields visible: email, logo.",
+      "label": "Tested",
+      "source_url": "https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks",
+      "note": "observed by the agent at 2026-10-30T11:35:45Z, HTTP 200; matched signin, login, continue with google"
+    },
+    {
       "text": "An Intuit Developer account created via the developer portal.",
       "label": "Sourced",
       "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
@@ -270,6 +282,12 @@
     {
       "url": "https://docs.composio.dev/toolkits/managed-auth",
       "title": "Managed OAuth apps | Composio"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/homepage"
+    },
+    {
+      "url": "https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks"
     }
   ],
   "last_verified": {
@@ -279,7 +297,7 @@
   "meta": {
     "slug": "quickbooks",
     "provenance": "agent",
-    "generated_at": "2026-10-30T11:33:20Z",
+    "generated_at": "2026-10-30T11:38:15Z",
     "model": "gemini-3.8-flash",
     "no_oauth_found": false
   }

@@ -55,6 +55,13 @@ LEVEL_PATTERNS: dict[Difficulty, tuple[str, ...]] = {
         r"letter of intent",
         r"before (?:you )?(?:can )?(?:receive|get|be issued) (?:any )?credentials",
         r"credentials are (?:only )?issued after",
+        # "must apply for the X Developer Program to receive credentials": the
+        # programme is the gate, and it stands before any keys exist.
+        r"apply (?:for|to join) (?:the )?[a-z' ]{0,40}program",
+        r"(?:to|and) receive [a-z' ]{0,40}credentials",
+        r"request (?:enterprise|partner|elevated) access",
+        r"approved before (?:you )?(?:can )?(?:register|create|receive|access)",
+        r"application form",
         r"approval from (?:both|multiple|two)",
         r"invite[- ]only",
         r"by invitation",

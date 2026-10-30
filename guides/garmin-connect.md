@@ -5,8 +5,8 @@
 **Verdict:** Access to create multi-user OAuth 2.0 applications requires applying for the Garmin Connect Developer Program (Starter Access application form). Once approved, developers can register apps with up to 1,000 users. *(Sourced)*
 > "Apply for the Garmin Connect Developer Program and create an app with Starter Access." — [source](https://developer.garmin.com/gc-developer-program)
 
-**Difficulty:** Medium
-**Why:** Starter Access limits user capacity to up to 1,000 connected users. *(Sourced)*
+**Difficulty:** Very hard
+**Why:** Access to create multi-user OAuth 2.0 applications requires applying for the Garmin Connect Developer Program (Starter Access application form). Once approved, developers can register apps with up to 1,000 users. *(Sourced)*
 **Hands-on time:** 15 to 30 minutes *(Inferred)*
 **Waiting time:** Unknown *(Uncertain)*
 

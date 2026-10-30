@@ -1,16 +1,16 @@
 {
   "slug": "quickbooks",
   "app": "QuickBooks",
-  "at": "2026-10-30T11:33:20Z",
+  "at": "2026-10-30T11:38:15Z",
   "model": "gemini-3.8-flash",
   "seconds": {
-    "discover": 104.34,
+    "discover": 0.0,
     "probe": 0.0,
     "composio": 0.0,
-    "extract": 256.44,
+    "extract": 0.0,
     "citations": 0.01,
     "score": 0.0,
-    "total": 360.79
+    "total": 0.01
   },
   "discover": {
     "queries": [
@@ -227,7 +227,43 @@
     ],
     "no_oauth_found": false
   },
-  "probe": [],
+  "probe": [
+    {
+      "url": "https://developer.intuit.com/app/developer/homepage",
+      "observed": "login_wall",
+      "at": "2026-10-30T11:35:42Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in"
+      ],
+      "fields_visible": [
+        "platform"
+      ],
+      "bytes": 2816,
+      "error": null,
+      "why": "path contains /app/developer, link text 'developer homepage'"
+    },
+    {
+      "url": "https://dashboard.composio.dev/login?utm_source=toolkits&utm_medium=hero&utm_campaign=toolkits-quickbooks&utm_content=%2Ftoolkits%2Fquickbooks",
+      "observed": "login_wall",
+      "at": "2026-10-30T11:35:45Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "signin",
+        "login",
+        "continue with google"
+      ],
+      "fields_visible": [
+        "email",
+        "logo"
+      ],
+      "bytes": 2439,
+      "error": null,
+      "why": "link text 'get started'"
+    }
+  ],
   "composio": {
     "kind": "managed",
     "tried": [
@@ -243,7 +279,7 @@
       "input_tokens": 34467,
       "output_tokens": 3686,
       "total_tokens": 44565,
-      "calls": 1
+      "calls": 0
     },
     "cost_usd": 0.039673,
     "prompt_chars": 129378,
@@ -269,7 +305,7 @@
   },
   "citations": {
     "slug": "quickbooks",
-    "at": "2026-10-30T11:33:20Z",
+    "at": "2026-10-30T11:38:15Z",
     "checked": 21,
     "verified": 21,
     "downgrades": []

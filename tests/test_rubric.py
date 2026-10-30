@@ -57,6 +57,21 @@ def test_very_hard_is_ruled_out_when_keys_come_first():
     assert any("approval before keys cannot apply" in m["skipped"] for m in skipped)
 
 
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Organizations must apply for the Garmin Connect Developer Program to "
+        "receive Starter Access credentials.",
+        "You must be approved before you can register an application.",
+        "Submit the application form and wait for a decision.",
+        "To scale further, request enterprise access with your account manager.",
+    ],
+)
+def test_a_programme_you_must_join_before_getting_keys_is_very_hard(text):
+    result = score(facts(approval_process=[text]))
+    assert result.difficulty is Difficulty.VERY_HARD
+
+
 def test_an_optional_programme_does_not_set_the_level():
     result = score(
         facts(
