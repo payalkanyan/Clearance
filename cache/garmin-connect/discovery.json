@@ -1,0 +1,460 @@
+{
+  "slug": "garmin-connect",
+  "app_name": "Garmin Connect",
+  "website": "nango.dev",
+  "queries": [
+    {
+      "query": "Garmin Connect OAuth app registration",
+      "results": 5,
+      "urls": [
+        "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+        "https://dev.to/alexanderhodes/implement-garmin-connect-oauth2-authentication-in-react-native-with-expo-1j55",
+        "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+        "https://forums.garmin.com/developer/connect-iq/f/discussion/3556/oauth-api-example-with-google-services",
+        "https://forums.garmin.com/developer/connect-iq/f/discussion/294189/how-do-i-use-the-oauth-2-0-api"
+      ]
+    },
+    {
+      "query": "Garmin Connect developer console create app",
+      "results": 5,
+      "urls": [
+        "https://developer.garmin.com/",
+        "https://www.reddit.com/r/Garmin/comments/84zd02/how_hard_is_it_to_create_an_app_for_a_garmin",
+        "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+        "https://developer.garmin.com/connect-iq/connect-iq-basics",
+        "https://developer.garmin.com/gc-developer-program"
+      ]
+    },
+    {
+      "query": "Garmin Connect API scopes permissions",
+      "results": 5,
+      "urls": [
+        "https://developer.garmin.com/gc-developer-program/personal",
+        "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+        "https://www.reddit.com/r/Garmin/comments/114eh9y/personal_use_of_garmin_api",
+        "https://developer.garmin.com/gc-developer-program",
+        "https://apis.io/apis/garmin/garmin-connect-health-api"
+      ]
+    },
+    {
+      "query": "Garmin Connect app review verification process",
+      "results": 5,
+      "urls": [
+        "https://support.garmin.com/en-US?faq=N7qM9eVuzl77PNYKV8ORX5",
+        "https://www.trustpilot.com/review/connect.garmin.com",
+        "https://forums.garmin.com/developer/connect-iq/f/connect-iq-web-store/428068/app-approval-process-taking-longer-than-usual-10-days",
+        "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgarmin+connect+app+review+verification+process",
+        "https://www.youtube.com/watch?v=aIDsXz7qyp4"
+      ]
+    },
+    {
+      "query": "Garmin Connect production access quota extension",
+      "results": 5,
+      "urls": [
+        "https://tryrook.io/blog/garmin-connect-api-access",
+        "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+        "https://developer.garmin.com/gc-developer-program",
+        "https://sahha.ai/blog/garmin-connect-api-reopened-fees",
+        "https://apps.garmin.com/en-US/apps/0c4dcc10-c5af-4940-bdf2-7471467d0b6c"
+      ]
+    },
+    {
+      "query": "Garmin Connect developer terms of service",
+      "results": 5,
+      "urls": [
+        "https://www8.garmin.com/en-US/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT_EN.pdf",
+        "https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html",
+        "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+        "https://tryrook.io/blog/garmin-connect-api-access",
+        "https://developer.garmin.com/gc-developer-program"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+      "title": "How to register your own Garmin OAuth2 app - Nango Docs",
+      "description": "## Documentation Index\nThis guide shows you how to register your own app with the Garmin Connect Developer Program and obtain OAuth2 credentials (client ID and secret).",
+      "query": "Garmin Connect OAuth app registration",
+      "position": 3,
+      "score": 18.1,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+      "title": "[PDF] Garmin Connect Developer Program OAuth2.0 PKCE Specification",
+      "description": "The client (third-party application) initiates the OAuth flow by prompting the user to log in to the Garmin. Connect account and consent to the third-party app.",
+      "query": "Garmin Connect OAuth app registration",
+      "position": 1,
+      "score": 15.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developer.garmin.com/gc-developer-program/personal",
+      "title": "Garmin Connect Personal API - Garmin Developers",
+      "description": "Your personal API key can be used to generate an access token that allows you to access Garmin Connect resources. To obtain an access token, call the Obtain ...",
+      "query": "Garmin Connect API scopes permissions",
+      "position": 1,
+      "score": 12.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+      "title": "Garmin Connect Personal API FAQ",
+      "description": "What is the Garmin Connect Personal API? The Garmin Connect Personal API allows Garmin customers to securely access their own Garmin Connect data using an API.",
+      "query": "Garmin Connect API scopes permissions",
+      "position": 2,
+      "score": 12.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.garmin.com/gc-developer-program",
+      "title": "Overview | Garmin Connect Developer Program",
+      "description": "Apply for the Garmin Connect Developer Program and create an app with Starter Access. Build, test, and launch integrations using core Garmin Connect APIs.",
+      "query": "Garmin Connect developer console create app",
+      "position": 5,
+      "score": 11.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+      "title": "Garmin Connect Developer",
+      "description": "The Garmin Connect Developer Program makes it easy to create your own programs from valuable health and activity information as well as push structured works ...",
+      "query": "Garmin Connect developer console create app",
+      "position": 3,
+      "score": 11.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developer.garmin.com/",
+      "title": "Garmin Developers: Home",
+      "description": "Design, create and build custom software and applications for a wide range of Garmin devices with our different developer programs and APIs.",
+      "query": "Garmin Connect developer console create app",
+      "position": 1,
+      "score": 10.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://www8.garmin.com/en-US/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT_EN.pdf",
+      "title": "[PDF] Garmin Connect Developer Program Agreement",
+      "description": "accompanying Deliverables.\n\nsupport and any other technical assistance for the Licensee Applications.\n\n## 5. LICENSEE\u2019S DUTIES AND RESTRICTIONS\nweb services;",
+      "query": "Garmin Connect developer terms of service",
+      "position": 1,
+      "score": 10.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html",
+      "title": "Garmin CONNECT IQ Agreement",
+      "description": "You must maintain your Garmin Developer Account in good standing. You may not share your login credentials or your Garmin Developer Account with anyone other ...",
+      "query": "Garmin Connect developer terms of service",
+      "position": 2,
+      "score": 10.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.garmin.com/connect-iq/connect-iq-basics",
+      "title": "Connect IQ Basics - Garmin Developers",
+      "description": "# Welcome to Connect IQ\n## Overview\n| Section | Description |\n|-|-|\n| [Your First App](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/#your-first-connect-iq-app) | Create your first watch face using Connect IQ |",
+      "query": "Garmin Connect developer console create app",
+      "position": 4,
+      "score": 9.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://apps.garmin.com/en-US/apps/0c4dcc10-c5af-4940-bdf2-7471467d0b6c",
+      "title": "Quota | Connect IQ Store - Garmin",
+      "description": "4 days ago \u00b7 Quota fills a ring for each goal you pick, from 12 o'clock round to the full circle, with crisp one-bit lines instead of colours. This app ...",
+      "query": "Garmin Connect production access quota extension",
+      "position": 5,
+      "score": 9.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://support.garmin.com/en-US?faq=N7qM9eVuzl77PNYKV8ORX5",
+      "title": "Frequently Asked Questions About the Garmin Connect App",
+      "description": "The Garmin Connect\u2122 app allows you to review health and fitness data you have recorded on your Garmin\u00ae device. You will find all your historical data there ...",
+      "query": "Garmin Connect app review verification process",
+      "position": 1,
+      "score": 8.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://www.trustpilot.com/review/connect.garmin.com",
+      "title": "Read Customer Service Reviews of connect.garmin.com - Trustpilot",
+      "description": "Rating 2.0(52)Jun 21, 2024. Rated 4 out of 5 stars. Had problems creating an account with the Connect Garmin app, I kept getting blocked, this was efficiently and patiently ...",
+      "query": "Garmin Connect app review verification process",
+      "position": 2,
+      "score": 7.4,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+      "title": "Garmin's Connect Developer Program is paused: what it means if you're ...",
+      "description": "Garmin has temporarily paused new applications to its Connect Developer Program, the program that grants companies API access to Garmin health ...",
+      "query": "Garmin Connect production access quota extension",
+      "position": 2,
+      "score": 6.4,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgarmin+connect+app+review+verification+process",
+      "title": "Garmin Connect\u2122 - Apps on Google Play",
+      "description": "Rating 4.4(1,117,829) \u00b7 Free \u00b7 AndroidOnce you pair your phone (1) with a Forerunner\u00ae, Venu\u00ae, f\u0113nix or another compatible Garmin device (2), you can review your tracked activities and health metrics ...",
+      "query": "Garmin Connect app review verification process",
+      "position": 4,
+      "score": 5.8,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://tryrook.io/blog/garmin-connect-api-access",
+      "title": "Can You Still Get Garmin Connect API Access in 2026? - ROOK",
+      "description": "Garmin has paused new applications to the Garmin Connect Developer Program, which is the program that gives companies API access to Garmin ...",
+      "query": "Garmin Connect production access quota extension",
+      "position": 1,
+      "score": 5.7,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://sahha.ai/blog/garmin-connect-api-reopened-fees",
+      "title": "Garmin API Access in 2026: New Tiers, Fees and Terms - Sahha",
+      "description": "5 days ago \u00b7 Garmin reopened its Connect Developer Program on 21 October with Personal, Starter and Enterprise tiers. What each includes, what it costs, ...",
+      "query": "Garmin Connect production access quota extension",
+      "position": 4,
+      "score": 4.8,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://apis.io/apis/garmin/garmin-connect-health-api",
+      "title": "Garmin Connect Health Api - APIs.io",
+      "description": "Garmin Connect Health API is one of 17 APIs that Garmin publishes on the APIs.io network.Tagged areas include Health, Fitness, Wellness, and Connect.",
+      "query": "Garmin Connect API scopes permissions",
+      "position": 5,
+      "score": 4.5,
+      "official": false,
+      "reasons": [
+        "app named in the result, but not the provider's site"
+      ]
+    },
+    {
+      "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/3556/oauth-api-example-with-google-services",
+      "title": "OAuth API example with Google services - Garmin Forums",
+      "description": "When you register your application with a service (like google), you typically provide one or more callback uris. will be sent to your app via ...",
+      "query": "Garmin Connect OAuth app registration",
+      "position": 4,
+      "score": 3.8,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/294189/how-do-i-use-the-oauth-2-0-api",
+      "title": "How do I use the OAUTH 2.0 API? - Garmin Forums",
+      "description": "We would like to use the REST api, but we are having a difficult time understanding how to register and use the Garmin REST API. Sign in to ...",
+      "query": "Garmin Connect OAuth app registration",
+      "position": 5,
+      "score": 3.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://dev.to/alexanderhodes/implement-garmin-connect-oauth2-authentication-in-react-native-with-expo-1j55",
+      "title": "Implement Garmin Connect OAuth2 Authentication in React Native with ...",
+      "description": "## Implement Garmin Connect OAuth2 Authentication in React Native with Expo\n### Setting up the Garmin Developer Portal\n#### Step 2: Register Your Application\n1. Navigate to [Garmin Connect API](https://connectapi.garmin.com/)\n2. Click on \"Register an Application\"\n3. Fill in the application details:\n   - **Application Name**: Garmin Auth App\n   - **Application Description**: Your app description\n   - **Application Type**: Wellness\n\n### Creating the Expo App\n#### Configuring the App\n```\n{\n  \"expo\": {\n    \"name\": \"garmin-auth-app\",\n    \"slug\": \"garmin-auth-app\",\n    \"scheme\": \"garminauthapp\",\n    \"version\": \"1.0.0\"\n    // ... other config\n  }\n}\n```\n\n### Implementing the OAuth2 Flow\n#### Automatic Token Refresh\n```\n[GarminAuth] Token will refresh in 1435 minutes\n[GarminAuth] Auto-refreshing token...\n```",
+      "query": "Garmin Connect OAuth app registration",
+      "position": 2,
+      "score": 1.4,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://forums.garmin.com/developer/connect-iq/f/connect-iq-web-store/428068/app-approval-process-taking-longer-than-usual-10-days",
+      "title": "App approval process taking longer than usual (10+ days)",
+      "description": "Hey ! I uploaded my app to the Connect IQ Store on the 9th of December and it still hasn't been processed for approval (see the screenshots ...",
+      "query": "Garmin Connect app review verification process",
+      "position": 3,
+      "score": 1.1,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Garmin/comments/84zd02/how_hard_is_it_to_create_an_app_for_a_garmin",
+      "title": "How hard is it to create an app for a Garmin smart watch? - Reddit",
+      "description": "If you are on garmin connect, go to Training and Planning > Workouts. Then select a workout type. For this, i would probably select \"Custom\" and ...Making new Garmin appDeveloping Garmin watches apps?More results from www.reddit.com",
+      "query": "Garmin Connect developer console create app",
+      "position": 2,
+      "score": -3.6,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Garmin/comments/114eh9y/personal_use_of_garmin_api",
+      "title": "Personal use of Garmin API - Reddit",
+      "description": "If you're coding in Python, garminconnect solves this. It uses Garth for the authentication and API requests.Garmin API access for my own dataGarmin API accessMore results from www.reddit.com",
+      "query": "Garmin Connect API scopes permissions",
+      "position": 3,
+      "score": -4.9,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aIDsXz7qyp4",
+      "title": "Garmin Connect+ One Year Later // More Features...Worth It? - YouTube",
+      "description": "On one hand I get training days and then on those same training days the app will tell me to take time for more rest days. I mean seriously, ...",
+      "query": "Garmin Connect app review verification process",
+      "position": 5,
+      "score": -6.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    }
+  ],
+  "gates": [],
+  "fallbacks": [],
+  "skipped": [
+    {
+      "url": "https://www8.garmin.com/en-US/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT/GARMINCONNECTDEVELOPERPROGRAMAGREEMENT_EN.pdf",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.garmin.com/connect-iq/connect-iq-basics",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://apps.garmin.com/en-US/apps/0c4dcc10-c5af-4940-bdf2-7471467d0b6c",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.garmin.com/en-US?faq=N7qM9eVuzl77PNYKV8ORX5",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.trustpilot.com/review/connect.garmin.com",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://tryterra.co/blog/garmin-connect-developer-program-pause",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgarmin+connect+app+review+verification+process",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://tryrook.io/blog/garmin-connect-api-access",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://sahha.ai/blog/garmin-connect-api-reopened-fees",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://apis.io/apis/garmin/garmin-connect-health-api",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/3556/oauth-api-example-with-google-services",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://forums.garmin.com/developer/connect-iq/f/discussion/294189/how-do-i-use-the-oauth-2-0-api",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://dev.to/alexanderhodes/implement-garmin-connect-oauth2-authentication-in-react-native-with-expo-1j55",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://forums.garmin.com/developer/connect-iq/f/connect-iq-web-store/428068/app-approval-process-taking-longer-than-usual-10-days",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.reddit.com/r/Garmin/comments/84zd02/how_hard_is_it_to_create_an_app_for_a_garmin",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.reddit.com/r/Garmin/comments/114eh9y/personal_use_of_garmin_api",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aIDsXz7qyp4",
+      "reason": "unofficial, official pages suffice"
+    }
+  ],
+  "no_oauth_found": false,
+  "failed": null,
+  "fetch_usage": []
+}

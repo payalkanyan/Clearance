@@ -1,0 +1,303 @@
+{
+  "slug": "quickbooks",
+  "app": "QuickBooks",
+  "at": "2026-10-30T11:33:20Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 104.34,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 256.44,
+    "citations": 0.01,
+    "score": 0.0,
+    "total": 360.79
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "QuickBooks OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+          "https://help.alteryx.com/platform/zh-CHS/connections/configure-connectivity/enable-oauth-2-0-authentication/oauth-2-0-for-quickbooks-online.html",
+          "https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks",
+          "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
+          "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online"
+        ]
+      },
+      {
+        "query": "QuickBooks developer console create app",
+        "results": 5,
+        "urls": [
+          "https://developer.intuit.com/",
+          "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
+          "https://developer.intuit.com/app/developer/qbo/docs/develop",
+          "https://developer.intuit.com/app/developer/qbdesktop/docs/get-started/create-an-intuit-developer-account",
+          "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661"
+        ]
+      },
+      {
+        "query": "QuickBooks API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
+          "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+          "https://help.developer.intuit.com/s/question/0D5TR00001FvXDB0A3/how-can-i-give-an-api-read-access-only",
+          "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
+          "https://help.developer.intuit.com/s/question/0D5TR00000aUBQ20AO/how-to-add-scopes-for-payroll-to-a-production-app"
+        ]
+      },
+      {
+        "query": "QuickBooks app review verification process",
+        "results": 5,
+        "urls": [
+          "https://quickbooks.intuit.com/app/apps/appdetails/rapidverify/en-us",
+          "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/verify-principal-officer-business-identity-payroll/L82qAb3me_US_en_US",
+          "https://quickbooks.intuit.com/community/reports-and-accounting-5/can-we-expect-the-app-to-be-published-on-the-marketplace-soon-i-submitted-my-application-for-marketplace-review-a-week-ago-but-have-not-yet-received-any-status-updates-57568",
+          "https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us",
+          "https://www.dancingnumbers.com/quickbooks-payment-in-review"
+        ]
+      },
+      {
+        "query": "QuickBooks production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661",
+          "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+          "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+          "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
+          "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits"
+        ]
+      },
+      {
+        "query": "QuickBooks developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+          "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
+          "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements",
+          "https://www.intuit.com/legal/terms",
+          "https://help.developer.intuit.com/s/question/0D5TR00001RvxTD0AZ/cannot-submit-updated-intuit-developer-terms-of-service"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "bytes": 45,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
+        "bytes": 160719,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/learn/scopes",
+        "bytes": 4938,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://quickbooks.intuit.com/app/apps/appdetails/rapidverify/en-us",
+        "bytes": 4096,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+        "bytes": 105315,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/question/0D5TR00000aUBQ20AO/how-to-add-scopes-for-payroll-to-a-production-app",
+        "bytes": 6301,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://quickbooks.intuit.com/app/apps/appdetails/verify_iq/en-us",
+        "bytes": 45,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/quickbooks",
+        "bytes": 29268,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://www.klavis.ai/docs/knowledge-base/oauth_app/quickbooks",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/article/Configuring-the-Oauth-2-0-Playground-for-QuickBooks-Online",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/start-developing-your-app",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbdesktop/docs/get-started/create-an-intuit-developer-account",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.alteryx.com/platform/zh-CHS/connections/configure-connectivity/enable-oauth-2-0-authentication/oauth-2-0-for-quickbooks-online.html",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/verify-principal-officer-business-identity-payroll/L82qAb3me_US_en_US",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/question/0D5TR00000vZkS90AK/how-can-i-add-scopes-for-the-quickbooks-online-graphql-api",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.intuit.com/",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/question/0D5TR00001RvxTD0AZ/cannot-submit-updated-intuit-developer-terms-of-service",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-subscriptions/learn-usage-limits-quickbooks-online/L6THMltE4_US_en_US",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/question/0D5TR00001FvXDB0A3/how-can-i-give-an-api-read-access-only",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://www.apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.dancingnumbers.com/quickbooks-payment-in-review",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.intuit.com/legal/terms/en-us/quickbooks/online",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.intuit.com/legal/terms",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://quickbooks.intuit.com/community/reports-and-accounting-5/can-we-expect-the-app-to-be-published-on-the-marketplace-soon-i-submitted-my-application-for-marketplace-review-a-week-ago-but-have-not-yet-received-any-status-updates-57568",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://quickbooks.intuit.com/community/account-management-7/how-do-i-add-a-simple-app-to-provide-production-api-access-for-a-backend-system-74661",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [],
+  "composio": {
+    "kind": "managed",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/quickbooks",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 34467,
+      "output_tokens": 3686,
+      "total_tokens": 44565,
+      "calls": 1
+    },
+    "cost_usd": 0.039673,
+    "prompt_chars": 129378,
+    "trimmed": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/quickbooks/how-to-register-your-own-quickbooks-api-oauth-app",
+        "kept_chars": 40000,
+        "original_chars": 160680,
+        "reason": "per-page cap"
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+        "kept_chars": 40000,
+        "original_chars": 105312,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [
+      "approval_process[0]: quote trimmed from 28 to 24 words",
+      "approval_process[1]: quote trimmed from 27 to 24 words"
+    ],
+    "calls": 1
+  },
+  "citations": {
+    "slug": "quickbooks",
+    "at": "2026-10-30T11:33:20Z",
+    "checked": 21,
+    "verified": 21,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Hard",
+    "reason": {
+      "text": "A self-assessment questionnaire confirming terms compliance may be required before public distribution.",
+      "label": "Sourced",
+      "source_url": "https://developer.intuit.com/app/developer/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services",
+      "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a",
+      "note": null
+    },
+    "trigger": "approval_process[0] matched 'questionnaire'",
+    "modifiers": [
+      "Regional or legal restrictions"
+    ],
+    "matches": [
+      {
+        "level": "Very hard",
+        "skipped": "credentials are available without approval ('sandbox'), so approval before keys cannot apply"
+      },
+      {
+        "level": "Hard",
+        "pattern": "questionnaire",
+        "where": "approval_process[0]",
+        "matched": "questionnaire"
+      }
+    ]
+  }
+}

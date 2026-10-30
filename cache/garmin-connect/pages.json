@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://nango.dev/docs/api-integrations/garmin-oauth2/how-to-register-your-own-garmin-oauth2-api-oauth-app",
+    "file": "pages/2f1eb962dcc9e5d3.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:33:34Z",
+    "title": "How to register your own Garmin OAuth2 app - Nango Docs",
+    "status": 200,
+    "bytes": 152717,
+    "official": false,
+    "query": "Garmin Connect OAuth app registration"
+  },
+  {
+    "url": "https://developerportal.garmin.com/sites/default/files/OAuth2PKCE_1.pdf",
+    "file": "pages/1e0b5c0219f28b88.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:33:35Z",
+    "title": "[PDF] Garmin Connect Developer Program OAuth2.0 PKCE Specification",
+    "status": 200,
+    "bytes": 8715,
+    "official": true,
+    "query": "Garmin Connect OAuth app registration"
+  },
+  {
+    "url": "https://developer.garmin.com/gc-developer-program/personal",
+    "file": "pages/0936c449817cf83f.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:33:35Z",
+    "title": "Program FAQ | Garmin Connect Developer Program | Garmin Developers",
+    "status": 200,
+    "bytes": 1640,
+    "official": true,
+    "query": "Garmin Connect API scopes permissions"
+  },
+  {
+    "url": "https://developer.garmin.com/gc-developer-program/personal/personal-faq",
+    "file": "pages/b51a2c442d92e327.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:33:37Z",
+    "title": "Program FAQ | Garmin Connect Developer Program | Garmin Developers",
+    "status": 200,
+    "bytes": 4372,
+    "official": true,
+    "query": "Garmin Connect API scopes permissions"
+  },
+  {
+    "url": "https://developer.garmin.com/gc-developer-program",
+    "file": "pages/22bc397ed9714603.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:33:38Z",
+    "title": "Overview | Garmin Connect Developer Program | Garmin Developers",
+    "status": 200,
+    "bytes": 2181,
+    "official": true,
+    "query": "Garmin Connect developer console create app"
+  },
+  {
+    "url": "https://developerportal.garmin.com/developer-programs/connect-developer-api",
+    "file": "pages/c450af82b01c7b19.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:34:00Z",
+    "title": "Garmin Connect Developer | Garmin Developer Portal",
+    "status": 200,
+    "bytes": 2950,
+    "official": true,
+    "query": "Garmin Connect developer console create app"
+  },
+  {
+    "url": "https://developer.garmin.com/",
+    "file": "pages/54db1d4a035ed94b.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T11:34:11Z",
+    "title": "Home | Garmin Developers",
+    "status": 200,
+    "bytes": 2703,
+    "official": true,
+    "query": "Garmin Connect developer console create app"
+  }
+]
