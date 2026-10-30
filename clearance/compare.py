@@ -48,11 +48,18 @@ LIST_SECTIONS = (
 COMPARED_SECTIONS = SINGLE_SECTIONS + LIST_SECTIONS
 
 # Roughly what we expect, for reporting only. The rubric is never bent to agree.
+#
+# The four demo apps were used while tuning the rubric, so their agreement is
+# flattered by hindsight. The two below are a blind test: these predictions were
+# written down before either app had been run.
 EXPECTED_DIFFICULTY = {
     "github": Difficulty.EASY,
     "spotify": Difficulty.MEDIUM,
     "quickbooks": Difficulty.HARD,
     "garmin-connect": Difficulty.VERY_HARD,
+    # Blind predictions, recorded before the run:
+    "notion": Difficulty.MEDIUM,
+    "zoom": Difficulty.HARD,
 }
 
 WORD = re.compile(r"[a-z0-9]+")
