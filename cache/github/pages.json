@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+    "file": "pages/84ecf70465d8af3e.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:48Z",
+    "title": "Scopes for OAuth apps - GitHub Docs",
+    "status": 200,
+    "bytes": 10183,
+    "official": true,
+    "query": "GitHub API scopes permissions"
+  },
+  {
+    "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+    "file": "pages/160fbbd275391ab4.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:49Z",
+    "title": "Creating an OAuth app - GitHub Docs",
+    "status": 200,
+    "bytes": 3171,
+    "official": true,
+    "query": "GitHub OAuth app registration"
+  },
+  {
+    "url": "https://docs.github.com/en/site-policy/github-terms/github-registered-developer-agreement",
+    "file": "pages/bb425db345a7bb82.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:50Z",
+    "title": "GitHub Registered Developer Agreement - GitHub Docs",
+    "status": 200,
+    "bytes": 24197,
+    "official": true,
+    "query": "GitHub developer terms of service"
+  },
+  {
+    "url": "https://docs.github.com/en/apps/using-github-apps/authorizing-github-apps",
+    "file": "pages/cb78f27106dd43d8.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:51Z",
+    "title": "Authorizing GitHub Apps - GitHub Docs",
+    "status": 200,
+    "bytes": 6878,
+    "official": true,
+    "query": "GitHub app review verification process"
+  },
+  {
+    "url": "https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps",
+    "file": "pages/8a721afee5a4a6fb.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:55Z",
+    "title": "Permissions required for GitHub Apps - GitHub Docs",
+    "status": 200,
+    "bytes": 585199,
+    "official": true,
+    "query": "GitHub API scopes permissions"
+  },
+  {
+    "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+    "file": "pages/7ec09a42ac26d315.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:56Z",
+    "title": "Registering a GitHub App - GitHub Docs",
+    "status": 200,
+    "bytes": 10853,
+    "official": true,
+    "query": "GitHub OAuth app registration"
+  },
+  {
+    "url": "https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization",
+    "file": "pages/3160f266bf7a8a0f.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:28:57Z",
+    "title": "Applying for publisher verification for your organization - GitHub Docs",
+    "status": 200,
+    "bytes": 4275,
+    "official": true,
+    "query": "GitHub app review verification process"
+  }
+]

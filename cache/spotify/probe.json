@@ -1,0 +1,32 @@
+{
+  "slug": "spotify",
+  "observations": [
+    {
+      "url": "https://developer.spotify.com/dashboard",
+      "observed": "application_form",
+      "at": "2026-10-30T10:26:57Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "login",
+        "continue with google",
+        "continue with apple"
+      ],
+      "fields_visible": [
+        "email",
+        "privacy policy",
+        "terms of service"
+      ],
+      "bytes": 4117,
+      "error": null,
+      "why": "path /dashboard, link text 'developer dashboard'"
+    }
+  ],
+  "considered": [
+    {
+      "url": "https://developer.spotify.com/dashboard",
+      "score": 10,
+      "why": "path /dashboard, link text 'developer dashboard'"
+    }
+  ]
+}

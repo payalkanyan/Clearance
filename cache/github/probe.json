@@ -1,0 +1,31 @@
+{
+  "slug": "github",
+  "observations": [
+    {
+      "url": "https://github.com/settings/applications",
+      "observed": "login_wall",
+      "at": "2026-10-30T10:28:19Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in",
+        "login",
+        "password",
+        "continue with google"
+      ],
+      "fields_visible": [
+        "email"
+      ],
+      "bytes": 1556,
+      "error": null,
+      "why": "path /settings/applications"
+    }
+  ],
+  "considered": [
+    {
+      "url": "https://github.com/settings/applications",
+      "score": 6,
+      "why": "path /settings/applications"
+    }
+  ]
+}

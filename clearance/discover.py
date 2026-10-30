@@ -189,8 +189,11 @@ def score_candidate(
             score += 4
             reasons.append("host dominates the search results")
         elif any(token in text for token in tokens):
+            # Naming the app proves nothing: a third-party tutorial about
+            # GitHub also says "GitHub". Worth reading, not citable as official.
             score += 2
-            reasons.append("app named in the result")
+            candidate.official = False
+            reasons.append("app named in the result, but not the provider's site")
         else:
             candidate.official = False
             reasons.append("cannot confirm this is the provider")

@@ -42,6 +42,7 @@ class FetchResult(BaseModel):
     title: str | None = None
     status: int | None = None
     links: list[str] = []
+    content_type: str | None = None
     error: str | None = None
     error_kind: str | None = None
     usage: dict[str, Any] | None = None
@@ -159,6 +160,7 @@ def _firecrawl_scrape_once(
         title=getattr(metadata, "title", None),
         status=status,
         links=list(document.links or [])[:300],
+        content_type=getattr(metadata, "content_type", None),
     )
     if status and status >= 400:
         result.error = f"HTTP {status}"
@@ -288,7 +290,12 @@ def http_scrape(url: str, *, timeout: float = 30.0) -> FetchResult:
         )
 
     content_type = response.headers.get("content-type", "")
-    result = FetchResult(url=url, source="http", status=response.status_code)
+    result = FetchResult(
+        url=url,
+        source="http",
+        status=response.status_code,
+        content_type=content_type or None,
+    )
     if response.status_code >= 400:
         result.error = f"HTTP {response.status_code}"
         result.error_kind = "http_error"
