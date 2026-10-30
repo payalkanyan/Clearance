@@ -289,6 +289,25 @@ def to_fact(fact: DraftFact) -> Fact:
     )
 
 
+def iter_draft_facts(draft: GuideDraft):
+    """Every fact in a draft as (section, index, Fact), like Guide.iter_facts."""
+    for field in SINGLE_FACT_FIELDS:
+        yield field, None, to_fact(getattr(draft, field))
+    for field in FACT_LIST_FIELDS:
+        for index, fact in enumerate(getattr(draft, field)):
+            yield field, index, to_fact(fact)
+
+
+def load_draft_facts(slug: str) -> list[tuple[str, int | None, Fact]] | None:
+    """The cached draft's facts, for running stage 5 on its own."""
+    from .cache import read_json
+
+    payload = read_json(slug_dir(slug) / "draft.json", default=None)
+    if not payload or not payload.get("draft"):
+        return None
+    return list(iter_draft_facts(GuideDraft.model_validate(payload["draft"])))
+
+
 def extract(
     app_input: str,
     *,
