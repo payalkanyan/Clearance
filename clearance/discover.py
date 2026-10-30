@@ -73,6 +73,15 @@ COMMUNITY_HOSTS = (
 HOST_PREFIXES = ("www", "developer", "developers", "docs", "dev", "api", "platform",
                  "console", "support", "help", "cloud", "portal")
 
+# A provider's own forum is still a forum: user posts, not documentation.
+FORUM_HOST_PREFIXES = ("community", "forum", "forums", "answers", "discuss",
+                       "discussions", "ask")
+FORUM_PATH_MARKERS = ("/forum/", "/forums/", "/discussion/", "/discussions/",
+                      "/community/", "/questions/", "/thread/", "/topic/")
+
+# Where a provider puts the pages we actually want.
+DOCS_HOST_PREFIXES = ("developer", "developers", "docs", "platform", "api")
+
 TLD_PARTS = {"com", "org", "net", "io", "dev", "co", "uk", "ai", "app", "me", "us",
              "gov", "edu", "info", "cloud", "tech", "online", "site"}
 
@@ -146,8 +155,14 @@ def host_tokens(url: str) -> set[str]:
 
 
 def is_community(url: str) -> bool:
-    host = urlsplit(url).netloc.lower()
-    return any(host == bad or host.endswith("." + bad) for bad in COMMUNITY_HOSTS)
+    parts = urlsplit(url)
+    host = parts.netloc.lower()
+    if any(host == bad or host.endswith("." + bad) for bad in COMMUNITY_HOSTS):
+        return True
+    if host.split(".")[0] in FORUM_HOST_PREFIXES:
+        return True
+    path = parts.path.lower()
+    return any(marker in path for marker in FORUM_PATH_MARKERS)
 
 
 def app_tokens(app_name: str) -> set[str]:
@@ -179,6 +194,10 @@ def score_candidate(
         else:
             candidate.official = False
             reasons.append("cannot confirm this is the provider")
+
+    if host.split(".")[0] in DOCS_HOST_PREFIXES:
+        score += 2
+        reasons.append("developer documentation host")
 
     path = urlsplit(candidate.url).path.lower()
     for keyword, weight in PATH_KEYWORDS.items():

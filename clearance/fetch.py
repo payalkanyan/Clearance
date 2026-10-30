@@ -13,7 +13,7 @@ from urllib.parse import urlsplit
 
 from pydantic import BaseModel
 
-from .config import anthropic_api_key, fetch_model, firecrawl_api_key
+from .config import anthropic_api_key, fallback_mode, fetch_model, firecrawl_api_key
 
 # Firecrawl failures worth retrying through web_fetch, per your Step 2 rules.
 FALLBACK_KINDS = {"timeout", "rate_limit", "credits", "unavailable", "network"}
@@ -183,7 +183,15 @@ def webfetch_scrape(url: str) -> FetchResult:
             error="ANTHROPIC_API_KEY is not set",
             error_kind="no_key",
         )
-    import anthropic
+    try:
+        import anthropic
+    except ImportError:
+        return FetchResult(
+            url=url,
+            source="web_fetch",
+            error="the anthropic package is not installed",
+            error_kind="no_sdk",
+        )
 
     model = fetch_model()
     try:
@@ -247,9 +255,73 @@ def parse_webfetch_payload(payload: dict, url: str, model: str) -> FetchResult:
     return result
 
 
+STRIP_TAGS = ("script", "style", "nav", "footer", "noscript", "header", "aside",
+              "form", "svg")
+
+BROWSER_UA = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/131.0.0.0 Safari/537.36"
+)
+
+
+def http_scrape(url: str, *, timeout: float = 30.0) -> FetchResult:
+    """Plain GET plus HTML to markdown. No model involved.
+
+    This is the fallback when no Anthropic key is configured. It is weaker than
+    Firecrawl on JavaScript-rendered and bot-protected pages, where it will
+    usually produce a gate instead of text, which is the honest outcome.
+    """
+    import httpx
+    from bs4 import BeautifulSoup
+    from markdownify import markdownify
+
+    try:
+        response = httpx.get(
+            url,
+            follow_redirects=True,
+            timeout=timeout,
+            headers={"User-Agent": BROWSER_UA, "Accept": "text/html,*/*"},
+        )
+    except Exception as exc:
+        return FetchResult(
+            url=url, source="http", error=str(exc)[:300], error_kind="network"
+        )
+
+    content_type = response.headers.get("content-type", "")
+    result = FetchResult(url=url, source="http", status=response.status_code)
+    if response.status_code >= 400:
+        result.error = f"HTTP {response.status_code}"
+        result.error_kind = "http_error"
+        return result
+    if "html" not in content_type and "text" not in content_type:
+        result.error = f"unsupported content {content_type}"
+        result.error_kind = "unsupported_content_type"
+        return result
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    for tag in soup(list(STRIP_TAGS)):
+        tag.decompose()
+    title = soup.title.get_text(strip=True) if soup.title else None
+    result.markdown = markdownify(str(soup), heading_style="ATX").strip()
+    result.title = title
+    if not result.markdown:
+        result.error = "empty page"
+        result.error_kind = "empty"
+    return result
+
+
+def choose_fallback() -> str:
+    """web_fetch needs an Anthropic key; http always works."""
+    mode = fallback_mode()
+    if mode in ("web_fetch", "http"):
+        return mode
+    return "web_fetch" if anthropic_api_key() else "http"
+
+
 def scrape(url: str) -> tuple[FetchResult, FetchResult | None]:
-    """Firecrawl, falling back to web_fetch. Returns (result, first attempt)."""
+    """Firecrawl, then a fallback. Returns (result, the failed first attempt)."""
     first = firecrawl_scrape(url)
     if first.ok or first.error_kind not in FALLBACK_KINDS:
         return first, None
-    return webfetch_scrape(url), first
+    fallback = webfetch_scrape if choose_fallback() == "web_fetch" else http_scrape
+    return fallback(url), first

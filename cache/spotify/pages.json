@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+    "file": "pages/70152e886f54936f.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:23:52Z",
+    "title": "Authorization | Spotify for Developers",
+    "status": 200,
+    "bytes": 18101,
+    "official": true,
+    "query": "Spotify OAuth app registration"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+    "file": "pages/40ef42f2982ae9e8.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:23:53Z",
+    "title": "Scopes | Spotify for Developers",
+    "status": 200,
+    "bytes": 32771,
+    "official": true,
+    "query": "Spotify API scopes permissions"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+    "file": "pages/0f80e89942b75198.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:23:54Z",
+    "title": "Quota modes | Spotify for Developers",
+    "status": 200,
+    "bytes": 19289,
+    "official": true,
+    "query": "Spotify production access quota extension"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+    "file": "pages/3399c8615c62fd5d.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:23:55Z",
+    "title": "Apps | Spotify for Developers",
+    "status": 200,
+    "bytes": 17533,
+    "official": true,
+    "query": "Spotify OAuth app registration"
+  },
+  {
+    "url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+    "file": "pages/d6d2e984edec53ef.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:23:58Z",
+    "title": "Getting started with Web API | Spotify for Developers",
+    "status": 200,
+    "bytes": 21584,
+    "official": true,
+    "query": "Spotify developer console create app"
+  },
+  {
+    "url": "https://support.spotify.com/us/article/verified-by-spotify",
+    "file": "pages/b9dc3ee32a7ae0cf.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:23:59Z",
+    "title": "Verified by Spotify - Spotify",
+    "status": 200,
+    "bytes": 27289,
+    "official": true,
+    "query": "Spotify app review verification process"
+  },
+  {
+    "url": "https://developer.spotify.com/terms",
+    "file": "pages/2d1a54fd5b54dd12.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T10:24:02Z",
+    "title": "Spotify Developer Terms | Spotify for Developers",
+    "status": 200,
+    "bytes": 67367,
+    "official": true,
+    "query": "Spotify developer terms of service"
+  }
+]

@@ -26,23 +26,40 @@ def _scrub_placeholders() -> None:
     their own, so a placeholder left in place is sent as a real credential and
     comes back as "Invalid token".
     """
-    for name in ("ANTHROPIC_API_KEY", "FIRECRAWL_API_KEY"):
+    for name in ("GEMINI_API_KEY", "GOOGLE_API_KEY", "ANTHROPIC_API_KEY",
+                 "FIRECRAWL_API_KEY"):
         value = os.environ.get(name)
         if value and re.search(r"x{4,}", value, re.I):
             del os.environ[name]
 
 _scrub_placeholders()
 
-DEFAULT_LLM_MODEL = "claude-opus-5-5"
+# Gemini, because it has a free tier. gemini-3.8-flash takes a 1,048,576 token
+# input, which is ample for the pages one guide is built from.
+DEFAULT_LLM_MODEL = "gemini-3.8-flash"
+
+# Only used to drive the Anthropic web_fetch fallback, when a key is present.
 DEFAULT_FETCH_MODEL = "claude-haiku-5-5"
 
-# USD per million tokens, for the cost line in logs/<slug>.json.
+# USD per million tokens (list price), for the cost line in logs/<slug>.json.
 PRICES = {
-    "claude-opus-5-5": (4.00, 20.00),
-    "claude-opus-5": (5.00, 25.00),
-    "claude-sonnet-5-5": (2.00, 10.00),
+    "gemini-3.8-flash": (0.75, 3.75),
+    "gemini-3.6-flash": (0.75, 3.75),
+    "gemini-3.5-flash-lite": (0.30, 2.50),
+    "gemini-2.5-pro": (1.25, 10.00),
+    "gemini-2.5-flash": (0.30, 2.50),
+    "gemini-4-argon": (2.00, 10.00),
     "claude-haiku-5-5": (0.10, 0.50),
-    "claude-fable-5-1": (10.00, 50.00),
+    "claude-opus-5-5": (4.00, 20.00),
+}
+
+# Models whose free tier can serve a whole run at no charge.
+FREE_TIER = {
+    "gemini-3.8-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-2.5-pro",
+    "gemini-2.5-flash",
 }
 
 
@@ -66,8 +83,17 @@ def _key(name: str) -> str | None:
     return value
 
 
+def gemini_api_key() -> str | None:
+    return _key("GEMINI_API_KEY") or _key("GOOGLE_API_KEY")
+
+
 def anthropic_api_key() -> str | None:
     return _key("ANTHROPIC_API_KEY")
+
+
+def fallback_mode() -> str:
+    """How to fetch a page Firecrawl could not: auto, web_fetch or http."""
+    return (os.environ.get("FALLBACK_MODE") or "auto").strip().lower()
 
 
 def firecrawl_api_key() -> str | None:
@@ -79,7 +105,7 @@ def base_url() -> str:
 
 
 def estimate_cost(model: str, input_tokens: int, output_tokens: int) -> float | None:
-    """Dollar estimate for one call, or None for a model we have no price for."""
+    """List-price estimate for one call; a free-tier key may be billed nothing."""
     price = PRICES.get(model)
     if price is None:
         return None

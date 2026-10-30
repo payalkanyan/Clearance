@@ -1,0 +1,498 @@
+{
+  "slug": "spotify",
+  "app_name": "Spotify",
+  "website": "developer.spotify.com",
+  "queries": [
+    {
+      "query": "Spotify OAuth app registration",
+      "results": 5,
+      "urls": [
+        "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+        "https://developer.spotify.com/documentation/web-api/concepts/apps",
+        "https://developer.spotify.com/documentation/web-api/tutorials/code-flow",
+        "https://developer.spotify.com/dashboard",
+        "https://www.youtube.com/watch?v=olY_2MW4Eik"
+      ]
+    },
+    {
+      "query": "Spotify developer console create app",
+      "results": 5,
+      "urls": [
+        "https://developer.spotify.com/documentation/web-api/concepts/apps",
+        "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+        "https://community.spotify.com/forum/en/discussion/7283365/unable-to-create-app",
+        "https://developer.spotify.com/dashboard",
+        "https://www.reddit.com/r/truespotify/comments/1qc5pc8/cannot_create_any_app_on_spotify_developers"
+      ]
+    },
+    {
+      "query": "Spotify API scopes permissions",
+      "results": 5,
+      "urls": [
+        "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+        "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+        "https://stackoverflow.com/questions/51795449/spotify-api-token-scope-issue",
+        "https://community.auth0.com/t/spotify-connection-with-additional-scopes/167542",
+        "https://www.activepieces.com/blog/spotify-web-api-free-access-modes-scopes-limits"
+      ]
+    },
+    {
+      "query": "Spotify app review verification process",
+      "results": 5,
+      "urls": [
+        "https://support.spotify.com/us/article/verified-by-spotify",
+        "https://support.spotify.com/us/artists/article/verified-by-spotify",
+        "https://www.trustpilot.com/review/www.spotify.com",
+        "https://www.quora.com/How-does-one-become-verified-on-Spotify",
+        "https://www.developer-tech.com/news/spotify-cries-foul-apple-app-review-process"
+      ]
+    },
+    {
+      "query": "Spotify production access quota extension",
+      "results": 5,
+      "urls": [
+        "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+        "https://www.reddit.com/r/spotifyapi/comments/1p95n9x/need_spotify_api_extended_quota_for_a_public",
+        "https://community.spotify.com/forum/en/discussion/7503072/clarification-on-extended-quota-mode-eligibility",
+        "https://developer.spotify.com/blog/2025-04-15-updating-the-criteria-for-web-api-extended-access",
+        "https://community.spotify.com/forum/en/discussion/7384615/extended-quota-mode-request-independent-developer-trackline"
+      ]
+    },
+    {
+      "query": "Spotify developer terms of service",
+      "results": 5,
+      "urls": [
+        "https://developer.spotify.com/terms",
+        "https://developer.spotify.com/policy",
+        "https://developer.spotify.com/documentation/web-api",
+        "https://www.reddit.com/r/truespotify/comments/1l2am4i/spotify_just_killed_indie_development_with_their",
+        "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/authorization",
+      "title": "Authorization - Spotify for Developers",
+      "description": "The authorization process requires valid client credentials: a client ID and a client secret. You can follow the Apps guide to learn how to generate them. Once ...",
+      "query": "Spotify OAuth app registration",
+      "position": 1,
+      "score": 17.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+      "title": "Scopes - Spotify for Developers",
+      "description": "# Scopes\nScopes provide Spotify users using third-party apps the confidence that only\n\n## List of Scopes\n- Spotify Connect\n  - [user-modify-playback-state](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-modify-playback-state)\n  - [user-read-currently-playing](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-read-currently-playing)\n- Playlists\n  - [playlist-read-private](https://developer.spotify.com/documentation/web-api/concepts/scopes#playlist-read-private)\n  - [playlist-modify-private](https://developer.spotify.com/documentation/web-api/concepts/scopes#playlist-modify-private)\n  - [playlist-modify-public](https://developer.spotify.com/documentation/web-api/concepts/scopes#playlist-modify-public)\n- Follow\n  - [user-follow-modify](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-follow-modify)\n- Library\n  - [user-library-modify](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-library-modify)\n- Users\n  - [user-read-email](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-read-email)\n  - [user-read-private](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-read-private)\n  - [user-personalized](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-personalized)\n- Open Access\n  - [user-soa-link](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-soa-link)\n  - [user-soa-unlink](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-soa-unlink)\n  - [soa-manage-entitlements](https://developer.spotify.com/documentation/web-api/concepts/scopes#soa-manage-entitlements)\n  - [soa-manage-partner](https://developer.spotify.com/documentation/web-api/concepts/scopes#soa-manage-partner)\n  - [soa-create-partner](https://developer.spotify.com/documentation/web-api/concepts/scopes#soa-create-partner)\n\n### `user-modify-playback-state`\n|  |  |\n|-|-|\n| **Description** | Write access to a user\u2019s playback state |\n| **Visible to users** | Control playback on your Spotify clients and Spotify Connect devices. |\n\n### `user-read-currently-playing`\n- [Get the User's Currently Playing Track](https://developer.spotify.com/documentation/web-api/reference/get-recently-played)\n- [Get the User's Queue](https://developer.spotify.com/documentation/web-api/reference/get-queue)\n\n### `streaming`\n|  |  |\n|-|-|\n| **Description** | Control playback of a Spotify track. This scope is currently available to the Web Playback SDK. The user must have a Spotify Premium account. |\n| **Visible to users** | Play content and control playback on your other devices. |\n\n### `playlist-read-private`\n|  |  |\n|-|-|\n| **Description** | Read access to user's private playlists. |\n| **Visible to users** | Access your private playlists. |\n\n### `playlist-modify-private`\n|  |  |\n|-|-|\n| **Description** | Write access to a user's private playlists. |\n| **Visible to users** | Manage your private playlists. |",
+      "query": "Spotify API scopes permissions",
+      "position": 1,
+      "score": 15.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "title": "Quota modes - Spotify for Developers",
+      "description": "Extended quota mode is for Spotify apps that are ready for a wider audience. Apps in this category can be installed by an unlimited number of users and the ...",
+      "query": "Spotify production access quota extension",
+      "position": 1,
+      "score": 13.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/concepts/apps",
+      "title": "Apps - Spotify for Developers",
+      "description": "You can create up to 25 apps per developer account. To create an app, go to your Dashboard and click on the Create an App button. Your application is now ...",
+      "query": "Spotify OAuth app registration",
+      "position": 2,
+      "score": 13.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/tutorials/getting-started",
+      "title": "Getting started with Web API - Spotify for Developers",
+      "description": "# Getting started with Web API\n## Create an app\nTo create an app, go to [your Dashboard](https://developer.spotify.com/dashboard), click on the _Create an_",
+      "query": "Spotify developer console create app",
+      "position": 2,
+      "score": 12.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://support.spotify.com/us/article/verified-by-spotify",
+      "title": "Verified by Spotify",
+      "description": "The \u201cVerified by Spotify\u201d badge is displayed on an artist's profile and search when an artist has met defined standards demonstrating authenticity and trust.",
+      "query": "Spotify app review verification process",
+      "position": 1,
+      "score": 11.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/terms",
+      "title": "Spotify Developer Terms",
+      "description": "# Spotify Developer Terms\n## Section VIII Representations and Warranties, Limitation of Liability, Indemnification, Disclaimers, Release\n12. SPOTIFY EXPRESSLY DISCLAIMS ANY WARRANTY THAT: (I) THE SPOTIFY PLATFORM, SPOTIFY SERVICE OR SPOTIFY CONTENT WILL MEET ALL OF YOUR REQUIREMENTS; (II) THE OPERATION OF THE SPOTIFY PLATFORM, THE SPOTIFY SERVICE OR THE SPOTIFY CONTENT WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE; OR (III) THE SPOTIFY PLATFORM, SPOTIFY SERVICE OR SPOTIFY CONTENT WILL PROVIDE RESULTS THAT ARE ACCURATE OR RELIABLE OR CONSISTENT WITH YOUR EXPECTATIONS.",
+      "query": "Spotify developer terms of service",
+      "position": 1,
+      "score": 11.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+      "title": "Update on Developer Access and Platform Security",
+      "description": "Development Mode use will require a Spotify Premium account; Developers will be limited to one Development Mode Client ID; Each Client ID will ...",
+      "query": "Spotify developer terms of service",
+      "position": 5,
+      "score": 11.5,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://support.spotify.com/us/artists/article/verified-by-spotify",
+      "title": "Verified by Spotify",
+      "description": "# Verified by Spotify\n## How the review process works\nOnce artists are reviewed and verified, artists will get a notification in Spotify for Artists and they will see the badge appear on their artist profile and in Search, across all surfaces.",
+      "query": "Spotify app review verification process",
+      "position": 2,
+      "score": 11.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/policy",
+      "title": "Spotify Developer Policy",
+      "description": "# Spotify Developer Policy\n## VII. Access, Usage and Quotas\n3. Your account information and contact details must be accurate, complete and up to date. Please make sure to register with an actively monitored email address for service announcements or contacts for further information relating to your developer account. Your access to the Spotify Platform may be removed or restricted if we\u2019re unable to contact you.",
+      "query": "Spotify developer terms of service",
+      "position": 2,
+      "score": 11.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/tutorials/code-flow",
+      "title": "Authorization Code Flow | Spotify for Developers",
+      "description": "# Authorization Code Flow\n## Request an access token\n```\nvar authOptions = {\n\n  url: 'https://accounts.spotify.com/api/token',\n\n  form: {\n\n    code: code,\n\n    redirect_uri: redirect_uri,\n\n    grant_type: 'authorization_code'\n\n  },\n\n  headers: {\n\n    'content-type': 'application/x-www-form-urlencoded',\n\n    'Authorization': 'Basic ' + (new Buffer.from(client_id + ':' + client_secret).toString('base64'))\n\n  },\n\n  json: true\n\n};\n```",
+      "query": "Spotify OAuth app registration",
+      "position": 3,
+      "score": 11.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api",
+      "title": "Web API - Spotify for Developers",
+      "description": "Spotify's streaming service, such as retrieving content metadata, creating and managing playlists, or controlling playback.\n\n## Legal\nBy using Spotify Web API, you accept the [Spotify Developer Terms of Service](https://developer.spotify.com/terms).",
+      "query": "Spotify developer terms of service",
+      "position": 3,
+      "score": 11.1,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/blog/2025-04-15-updating-the-criteria-for-web-api-extended-access",
+      "title": "Updating the Criteria for Web API Extended Access",
+      "description": "As a result, we're updating how we grant extended quota mode access to ensure we continue to invest our resources effectively while supporting ...",
+      "query": "Spotify production access quota extension",
+      "position": 4,
+      "score": 10.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://developer.spotify.com/dashboard",
+      "title": "spotify-for-developers",
+      "description": "Something went wrong, we could not load this dashboard page. Try again later.",
+      "query": "Spotify OAuth app registration",
+      "position": 4,
+      "score": 9.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://www.activepieces.com/blog/spotify-web-api-free-access-modes-scopes-limits",
+      "title": "Spotify Web API Free? Access Modes, Scopes, Limits - Activepieces",
+      "description": "## Choosing an authorization flow and scopes\n### Scopes and token lifetime\n17 scopes are defined by Spotify, and [Spotify for Developers](https://developer.spotify.com/documentation/web-api/concepts/scopes) groups them by what they let an app do.\n\n## Available and restricted Spotify API endpoints by group\n| Group | Returns | Auth needed | Status and date changed |\n|-|-|-|-|\n| Search | Matching tracks, albums, artists, playlists | App token | Lower result limits, Feb 2026 |\n| Albums | Album metadata and track lists | App token | No change noted |\n| Artists | Artist metadata, albums, top tracks | App token | Related artists removed for new apps, Nov 2024 |\n| Playlists | Playlist contents and edits | User token, playlist scopes | Spotify-owned playlists restricted, Nov 2024 |\n| Player | Playback state, device control | User token, playback scopes | No change noted |\n| Library | Saved tracks, albums, followed items | User token, library scopes | No change noted |\n| Restricted items | Recommendations, featured and category playlists, preview URLs | Closed to new apps | Nov 2024 |\n\nBecause albums, artists and tracks need only an app token, they carry no user consent.",
+      "query": "Spotify API scopes permissions",
+      "position": 5,
+      "score": 8.5,
+      "official": true,
+      "reasons": [
+        "app named in the result"
+      ]
+    },
+    {
+      "url": "https://www.developer-tech.com/news/spotify-cries-foul-apple-app-review-process",
+      "title": "Spotify cries foul over Apple's app review process",
+      "description": "Spotify has accused Apple of deliberately holding back approval for an updated version of its iOS app, claiming the tech giant is failing to comply with the ...",
+      "query": "Spotify app review verification process",
+      "position": 5,
+      "score": 8.5,
+      "official": true,
+      "reasons": [
+        "app named in the result"
+      ]
+    },
+    {
+      "url": "https://www.trustpilot.com/review/www.spotify.com",
+      "title": "Read Customer Service Reviews of www.spotify.com - Trustpilot",
+      "description": "Read customer service reviews for Spotify on Trustpilot. Check out what customers have written so far or share your own experience with the company.",
+      "query": "Spotify app review verification process",
+      "position": 3,
+      "score": 7.1,
+      "official": true,
+      "reasons": [
+        "app named in the result"
+      ]
+    },
+    {
+      "url": "https://stackoverflow.com/questions/51795449/spotify-api-token-scope-issue",
+      "title": "Spotify API Token Scope Issue - Stack Overflow",
+      "description": "To get the token with a specific scope you need to go to the authorize endpoint and get the code . The code is what you want to get to be ...Spotify Web API giving me illegal scope no matter whatEdit scope authorization Spotify APIMore results from stackoverflow.com",
+      "query": "Spotify API scopes permissions",
+      "position": 3,
+      "score": 0.1,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://community.auth0.com/t/spotify-connection-with-additional-scopes/167542",
+      "title": "Spotify connection with additional scopes - Auth0 Community",
+      "description": "After adding permissions on the API and adding the scopes into the loginWithRedirect and I was able to get the scopes on the access_token ...",
+      "query": "Spotify API scopes permissions",
+      "position": 4,
+      "score": -2.2,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/truespotify/comments/1qc5pc8/cannot_create_any_app_on_spotify_developers",
+      "title": "Cannot create any app on Spotify developers dashboard. - Reddit",
+      "description": "Any new information available as to when they are going to let the developers create app through dashboard?",
+      "query": "Spotify developer console create app",
+      "position": 5,
+      "score": -2.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://community.spotify.com/forum/en/discussion/7384615/extended-quota-mode-request-independent-developer-trackline",
+      "title": "Extended Quota Mode Request \u2014 Independent Developer (TrackLine)",
+      "description": "Because your app falls under this category, it unfortunately isn't eligible for a quota extension. Spotify doesn't grant increased API limits ...",
+      "query": "Spotify production access quota extension",
+      "position": 5,
+      "score": -2.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/spotifyapi/comments/1p95n9x/need_spotify_api_extended_quota_for_a_public",
+      "title": "Need Spotify API Extended Quota for a public applications? - Reddit",
+      "description": "In order to get your quota extended, you need to prove your site gets 250k monthly active users. It's a non-starter. Also, Spotify no longer ...Spotify just killed indie development with their new API restrictionsI didn't know about the restrictions on requesting extended quota ...More results from www.reddit.com",
+      "query": "Spotify production access quota extension",
+      "position": 2,
+      "score": -2.6,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.quora.com/How-does-one-become-verified-on-Spotify",
+      "title": "How does one become verified on Spotify? - Quora",
+      "description": "How does one become verified on Spotify? \u00b7 step 1; download unitedmasters or amuse (can be distrokid as well) \u00b7 step 2: make an account \u00b7 step 3: ...",
+      "query": "Spotify app review verification process",
+      "position": 4,
+      "score": -3.2,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://community.spotify.com/forum/en/discussion/7283365/unable-to-create-app",
+      "title": "Unable to create app - Spotify Community",
+      "description": "The \"Create App\" button is unavailable in the Spotify Developer Dashboard. When hovered over, the following tooltip is displayed: \"Note: New ...",
+      "query": "Spotify developer console create app",
+      "position": 3,
+      "score": -3.9,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://community.spotify.com/forum/en/discussion/7503072/clarification-on-extended-quota-mode-eligibility",
+      "title": "Clarification on Extended Quota Mode Eligibility - Spotify Community",
+      "description": "Hello Spotify Developer Support, I'm looking for some clarification regarding the current requirements for Extended Quota Mode.",
+      "query": "Spotify production access quota extension",
+      "position": 3,
+      "score": -3.9,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/truespotify/comments/1l2am4i/spotify_just_killed_indie_development_with_their",
+      "title": "Spotify just killed indie development with their new API restrictions - Reddit",
+      "description": "As of May 15, Spotify made changes to their API access policy that basically lock out indie developers and small teams.",
+      "query": "Spotify developer terms of service",
+      "position": 4,
+      "score": -6.2,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=olY_2MW4Eik",
+      "title": "Spotify API OAuth - Automate Getting User Playlists (Complete Tutorial)",
+      "description": "... App on the Spotify API Developer Dashboard 18:30 Setting up the Flask Server & Flask Session 21:30 Getting the Client ID & Secret from the ...",
+      "query": "Spotify OAuth app registration",
+      "position": 5,
+      "score": -6.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
+    }
+  ],
+  "gates": [],
+  "fallbacks": [],
+  "skipped": [
+    {
+      "url": "https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://support.spotify.com/us/artists/article/verified-by-spotify",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.spotify.com/policy",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api/tutorials/code-flow",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.spotify.com/documentation/web-api",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.spotify.com/blog/2025-04-15-updating-the-criteria-for-web-api-extended-access",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://developer.spotify.com/dashboard",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.activepieces.com/blog/spotify-web-api-free-access-modes-scopes-limits",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.developer-tech.com/news/spotify-cries-foul-apple-app-review-process",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://www.trustpilot.com/review/www.spotify.com",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/51795449/spotify-api-token-scope-issue",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://community.auth0.com/t/spotify-connection-with-additional-scopes/167542",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.reddit.com/r/truespotify/comments/1qc5pc8/cannot_create_any_app_on_spotify_developers",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://community.spotify.com/forum/en/discussion/7384615/extended-quota-mode-request-independent-developer-trackline",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.reddit.com/r/spotifyapi/comments/1p95n9x/need_spotify_api_extended_quota_for_a_public",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.quora.com/How-does-one-become-verified-on-Spotify",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://community.spotify.com/forum/en/discussion/7283365/unable-to-create-app",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://community.spotify.com/forum/en/discussion/7503072/clarification-on-extended-quota-mode-eligibility",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.reddit.com/r/truespotify/comments/1l2am4i/spotify_just_killed_indie_development_with_their",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=olY_2MW4Eik",
+      "reason": "unofficial, official pages suffice"
+    }
+  ],
+  "no_oauth_found": false,
+  "failed": null,
+  "fetch_usage": []
+}
