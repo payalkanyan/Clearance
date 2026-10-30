@@ -1,7 +1,7 @@
 {
   "slug": "quickbooks",
   "app": "QuickBooks",
-  "at": "2026-10-30T12:06:53Z",
+  "at": "2026-10-30T12:20:41Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -287,7 +287,7 @@
   },
   "citations": {
     "slug": "quickbooks",
-    "at": "2026-10-30T12:06:53Z",
+    "at": "2026-10-30T12:20:41Z",
     "checked": 25,
     "verified": 25,
     "downgrades": []

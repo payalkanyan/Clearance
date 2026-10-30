@@ -53,7 +53,13 @@ LEVEL_PATTERNS: dict[Difficulty, tuple[str, ...]] = {
         r"partner (?:program|programme|agreement|application)",
         r"become a partner",
         r"business (?:approval|agreement|verification)",
-        r"security (?:audit|assessment|review|questionnaire)",
+        # The rubric's Very hard condition is a *paid* security audit. A
+        # provider running its own security review of your app is part of an
+        # ordinary marketplace review, which is Hard.
+        r"(?:paid|independent|third[- ]party|external)\s+security\s+"
+        r"(?:audit|assessment|review)",
+        r"\bsoc ?2\b",
+        r"\biso ?27001\b",
         r"penetration test",
         r"signed (?:agreement|contract)",
         r"letter of intent",
@@ -82,11 +88,20 @@ LEVEL_PATTERNS: dict[Difficulty, tuple[str, ...]] = {
         r"complete the .{0,30}verification process",
         r"questionnaire",
         r"assessment form",
+        r"security (?:assessment|questionnaire)",
         r"request production access",
         r"production access (?:requires|must)",
         r"apply for (?:production|full|extended|elevated)",
         r"approval (?:is )?required before",
         r"formal review",
+        # Providers name their review stages rather than calling it "app
+        # review": Slack has a preliminary and a functional review, Zoom a
+        # security one. A review with a stated duration is a mandatory review.
+        r"(?:preliminary|functional|technical|security|design|marketing|manual"
+        r"|editorial|compliance|architecture)\s+review",
+        r"review takes (?:up to )?\d+",
+        r"submit (?:for|to) [a-z' ]{0,30}review",
+        r"resubmit(?:ting)? for review",
         r"waitlist",
         r"request (?:to be )?(?:allow|white)listed",
         r"(?:allow|white)list request",

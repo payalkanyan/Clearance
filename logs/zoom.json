@@ -1,7 +1,7 @@
 {
   "slug": "zoom",
   "app": "Zoom",
-  "at": "2026-10-30T12:06:54Z",
+  "at": "2026-10-30T12:20:42Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
@@ -293,7 +293,7 @@
   },
   "citations": {
     "slug": "zoom",
-    "at": "2026-10-30T12:06:54Z",
+    "at": "2026-10-30T12:20:42Z",
     "checked": 34,
     "verified": 29,
     "downgrades": [
@@ -342,13 +342,13 @@
   "score": {
     "difficulty": "Hard",
     "reason": {
-      "text": "Ongoing monitoring: Zoom continuously monitors published apps and may request remediation or suspend apps that pose significant risks.",
+      "text": "Scope evaluation: The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
       "label": "Sourced",
       "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
-      "quote": "We monitor applications that have passed app review and been published to the App Marketplace to ensure continued compliance with our guidelines.",
+      "quote": "The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
       "note": null
     },
-    "trigger": "approval_process[5] matched 'app review'",
+    "trigger": "approval_process[2] matched 'security review'",
     "modifiers": [],
     "matches": [
       {
@@ -357,9 +357,9 @@
       },
       {
         "level": "Hard",
-        "pattern": "(?:app|application) review",
-        "where": "approval_process[5]",
-        "matched": "app review"
+        "pattern": "(?:preliminary|functional|technical|security|design|marketing|manual|editorial|compliance|architecture)\\s+review",
+        "where": "approval_process[2]",
+        "matched": "security review"
       }
     ]
   }

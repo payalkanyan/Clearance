@@ -3,7 +3,7 @@
 **SerpApi, serpapi.com**
 
 **Verdict:** No OAuth app found. The provider's own pages we could read describe no OAuth flow, so there may be nothing to register. This app may authenticate with an API key instead. *(Inferred)*
-> searched: SerpApi OAuth app registration, SerpApi developer console create app, SerpApi API scopes permissions, SerpApi app review verification process, SerpApi production access quota extension, SerpApi developer terms of service; read 4 official pages
+> searched: SerpApi OAuth app registration, SerpApi developer console create app, SerpApi API scopes permissions, SerpApi app review verification process, SerpApi production access quota extension, SerpApi developer terms of service; read 6 official pages
 
 **Difficulty:** Unknown
 **Why:** The rubric rates OAuth approval, and no OAuth flow was found to rate. *(Inferred)*
@@ -26,7 +26,8 @@
 - [How to scrape Google Play Store app reviews](https://serpapi.com/blog/how-to-scrape-google-play-store-app-reviews)
 - [How To Scrape Home Depot Product Reviews](https://serpapi.com/blog/how-to-scrape-home-depot-product-reviews)
 - [Google Search Engine Results API - SerpApi](https://serpapi.com/search-api)
-- [https://composio.dev/toolkits/serpapi](https://composio.dev/toolkits/serpapi)
+- [Serpapi MCP Server | Composio](https://composio.dev/toolkits/serpapi)
+- [Managed OAuth apps | Composio](https://docs.composio.dev/toolkits/managed-auth)
 
 **Last verified:** 2026-10-30, by agent.
 

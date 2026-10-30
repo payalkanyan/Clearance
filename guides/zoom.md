@@ -6,7 +6,7 @@
 > "Private and beta apps do not require review." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
 
 **Difficulty:** Hard
-**Why:** Ongoing monitoring: Zoom continuously monitors published apps and may request remediation or suspend apps that pose significant risks. *(Sourced)*
+**Why:** Scope evaluation: The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality. *(Sourced)*
 **Hands-on time:** 15 to 30 minutes *(Inferred)*
 **Waiting time:** Unknown *(Sourced)*
 
@@ -30,10 +30,10 @@
    > Derived from the Zoom OAuth redirect URI instructions and loopback URI specifications in the OAuth documentation.
 3. If building a native or public client without a backend secret, navigate to App Credentials under Basic Information and toggle 'Use Public Client OAuth' to on. *(Inferred)*
    > "Open your app and navigate to App Credentials under Basic Information. Toggle Use Public Client OAuth to on." — [source](https://developers.zoom.us/docs/integrations/oauth)
-   > downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
+   > downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
 4. Navigate to Scopes, click 'Add Scopes', and select the granular scopes required for your integration. *(Inferred)*
    > "Under Scopes, click Add Scopes. Select the granular scopes you'd like to use in the app." — [source](https://developers.zoom.us/docs/integrations/oauth-scopes-overview)
-   > downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page
+   > downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page
 5. Mark non-essential granular scopes as 'Optional' so that users can authorize minimal permissions initially. *(Sourced)*
    > "In that list, you can mark a scope Optional. Scopes not marked as optional will be required when using the basic authorization query." — [source](https://developers.zoom.us/docs/integrations/oauth-scopes-overview)
 6. Copy your Client ID and Client Secret from App Credentials (and paste them into your integration platform or Composio custom auth config if applicable). *(Inferred)*
@@ -81,7 +81,7 @@
   > "The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
 - Security testing: Apps undergo automated web scanning, least-privilege verification, library vulnerability checks, and manual assessments against OWASP Top 10 risks. *(Inferred)*
   > "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
-  > downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
+  > downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
 - Remediation & re-submission: Zoom provides a report explaining reasons for rejection and action items to fix before resubmitting. *(Sourced)*
   > "We provide a report explaining the reasons we did not accept the app and action items you can complete to remediate the issues." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
 - Ongoing monitoring: Zoom continuously monitors published apps and may request remediation or suspend apps that pose significant risks. *(Sourced)*
@@ -93,14 +93,14 @@
   > "The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
 - Security vulnerabilities or failing OWASP Top 10 assessments during technical security scanning. *(Inferred)*
   > "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
-  > downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
+  > downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
 - Presenting ads to users or collecting user data for marketing purposes, which violates usability policies. *(Sourced)*
   > "Your app should not present advertising to Zoom users or collect user information for marketing purposes." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
 - Incomplete technical design documentation or unclear test plans and listing descriptions. *(Sourced)*
   > "Apps with poorly described scopes, confusing UI, or unclear listing information may require a lengthy review process." — [source](https://developers.zoom.us/docs/distribute/app-review-process)
 - Violating Zoom branding guidelines or intellectual property rules in the app name, description, or assets. *(Inferred)*
   > "Zoom reserves the right to remove or require a revision to any content, in whole or part, including an app name, that violates: Zoom's" — [source](https://developers.zoom.us/docs/distribute/app-review-process)
-  > downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
+  > downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together
 - Missing account administrator permissions or pre-approval in the Zoom organization. *(Sourced)*
   > "To enable apps for end-users, an account admin, or user with Marketplace permissions for their Zoom Account, must pre-approve the app." — [source](https://developers.zoom.us/docs/integrations/oauth-scopes-overview)
 

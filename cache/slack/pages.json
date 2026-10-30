@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://nango.dev/docs/api-integrations/slack/how-to-register-your-own-slack-api-oauth-app",
+    "file": "pages/741aa65d8e34bf1f.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:12:43Z",
+    "title": "How to register your own Slack OAuth app - Nango Docs",
+    "status": 200,
+    "bytes": 157866,
+    "official": false,
+    "kind": "provider",
+    "query": "Slack OAuth app registration"
+  },
+  {
+    "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+    "file": "pages/b0450ada08595424.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:12:45Z",
+    "title": "Installing via OAuth authorization code flow | Slack Developer Docs",
+    "status": 200,
+    "bytes": 28274,
+    "official": true,
+    "kind": "provider",
+    "query": "Slack OAuth app registration"
+  },
+  {
+    "url": "https://docs.slack.dev/reference/scopes",
+    "file": "pages/1be18f5cbe28ebb4.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:12:53Z",
+    "title": "Scopes | Slack Developer Docs",
+    "status": 200,
+    "bytes": 19563,
+    "official": true,
+    "kind": "provider",
+    "query": "Slack API scopes permissions"
+  },
+  {
+    "url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+    "file": "pages/3b0e81d4d1227b03.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:13:28Z",
+    "title": "Slack Marketplace review process | Slack Developer Docs",
+    "status": 200,
+    "bytes": 25446,
+    "official": true,
+    "kind": "provider",
+    "query": "Slack app review verification process"
+  },
+  {
+    "url": "https://docs.slack.dev/apis/web-api/rate-limits",
+    "file": "pages/0502a2268753f994.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:13:29Z",
+    "title": "Rate limits | Slack Developer Docs",
+    "status": 200,
+    "bytes": 13146,
+    "official": true,
+    "kind": "provider",
+    "query": "Slack production access quota extension"
+  },
+  {
+    "url": "https://slack.com/blog/developers/slack-marketplace-review-process",
+    "file": "pages/5be71cef7ae211c1.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:13:47Z",
+    "title": "FAQ: Slack\u2019s Marketplace review process | Slack",
+    "status": 200,
+    "bytes": 7483,
+    "official": true,
+    "kind": "provider",
+    "query": "Slack app review verification process"
+  },
+  {
+    "url": "https://slack.com/help/articles/115003461503-Understand-app-permissions",
+    "file": "pages/2f1ac99553a82509.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:13:50Z",
+    "title": "Understand app permissions | Slack",
+    "status": 200,
+    "bytes": 10144,
+    "official": true,
+    "kind": "provider",
+    "query": "Slack API scopes permissions"
+  },
+  {
+    "url": "https://composio.dev/toolkits/slack",
+    "file": "pages/b50de8ef140778bd.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:15:05Z",
+    "title": "Slack MCP Server for AI Agents | Composio",
+    "status": 200,
+    "bytes": 39687,
+    "official": true,
+    "kind": "composio",
+    "query": null
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/managed-auth",
+    "file": "pages/a0f9c2141dd2d96c.md",
+    "source": "firecrawl",
+    "fetched_at": "2026-10-30T12:15:05Z",
+    "title": "Managed OAuth apps | Composio",
+    "status": 200,
+    "bytes": 3369,
+    "official": true,
+    "kind": "composio",
+    "query": null
+  }
+]

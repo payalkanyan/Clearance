@@ -1,0 +1,60 @@
+{
+  "slug": "slack",
+  "observations": [
+    {
+      "url": "https://api.slack.com/developer-program/dashboard",
+      "observed": "login_wall",
+      "at": "2026-10-30T12:13:58Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in",
+        "signin"
+      ],
+      "fields_visible": [
+        "organization",
+        "platform"
+      ],
+      "bytes": 4150,
+      "error": null,
+      "why": "path /dashboard, link text 'dashboard'"
+    },
+    {
+      "url": "https://api.slack.com/apps",
+      "observed": "login_wall",
+      "at": "2026-10-30T12:14:32Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in",
+        "signin"
+      ],
+      "fields_visible": [],
+      "bytes": 207,
+      "error": null,
+      "why": "path /apps"
+    }
+  ],
+  "considered": [
+    {
+      "url": "https://api.slack.com/developer-program/dashboard",
+      "score": 10,
+      "why": "path /dashboard, link text 'dashboard'"
+    },
+    {
+      "url": "https://api.slack.com/apps",
+      "score": 6,
+      "why": "path /apps"
+    },
+    {
+      "url": "https://slack.com/get-started?entry_point=footer",
+      "score": 4,
+      "why": "link text 'get started'"
+    },
+    {
+      "url": "https://slack.com/get-started?entry_point=help_center",
+      "score": 4,
+      "why": "link text 'sign up'"
+    }
+  ]
+}

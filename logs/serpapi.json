@@ -1,7 +1,7 @@
 {
   "slug": "serpapi",
   "app": "SerpApi",
-  "at": "2026-10-30T12:06:54Z",
+  "at": "2026-10-30T12:20:41Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,

@@ -10,11 +10,11 @@
   "quick_setup_checklist": [],
   "difficulty": "Hard",
   "difficulty_reason": {
-    "text": "Ongoing monitoring: Zoom continuously monitors published apps and may request remediation or suspend apps that pose significant risks.",
+    "text": "Scope evaluation: The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
     "label": "Sourced",
     "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
-    "quote": "We monitor applications that have passed app review and been published to the App Marketplace to ensure continued compliance with our guidelines.",
-    "note": "triggered the Hard rating: approval_process[5] matched 'app review'"
+    "quote": "The Marketplace Security Review Team verifies that the app only requests the minimum necessary OAuth scopes required for its functionality.",
+    "note": "triggered the Hard rating: approval_process[2] matched 'security review'"
   },
   "hands_on_time": {
     "text": "15 to 30 minutes",
@@ -71,14 +71,14 @@
       "label": "Inferred",
       "source_url": "https://developers.zoom.us/docs/integrations/oauth",
       "quote": "Open your app and navigate to App Credentials under Basic Information. Toggle Use Public Client OAuth to on.",
-      "note": "downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
+      "note": "downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
     },
     {
       "text": "Navigate to Scopes, click 'Add Scopes', and select the granular scopes required for your integration.",
       "label": "Inferred",
       "source_url": "https://developers.zoom.us/docs/integrations/oauth-scopes-overview",
       "quote": "Under Scopes, click Add Scopes. Select the granular scopes you'd like to use in the app.",
-      "note": "downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page"
+      "note": "downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page"
     },
     {
       "text": "Mark non-essential granular scopes as 'Optional' so that users can authorize minimal permissions initially.",
@@ -197,7 +197,7 @@
       "label": "Inferred",
       "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
       "quote": "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning.",
-      "note": "downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
+      "note": "downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
     },
     {
       "text": "Remediation & re-submission: Zoom provides a report explaining reasons for rejection and action items to fix before resubmitting.",
@@ -224,7 +224,7 @@
       "label": "Inferred",
       "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
       "quote": "Apps are tested against the OWASP Top 10 risks and undergo a variety of assessments, including: Verification of least-privilege access. Web application security scanning.",
-      "note": "downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
+      "note": "downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
     },
     {
       "text": "Presenting ads to users or collecting user data for marketing purposes, which violates usability policies.",
@@ -243,7 +243,7 @@
       "label": "Inferred",
       "source_url": "https://developers.zoom.us/docs/distribute/app-review-process",
       "quote": "Zoom reserves the right to remove or require a revision to any content, in whole or part, including an app name, that violates: Zoom's",
-      "note": "downgraded from Sourced on 2026-10-30T12:06:54Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
+      "note": "downgraded from Sourced on 2026-10-30T12:20:42Z: quote does not appear in the cited page; its first 8 words do, so the rest looks paraphrased or stitched together"
     },
     {
       "text": "Missing account administrator permissions or pre-approval in the Zoom organization.",
@@ -322,7 +322,7 @@
   "meta": {
     "slug": "zoom",
     "provenance": "agent",
-    "generated_at": "2026-10-30T12:06:54Z",
+    "generated_at": "2026-10-30T12:20:42Z",
     "model": "gemini-3.8-flash",
     "no_oauth_found": false
   }

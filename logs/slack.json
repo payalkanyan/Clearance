@@ -1,0 +1,345 @@
+{
+  "slug": "slack",
+  "app": "Slack",
+  "at": "2026-10-30T12:20:42Z",
+  "model": "gemini-3.8-flash",
+  "seconds": {
+    "discover": 0.0,
+    "probe": 0.0,
+    "composio": 0.0,
+    "extract": 0.0,
+    "citations": 0.01,
+    "score": 0.0,
+    "total": 0.02
+  },
+  "discover": {
+    "queries": [
+      {
+        "query": "Slack OAuth app registration",
+        "results": 5,
+        "urls": [
+          "https://api.slack.com/apps",
+          "https://docs.slack.dev/authentication/installing-with-oauth",
+          "https://nango.dev/docs/api-integrations/slack/how-to-register-your-own-slack-api-oauth-app",
+          "https://www.useparagon.com/blog/create-a-slack-app-to-enable-oauth-for-your-integration",
+          "https://docs.slack.dev/app-management/quickstart-app-settings"
+        ]
+      },
+      {
+        "query": "Slack developer console create app",
+        "results": 5,
+        "urls": [
+          "https://api.slack.com/apps",
+          "https://docs.slack.dev/",
+          "https://slack.com/help/articles/13345326945043-Build-apps-with-Slacks-developer-tools",
+          "https://slack.dev/",
+          "https://slack.com/marketplace"
+        ]
+      },
+      {
+        "query": "Slack API scopes permissions",
+        "results": 5,
+        "urls": [
+          "https://docs.slack.dev/reference/scopes",
+          "https://docs.slack.dev/authentication/installing-with-oauth",
+          "https://slack.com/help/articles/115003461503-Understand-app-permissions",
+          "https://api.slack.com/apps",
+          "https://stackoverflow.com/questions/69381785/slack-api-how-to-add-usersread-scope-to-a-bot-token"
+        ]
+      },
+      {
+        "query": "Slack app review verification process",
+        "results": 5,
+        "urls": [
+          "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+          "https://slack.com/blog/developers/slack-marketplace-review-process",
+          "https://www.reddit.com/r/Slack/comments/zfhktf/slack_app_review_process",
+          "https://slack.com/help/articles/222386767-Manage-app-approval-for-your-workspace",
+          "https://meenal-kekre.medium.com/tips-to-expedite-slack-app-approval-for-general-use-b9b49043790c"
+        ]
+      },
+      {
+        "query": "Slack production access quota extension",
+        "results": 5,
+        "urls": [
+          "https://docs.slack.dev/apis/web-api/rate-limits",
+          "https://slack.com/integrations",
+          "https://slack.com/pricing/paid-vs-free",
+          "https://learn.microsoft.com/en-us/answers/questions/2148506/need-to-increase-payload-limit-for-slack-channel-b",
+          "https://developer.spotify.com/documentation/web-api/concepts/quota-modes"
+        ]
+      },
+      {
+        "query": "Slack developer terms of service",
+        "results": 5,
+        "urls": [
+          "https://slack.com/terms-of-service/api",
+          "https://slack.com/terms-of-service/slack-developer-program",
+          "https://slack.com/main-services-agreement",
+          "https://docs.slack.dev/developer-policy",
+          "https://slack.com/terms-of-service/user"
+        ]
+      },
+      {
+        "query": "Slack OAuth app access restrictions admin approval",
+        "results": 5,
+        "urls": [
+          "https://docs.slack.dev/authentication/installing-with-oauth",
+          "https://slack.com/help/articles/222386767-Manage-app-approval-for-your-workspace",
+          "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions",
+          "https://learn.microsoft.com/en-sg/answers/questions/4375957/outlook-calendar-for-slack-users-receiving-admin-a",
+          "https://www.reddit.com/r/Slack/comments/i2o47z/gated_access_to_adding_new_apps_in_slack_how"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/slack/how-to-register-your-own-slack-api-oauth-app",
+        "bytes": 157866,
+        "source": "firecrawl",
+        "official": false
+      },
+      {
+        "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+        "bytes": 28274,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.slack.dev/reference/scopes",
+        "bytes": 19563,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+        "bytes": 25446,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.slack.dev/apis/web-api/rate-limits",
+        "bytes": 13146,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://slack.com/blog/developers/slack-marketplace-review-process",
+        "bytes": 7483,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://slack.com/help/articles/115003461503-Understand-app-permissions",
+        "bytes": 10144,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://composio.dev/toolkits/slack",
+        "bytes": 39687,
+        "source": "firecrawl",
+        "official": true
+      },
+      {
+        "url": "https://docs.composio.dev/toolkits/managed-auth",
+        "bytes": 3369,
+        "source": "firecrawl",
+        "official": true
+      }
+    ],
+    "gates": [],
+    "fallbacks": [],
+    "skipped": [
+      {
+        "url": "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.useparagon.com/blog/create-a-slack-app-to-enable-oauth-for-your-integration",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://slack.com/help/articles/222386767-Manage-app-approval-for-your-workspace",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.slack.dev/developer-policy",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://api.slack.com/apps",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.slack.dev/app-management/quickstart-app-settings",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/help/articles/13345326945043-Build-apps-with-Slacks-developer-tools",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/terms-of-service/slack-developer-program",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/terms-of-service/api",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://docs.slack.dev/",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/terms-of-service/user",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/integrations",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/pricing/paid-vs-free",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/main-services-agreement",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.dev/",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://slack.com/marketplace",
+        "reason": "page limit reached"
+      },
+      {
+        "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://stackoverflow.com/questions/69381785/slack-api-how-to-add-usersread-scope-to-a-bot-token",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Slack/comments/zfhktf/slack_app_review_process",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://meenal-kekre.medium.com/tips-to-expedite-slack-app-approval-for-general-use-b9b49043790c",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://www.reddit.com/r/Slack/comments/i2o47z/gated_access_to_adding_new_apps_in_slack_how",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/answers/questions/2148506/need-to-increase-payload-limit-for-slack-channel-b",
+        "reason": "unofficial, official pages suffice"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-sg/answers/questions/4375957/outlook-calendar-for-slack-users-receiving-admin-a",
+        "reason": "unofficial, official pages suffice"
+      }
+    ],
+    "no_oauth_found": false
+  },
+  "probe": [
+    {
+      "url": "https://api.slack.com/developer-program/dashboard",
+      "observed": "login_wall",
+      "at": "2026-10-30T12:13:58Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in",
+        "signin"
+      ],
+      "fields_visible": [
+        "organization",
+        "platform"
+      ],
+      "bytes": 4150,
+      "error": null,
+      "why": "path /dashboard, link text 'dashboard'"
+    },
+    {
+      "url": "https://api.slack.com/apps",
+      "observed": "login_wall",
+      "at": "2026-10-30T12:14:32Z",
+      "status": 200,
+      "source": "firecrawl",
+      "signals": [
+        "sign in",
+        "signin"
+      ],
+      "fields_visible": [],
+      "bytes": 207,
+      "error": null,
+      "why": "path /apps"
+    }
+  ],
+  "composio": {
+    "kind": "managed",
+    "tried": [
+      {
+        "url": "https://composio.dev/toolkits/slack",
+        "status": 200,
+        "error": null
+      }
+    ]
+  },
+  "extract": {
+    "usage": {
+      "input_tokens": 51846,
+      "output_tokens": 3795,
+      "total_tokens": 61571,
+      "calls": 0
+    },
+    "cost_usd": 0.053116,
+    "prompt_chars": 188499,
+    "trimmed": [
+      {
+        "url": "https://nango.dev/docs/api-integrations/slack/how-to-register-your-own-slack-api-oauth-app",
+        "kept_chars": 40000,
+        "original_chars": 157811,
+        "reason": "per-page cap"
+      }
+    ],
+    "repairs": [
+      "approval_process[1]: quote trimmed from 28 to 24 words",
+      "approval_process[2]: quote trimmed from 28 to 24 words",
+      "likely_blockers[3]: quote trimmed from 26 to 24 words"
+    ],
+    "calls": 0
+  },
+  "citations": {
+    "slug": "slack",
+    "at": "2026-10-30T12:20:42Z",
+    "checked": 29,
+    "verified": 29,
+    "downgrades": []
+  },
+  "score": {
+    "difficulty": "Hard",
+    "reason": {
+      "text": "Immediate for development workspace installs; up to 10 business days preliminary and 10 weeks functional review for public Slack Marketplace listing.",
+      "label": "Inferred",
+      "source_url": null,
+      "quote": null,
+      "note": "Developers can create an app and install it to their development workspace immediately without review. Public listing in the Slack Marketplace requires passing an automated and manual multi-stage review."
+    },
+    "trigger": "verdict matched 'functional review'",
+    "modifiers": [],
+    "matches": [
+      {
+        "level": "Hard",
+        "pattern": "(?:preliminary|functional|technical|security|design|marketing|manual|editorial|compliance|architecture)\\s+review",
+        "where": "verdict",
+        "matched": "functional review"
+      }
+    ]
+  }
+}

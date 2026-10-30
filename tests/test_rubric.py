@@ -85,6 +85,21 @@ def test_an_optional_programme_does_not_set_the_level():
     assert any("optional programme" in m.get("skipped", "") for m in result.matches)
 
 
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Functional review takes up to 10 weeks for new submissions.",
+        "Preliminary review takes up to 10 business days.",
+        "The Marketplace Security Review Team verifies requested scopes.",
+        "Apps must reach 10 workspaces before they are eligible to submit for "
+        "public review.",
+    ],
+)
+def test_a_named_review_phase_is_still_a_mandatory_review(text):
+    """Providers name their stages rather than saying "app review"."""
+    assert score(facts(approval_process=[text])).difficulty is Difficulty.HARD
+
+
 def test_a_marketplace_review_that_gates_distribution_is_not_optional():
     """Zoom: Marketplace review is how an app reaches anyone outside your own
     account, so it sets the level. Contrast with the GitHub case above, where

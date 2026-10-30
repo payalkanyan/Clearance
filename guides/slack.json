@@ -1,0 +1,309 @@
+{
+  "app_name": "Slack",
+  "website": "api.slack.com/developer-program/dashboard",
+  "verdict": {
+    "text": "Immediate for development workspace installs; up to 10 business days preliminary and 10 weeks functional review for public Slack Marketplace listing.",
+    "label": "Inferred",
+    "note": "Developers can create an app and install it to their development workspace immediately without review. Public listing in the Slack Marketplace requires passing an automated and manual multi-stage review."
+  },
+  "quick_setup_checklist": [],
+  "difficulty": "Hard",
+  "difficulty_reason": {
+    "text": "Immediate for development workspace installs; up to 10 business days preliminary and 10 weeks functional review for public Slack Marketplace listing.",
+    "label": "Inferred",
+    "note": "triggered the Hard rating: verdict matched 'functional review'"
+  },
+  "hands_on_time": {
+    "text": "15 to 30 minutes",
+    "label": "Inferred",
+    "note": "Registering an app, obtaining credentials, setting up redirect URIs, and configuring scopes takes roughly 15 to 30 minutes."
+  },
+  "waiting_time": {
+    "text": "Immediate to 10 weeks",
+    "label": "Inferred",
+    "note": "Workspace-level installs are instant. For Marketplace listing, preliminary review takes up to 10 business days and functional review takes up to 10 weeks."
+  },
+  "composio_status": {
+    "text": "Toolkit available with a Composio managed OAuth app, so you can connect without registering your own. Bringing your own app is optional, for your name on the consent screen.",
+    "label": "Sourced",
+    "source_url": "https://composio.dev/toolkits/slack",
+    "quote": "Composio provides a managed OAuth app for Slack, so you sign in with your normal Slack account and approve access.",
+    "note": "read from Composio's own toolkit page"
+  },
+  "prerequisites": [
+    {
+      "text": "At https://api.slack.com/developer-program/dashboard, a sign-in wall: you must log in before you can register an app. Fields visible: organization, platform.",
+      "label": "Tested",
+      "source_url": "https://api.slack.com/developer-program/dashboard",
+      "note": "observed by the agent at 2026-10-30T12:13:58Z, HTTP 200; matched sign in, signin"
+    },
+    {
+      "text": "At https://api.slack.com/apps, a sign-in wall: you must log in before you can register an app.",
+      "label": "Tested",
+      "source_url": "https://api.slack.com/apps",
+      "note": "observed by the agent at 2026-10-30T12:14:32Z, HTTP 200; matched sign in, signin"
+    },
+    {
+      "text": "A Slack account and access to a development workspace where the app will be built and tested.",
+      "label": "Inferred",
+      "note": "Slack requires signing into a workspace to access app management and to install an undistributed app."
+    },
+    {
+      "text": "For Marketplace review submission, your app must be installed on 10 or more active workspaces used in the past 28 days.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Your app has been installed on 10 or more active workspaces and the service has been tested on those workspaces"
+    }
+  ],
+  "setup_steps": [
+    {
+      "text": "Go to the Slack App Management console at https://api.slack.com/apps and sign in with your Slack account.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "Include both your app's client ID, which is found in the App Management page, and a comma-separated list of scopes"
+    },
+    {
+      "text": "Create a new app by choosing either 'From scratch' or using an App Manifest, give it an app name, and pick your development workspace.",
+      "label": "Inferred",
+      "note": "Standard app creation flow in Slack App Management."
+    },
+    {
+      "text": "In the left sidebar under 'OAuth & Permissions', configure your HTTPS Redirect URL (must not include an anchor '#').",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "Alternatively, you can configure a Redirect URL in the App Management page under OAuth & Permissions. A Redirect URL must also use HTTPS."
+    },
+    {
+      "text": "Under 'OAuth & Permissions', add the required Bot Token Scopes and User Token Scopes needed for your integration.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "Bot scopes should be added as scope=<bot_scope>, and user scopes should be added as user_scope=<user_scope>."
+    },
+    {
+      "text": "Retrieve your Client ID and Client Secret from the App Management page for exchanging authorization codes via oauth.v2.access.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "curl -F code=1234 -F client_id=3336676.569200954261 -F client_secret=ABCDEFGH https://slack.com/api/oauth.v2.access"
+    },
+    {
+      "text": "Redirect users to https://slack.com/oauth/v2/authorize with your client_id, scopes, and redirect_uri to initiate installation.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "To request scopes, redirect Slack users to https://slack.com/oauth/v2/authorize."
+    },
+    {
+      "text": "If publishing publicly, test across 10 active workspaces and navigate to 'Submit to the Slack Marketplace' in your app configuration page.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Your app submission (and subsequent updates to your app) happens from the Submit to the Slack Marketplace section of your app's configuration page."
+    }
+  ],
+  "scopes": [
+    {
+      "text": "chat:write: Send messages as your Slack app.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/reference/scopes",
+      "quote": "Send messages as your Slack app"
+    },
+    {
+      "text": "channels:read: View basic information about public channels in a workspace.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/reference/scopes",
+      "quote": "View basic information about public channels in a workspace"
+    },
+    {
+      "text": "channels:history: View messages and other content in public channels that your Slack app has been added to.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/reference/scopes",
+      "quote": "View messages and other content in public channels that your Slack app has been added to"
+    },
+    {
+      "text": "commands: Add shortcuts and slash commands that people can use.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/reference/scopes",
+      "quote": "Add shortcuts and slash commands that people can use"
+    },
+    {
+      "text": "incoming-webhook: Post messages to specific channels in Slack.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/reference/scopes",
+      "quote": "Post messages to specific channels in Slack"
+    },
+    {
+      "text": "users:read: View people in a workspace.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/reference/scopes",
+      "quote": "View people in a workspace"
+    }
+  ],
+  "limits_before_approval": [
+    {
+      "text": "Undistributed apps can only be installed on the workspace where they were created, unless configured for an Enterprise org that supports org-wide installs.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "quote": "Your app can only be installed on the workspace that owns it. Slack asks the user to sign in to that workspace"
+    },
+    {
+      "text": "Apps must reach at least 10 active workspaces before they are eligible to submit for public Slack Marketplace review.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Your app has been installed on 10 or more active workspaces and the service has been tested on those workspaces"
+    },
+    {
+      "text": "Web API calls are rate limited per method per workspace per app across four tiers (Tier 1: 1+/min, Tier 2: 20+/min, Tier 3: 50+/min, Tier 4: 100+/min).",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/apis/web-api/rate-limits",
+      "quote": "Broadly, you'll encounter limits like these, applied on a \" per API method per workspace/team per app\" basis."
+    },
+    {
+      "text": "Message posting is limited to 1 message per second per channel, with short bursts allowed.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/apis/web-api/rate-limits",
+      "quote": "In general, apps may post no more than one message per second per channel, whether a message is posted via chat.postMessage"
+    },
+    {
+      "text": "Events API deliveries max out at 30,000 per workspace per app per 60 minutes.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/apis/web-api/rate-limits",
+      "quote": "Event deliveries to your server via the Events API currently max out at 30,000 per workspace/team per app per 60 minutes."
+    }
+  ],
+  "approval_process": [
+    {
+      "text": "Automated tests run during the submission process and detected issues must be resolved before manual submission.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Before you can submit your app, we will run some automated tests on your app. Once you\u2019ve fixed any issues we detect, you can submit"
+    },
+    {
+      "text": "Preliminary review takes up to 10 business days, reviewing listing details, links, documentation, and scope justifications.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Currently, the preliminary part of the review takes up to 10 business days to receive feedback, while the functional review takes up to 10"
+    },
+    {
+      "text": "Functional review takes up to 10 weeks for new submissions and tests the end-to-end user experience, install/uninstall, and scope usage.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Once your app enters this stage of the review, your submission will be assigned to a reviewer and you\u2019ll receive feedback about your app\u2019s"
+    },
+    {
+      "text": "Endpoints are checked for TLS and request signing verification, though Slack does not perform code reviews.",
+      "label": "Sourced",
+      "source_url": "https://slack.com/blog/developers/slack-marketplace-review-process",
+      "quote": "Tests an app\u2019s endpoints for TLS and request signing verification (used by apps to validate requests they receive are coming from Slack)."
+    },
+    {
+      "text": "Once approved and published to the Slack Marketplace, the live app configuration is locked and changes require resubmitting for review.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Once your app is published in the Slack Marketplace, the live version of your app is locked."
+    }
+  ],
+  "likely_blockers": [
+    {
+      "text": "Not meeting the minimum requirement of 10 active workspace installations blocks submission to the Marketplace.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "apps that do not meet this requirement will be blocked from submitting to the Marketplace"
+    },
+    {
+      "text": "Requesting legacy, coded workflow, or high-privilege scopes such as admin.*, search:read, triggers:*, read, post, or client.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "you\u2019ll also need to ensure that your app does not request legacy/restricted scopes, scopes that provide extensive access to workspace data, or coded workflow scopes"
+    },
+    {
+      "text": "Requesting scopes for future functionality rather than features actively available and testable in the current app build.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "Please do not submit your app with scopes for a feature that you plan to build at some point in future."
+    },
+    {
+      "text": "Failing to provide test account credentials (or sufficiently long free trials) for third-party or paid services required by the app.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "If a paid account is required for your service, you\u2019ll need to share login credentials with us for an account with the required level"
+    },
+    {
+      "text": "Frequent bugs, low quality, or submitting in private beta before full end-to-end and uninstall testing is completed.",
+      "label": "Sourced",
+      "source_url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "quote": "If your app is submitted with bugs, poor user experience, or we repeatedly run into issues of low quality when reviewing, we will return it"
+    }
+  ],
+  "agent_can_do": [
+    "Explain bot vs user scopes and provide appropriate scope lists for your integration.",
+    "Generate OAuth authorize URLs with parameters like client_id, scopes, and redirect_uri.",
+    "Format API requests for token exchange using oauth.v2.access.",
+    "Draft app manifest YAML or JSON configurations for app setup."
+  ],
+  "you_must_do": [
+    "Log in to the Slack App Management console at https://api.slack.com/apps.",
+    "Create the app and copy your Client ID and Client Secret.",
+    "Configure your HTTPS Redirect URL and authorize test workspace installs.",
+    "Fulfill the 10-active-workspace requirement and submit for Slack Marketplace review if distributing publicly."
+  ],
+  "open_questions": [
+    {
+      "text": "Can an app be distributed to multiple external workspaces via direct install links without submitting to the Slack Marketplace, beyond initial test workspaces?",
+      "label": "Uncertain",
+      "note": "Documentation discusses workspace installs on 10 active workspaces prior to Marketplace submission, but does not state the hard cap on direct link installs without Marketplace listing."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nango.dev/docs/api-integrations/slack/how-to-register-your-own-slack-api-oauth-app",
+      "title": "How to register your own Slack OAuth app - Nango Docs"
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "title": "Installing via OAuth authorization code flow | Slack Developer Docs"
+    },
+    {
+      "url": "https://docs.slack.dev/reference/scopes",
+      "title": "Scopes | Slack Developer Docs"
+    },
+    {
+      "url": "https://docs.slack.dev/slack-marketplace/slack-marketplace-review-guide",
+      "title": "Slack Marketplace review process | Slack Developer Docs"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/web-api/rate-limits",
+      "title": "Rate limits | Slack Developer Docs"
+    },
+    {
+      "url": "https://slack.com/blog/developers/slack-marketplace-review-process",
+      "title": "FAQ: Slack\u2019s Marketplace review process | Slack"
+    },
+    {
+      "url": "https://slack.com/help/articles/115003461503-Understand-app-permissions",
+      "title": "Understand app permissions | Slack"
+    },
+    {
+      "url": "https://composio.dev/toolkits/slack",
+      "title": "Slack MCP Server for AI Agents | Composio"
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "title": "Managed OAuth apps | Composio"
+    },
+    {
+      "url": "https://api.slack.com/developer-program/dashboard"
+    },
+    {
+      "url": "https://api.slack.com/apps"
+    }
+  ],
+  "last_verified": {
+    "date": "2026-10-30",
+    "by": "agent"
+  },
+  "meta": {
+    "slug": "slack",
+    "provenance": "agent",
+    "generated_at": "2026-10-30T12:20:42Z",
+    "model": "gemini-3.8-flash",
+    "no_oauth_found": false
+  }
+}

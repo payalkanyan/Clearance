@@ -4,7 +4,7 @@
   "verdict": {
     "text": "No OAuth app found. The provider's own pages we could read describe no OAuth flow, so there may be nothing to register. This app may authenticate with an API key instead.",
     "label": "Inferred",
-    "note": "searched: SerpApi OAuth app registration, SerpApi developer console create app, SerpApi API scopes permissions, SerpApi app review verification process, SerpApi production access quota extension, SerpApi developer terms of service; read 4 official pages"
+    "note": "searched: SerpApi OAuth app registration, SerpApi developer console create app, SerpApi API scopes permissions, SerpApi app review verification process, SerpApi production access quota extension, SerpApi developer terms of service; read 6 official pages"
   },
   "quick_setup_checklist": [],
   "difficulty": "Unknown",
@@ -70,7 +70,12 @@
       "title": "Google Search Engine Results API - SerpApi"
     },
     {
-      "url": "https://composio.dev/toolkits/serpapi"
+      "url": "https://composio.dev/toolkits/serpapi",
+      "title": "Serpapi MCP Server | Composio"
+    },
+    {
+      "url": "https://docs.composio.dev/toolkits/managed-auth",
+      "title": "Managed OAuth apps | Composio"
     }
   ],
   "last_verified": {
@@ -80,7 +85,7 @@
   "meta": {
     "slug": "serpapi",
     "provenance": "agent",
-    "generated_at": "2026-10-30T12:06:54Z",
+    "generated_at": "2026-10-30T12:20:41Z",
     "model": "gemini-3.8-flash",
     "no_oauth_found": true
   }

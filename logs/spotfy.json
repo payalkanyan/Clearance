@@ -1,14 +1,14 @@
 {
   "slug": "spotfy",
   "app": "Spotfy",
-  "at": "2026-10-30T12:06:54Z",
+  "at": "2026-10-30T12:20:41Z",
   "model": "gemini-3.8-flash",
   "seconds": {
     "discover": 0.0,
     "probe": 0.0,
     "composio": 0.0,
     "extract": 0.0,
-    "citations": 0.0,
+    "citations": 0.01,
     "score": 0.0,
     "total": 0.02
   },
@@ -280,7 +280,7 @@
   },
   "citations": {
     "slug": "spotfy",
-    "at": "2026-10-30T12:06:54Z",
+    "at": "2026-10-30T12:20:41Z",
     "checked": 31,
     "verified": 31,
     "downgrades": []
