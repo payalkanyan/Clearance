@@ -30,9 +30,9 @@ def test_guide_page_renders_a_known_guide():
     result = app(view="guide", app="github")
     assert not result.exception
     text = " ".join(block.value for block in result.markdown)
-    assert "Prerequisites" in " ".join(h.value for h in result.subheader)
-    assert "Sources" in " ".join(h.value for h in result.subheader)
-    assert "Tested" in text or "Sourced" in text
+    for heading in ("Verdict", "Composio", "Prerequisites", "Setup steps", "Sources"):
+        assert f"##### {heading}" in text, heading
+    assert "GitHub" in " ".join(block.value for block in result.title)
 
 
 def test_guide_page_shows_a_shareable_link():
@@ -67,16 +67,29 @@ def test_the_sidebar_explains_every_label(label):
     assert label in sidebar
 
 
-def test_labels_render_as_coloured_tags():
+def test_labels_render_as_native_themed_badges():
+    """The colours live in .streamlit/config.toml, so the labels are Streamlit
+    badges rather than hand-written HTML spans."""
     result = app(view="guide", app="github")
-    html = " ".join(block.value for block in result.markdown)
-    assert "border-radius:4px" in html  # the tag helper's styling reached the page
-    assert "background:#E1F5EE" in html or "background:#EEEDFE" in html
+    text = " ".join(block.value for block in result.markdown)
+    assert ":violet-badge[Sourced]" in text
+    assert ":green-badge[Tested]" in text
+    assert "<span style=" not in text  # no hand-rolled chips left
 
 
-def test_difficulty_renders_as_a_tag_on_the_library():
-    html = " ".join(block.value for block in app().markdown)
-    assert any(colour in html for colour in ("#E1F5EE", "#FDF2DD", "#FDE8DC", "#FBE2E2"))
+def test_difficulty_shows_a_severity_meter_with_its_level_written_out():
+    """Never colour alone: the level is always spelled out beside the meter."""
+    result = app()
+    blocks = " ".join(block.value for block in result.html)
+    assert "cl-meter" in blocks and "cl-seg" in blocks
+    assert "Difficulty" in blocks
+    assert any(level in blocks for level in ("Easy", "Medium", "Hard", "Very hard"))
+
+
+def test_a_guide_page_shows_the_three_stat_tiles():
+    blocks = " ".join(block.value for block in app(view="guide", app="spotify").html)
+    for label in ("Difficulty", "Hands-on time", "Waiting time"):
+        assert label in blocks, label
 
 
 def test_generating_a_guide_shows_each_stage_then_opens_it(monkeypatch):
@@ -117,7 +130,7 @@ def test_generating_a_guide_shows_each_stage_then_opens_it(monkeypatch):
     assert "Writing the guide (the one model call)" in reported
     assert "29 of 29 quotes verified" in reported
     # The guide itself renders below the stage list, with its shareable link.
-    assert "GitHub, github.com/settings/developers" in reported
+    assert "##### Prerequisites" in reported
     assert any("view=guide&app=github" in block.value for block in result.code)
 
 
@@ -128,5 +141,5 @@ def test_a_guide_built_from_a_misspelled_input_says_so():
 
     if not (GUIDES_DIR / "spotfy.json").exists():
         pytest.skip("the misspelled-input guide has not been generated")
-    captions = " ".join(block.value for block in app().caption)
-    assert "asked for" in captions and "spotfy" in captions
+    text = " ".join(block.value for block in app().markdown)
+    assert "asked for" in text and "spotfy" in text

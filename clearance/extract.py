@@ -118,7 +118,11 @@ Other rules:
 - approval_process covers what is reviewed, what you submit, and who decides.
 - likely_blockers covers what commonly causes rejection or delay: a required
   paid plan, a verified domain, privacy policy or terms URLs, a demo video,
-  regional restrictions, organisation policies.
+  regional restrictions, organisation policies. Include blockers that bite on
+  the user's side rather than yours: an administrator policy that must approve
+  your app before it can reach an organisation's data, a consent screen warning
+  shown for unverified apps, a plan tier the user needs. An integration that
+  connects successfully and then returns nothing is a blocker worth naming.
 - agent_can_do and you_must_do are short plain strings, no labels. An agent can
   read docs, explain scopes and fill in a guide. A human must log in, click
   consent, handle secrets and submit review forms.

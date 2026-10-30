@@ -1,0 +1,54 @@
+# Editorial theme: the palette already used in the README's architecture diagram.
+# Serif headings, sans body, warm paper background, hairline borders.
+#
+# The basic colour slots are redefined so that native badges
+# (:green-badge[...], st.badge) carry the evidence-label colours directly,
+# instead of hand-written HTML spans.
+
+[theme]
+base = "light"
+font = "sans-serif"
+headingFont = "serif"
+codeFont = "monospace"
+baseFontSize = 16
+backgroundColor = "#FAF8F3"
+secondaryBackgroundColor = "#F1EFE8"
+textColor = "#1F1F1D"
+primaryColor = "#0F6E56"
+linkColor = "#3C3489"
+linkUnderline = false
+borderColor = "#E4E1D8"
+baseRadius = "8px"
+buttonRadius = "6px"
+showWidgetBorder = true
+showSidebarBorder = false
+
+# Tested
+greenColor = "#0F6E56"
+greenTextColor = "#085041"
+greenBackgroundColor = "#E1F5EE"
+# Sourced
+violetColor = "#534AB7"
+violetTextColor = "#3C3489"
+violetBackgroundColor = "#EEEDFE"
+# Inferred
+orangeColor = "#8A5A00"
+orangeTextColor = "#7A4F00"
+orangeBackgroundColor = "#FDF2DD"
+# Uncertain
+grayColor = "#5F5E5A"
+grayTextColor = "#444441"
+grayBackgroundColor = "#F1EFE8"
+# Difficulty severity, used only on the meter and its value
+yellowColor = "#8A6D00"
+yellowTextColor = "#6F5700"
+yellowBackgroundColor = "#FBF3D6"
+redColor = "#9A3412"
+redTextColor = "#8B1D1D"
+redBackgroundColor = "#FBE4DC"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

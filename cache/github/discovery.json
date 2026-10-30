@@ -68,6 +68,17 @@
         "https://www.reddit.com/r/programming/comments/5wy68j/new_github_terms_of_service_require_removing_many",
         "https://docs.github.com/en/site-policy/github-terms"
       ]
+    },
+    {
+      "query": "GitHub OAuth app access restrictions admin approval",
+      "results": 5,
+      "urls": [
+        "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions",
+        "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization",
+        "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/disabling-oauth-app-access-restrictions-for-your-organization",
+        "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps",
+        "https://github.com/orgs/community/discussions/24488"
+      ]
     }
   ],
   "candidates": [
@@ -85,12 +96,64 @@
       ]
     },
     {
+      "url": "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps",
+      "title": "Authorizing OAuth apps - GitHub Docs",
+      "description": "# Authorizing OAuth apps\n## [OAuth apps and organizations](https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps#oauth-apps-and-organizations)\n- **For organizations _with_ OAuth app access restrictions, you can request that organization owners approve the application for use in that organization.** If the organization does not approve the application, then the application will only be able to access the organization's public resources. If you're an organization owner, you can [approve the application](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization) yourself.",
+      "query": "GitHub OAuth app access restrictions admin approval",
+      "position": 4,
+      "score": 22.8,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions",
+      "title": "About OAuth app access restrictions - GitHub Docs",
+      "description": "# About OAuth app access restrictions\n## [Further reading](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions#further-reading)\n- [Requesting organization approval for OAuth apps](https://docs.github.com/en/account-and-profile/how-tos/organization-membership/requesting-organization-approval-for-oauth-apps)",
+      "query": "GitHub OAuth app access restrictions admin approval",
+      "position": 1,
+      "score": 19.7,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
       "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
       "title": "Creating an OAuth app - GitHub Docs",
       "description": "# Creating an OAuth app\nYou can create and register an OAuth app under your personal account or under any organization you have administrative access to.\n\n4. Click **New OAuth App**. Note If you haven't created an app before, this button will say, **Register a new application**.\n11. Click **Register application**.",
       "query": "GitHub OAuth app registration",
       "position": 2,
       "score": 19.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization",
+      "title": "Approving OAuth apps for your organization - GitHub Docs",
+      "description": "# Approving OAuth apps for your organization\nWhen an organization member or outside collaborator requests OAuth app access to organization resources, organization owners can approve or deny the request.\n\nWhen OAuth app access restrictions are enabled, organization members and outside collaborators must [request approval](https://docs.github.com/en/account-and-profile/how-tos/organization-membership/requesting-organization-approval-for-oauth-apps) from an organization owner before they can authorize an OAuth app that has access to the organization's resources.\n\nOrganization owners can choose whether to allow outside collaborators to request access for unapproved OAuth apps and GitHub Apps.\n\n## [Further reading](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization#further-reading)\n- [About OAuth app access restrictions](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions)",
+      "query": "GitHub OAuth app access restrictions admin approval",
+      "position": 2,
+      "score": 19.4,
+      "official": true,
+      "reasons": [
+        "host matches the app name",
+        "developer documentation host"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/disabling-oauth-app-access-restrictions-for-your-organization",
+      "title": "Disabling OAuth app access restrictions for your organization",
+      "description": "When you disable OAuth app access restrictions for your organization, any organization member will automatically authorize OAuth app access to the ...",
+      "query": "GitHub OAuth app access restrictions admin approval",
+      "position": 3,
+      "score": 19.1,
       "official": true,
       "reasons": [
         "host matches the app name",
@@ -444,14 +507,42 @@
       "reasons": [
         "third-party host"
       ]
+    },
+    {
+      "url": "https://github.com/orgs/community/discussions/24488",
+      "title": "Getting \"OAuth App access restrictions\" for GraphQL mutations but not ...",
+      "description": "Because this feature is enabled, only owner-approved OAuth Apps can access the organization's resources. In this case, Ryan's application, ...",
+      "query": "GitHub OAuth app access restrictions admin approval",
+      "position": 5,
+      "score": -6.5,
+      "official": false,
+      "reasons": [
+        "third-party host"
+      ]
     }
   ],
   "gates": [],
   "fallbacks": [],
   "skipped": [
     {
+      "url": "https://docs.github.com/en/apps/using-github-apps/authorizing-github-apps",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps",
+      "reason": "page limit reached"
+    },
+    {
       "url": "https://docs.travis-ci.com/user/github-oauth-scopes",
       "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+      "reason": "page limit reached"
+    },
+    {
+      "url": "https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/applying-for-publisher-verification-for-your-organization",
+      "reason": "page limit reached"
     },
     {
       "url": "https://www.freecodecamp.org/news/how-to-set-up-a-github-oauth-application",
@@ -539,6 +630,10 @@
     },
     {
       "url": "https://github.com/orgs/community/discussions/210344",
+      "reason": "unofficial, official pages suffice"
+    },
+    {
+      "url": "https://github.com/orgs/community/discussions/24488",
       "reason": "unofficial, official pages suffice"
     }
   ],
